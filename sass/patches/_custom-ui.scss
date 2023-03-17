@@ -1,0 +1,38 @@
+/*==== Checklist Items ====*/
+.check-list li {
+    margin-bottom: 8px;
+    .block-editor-rich-text__editable {display: inline-block;}
+
+    /*==== Icon ====*/
+    &::before {
+        content: "\f058";
+        font-family: var(--icons-font);
+    }
+}
+
+/*==== Row Mode ====*/
+.check-list.row li::before {margin-#{$direction-end}: 5px;}
+
+/*==== Links List ====*/
+.links-list li {
+    /*==== Links ====*/
+    a {display: block;}
+
+    /*==== Hover ====*/
+    &:hover {@include padding-inline(5px, 'start');}
+
+    /*==== Icon ====*/
+    a::before {
+        content: "\f0c1";
+        @extend %inline-block;
+        color: var(--gray-color);
+        margin-#{$direction-end}: 8px;
+        font-family: var(--icons-font);
+    }
+}
+
+/*==== Front-End Only ====*/
+body:not([class*="block-editor"]):not([class*="site-editor"]) {
+    .full-screen-wide {min-height: 75vh;}
+    .full-screen {min-height: 100vh;}
+}

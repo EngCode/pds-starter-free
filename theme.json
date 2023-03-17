@@ -1,0 +1,199 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+
+	"customTemplates": [
+		{
+			"name": "blank",
+			"title": "Blank",
+			"postTypes": ["page", "post"]
+		},
+		{
+			"name": "archive",
+			"title": "Blog Archive",
+			"postTypes": ["page", "post"]
+		},
+		{
+			"name": "single",
+			"title": "Blog Details",
+			"postTypes": ["page", "post"]
+		}
+	],
+
+	"templateParts": [
+		{
+			"name": "header",
+			"title": "Header",
+			"area": "header"
+		},
+		{
+			"name": "footer",
+			"title": "Footer",
+			"area": "footer"
+		}
+	],
+
+	"styles": {
+		"color": {
+			"background" : "#F7F9FC",
+			"text": "#555555"
+		},
+		"spacing": {"blockGap": "0"}
+	},
+
+	"settings": {
+		"appearanceTools": true,
+
+		"color": {
+			"defaultDuotone": false,
+			"customDuotone" : false,
+
+			"palette": [
+				{
+					"slug": "background",
+					"color": "#F7F9FC",
+					"name": "Document BG"
+				},
+				{
+					"slug": "primary",
+					"color": "#0C97F9",
+					"name": "Primary"
+				},
+				{
+					"slug": "primary-hvr",
+					"color": "#1A69F4",
+					"name": "Primary Hover"
+				},
+				{
+					"slug": "primary-offwhite",
+					"color": "#e1eef7",
+					"name": "Primary Offwhite"
+				},
+				{
+					"slug": "primary-txt",
+					"color": "#FFFFFF",
+					"name": "Primary Text"
+				},
+				{
+					"slug": "primary-dark",
+					"color": "#14243C",
+					"name": "Primary Dark"
+				},
+				{
+					"slug": "secondary",
+					"color": "#F8C25B",
+					"name": "Secondary"
+				},
+				{
+					"slug": "secondary-hvr",
+					"color": "#FB955D",
+					"name": "Secondary Hover"
+				},
+				{
+					"slug": "secondary-offwhite",
+					"color": "#fddfa8",
+					"name": "Secondary Offwhite"
+				},
+				{
+					"slug": "secondary-txt",
+					"color": "#FFFFFF",
+					"name": "Secondary Text"
+				},
+				{
+					"slug": "secondary-dark",
+					"color": "#120E2E",
+					"name": "Secondary Dark"
+				},
+				{
+					"slug": "info",
+					"color": "#816CF3",
+					"name": "Informative Color"
+				},
+				{
+					"slug": "info-offwhite",
+					"color": "#CECCF9",
+					"name": "Info Offwhite Color"
+				},
+				{
+					"slug": "gray",
+					"color": "#868e96",
+					"name": "Gray Color"
+				},
+				{
+					"slug": "gray-offwhite",
+					"color": "#d9dde1",
+					"name": "Gray Offwhite Color"
+				},
+				{
+					"slug": "dark",
+					"color": "#343a40",
+					"name": "Dark Color"
+				},
+				{
+					"slug": "dark-offwhite",
+					"color": "#343a40",
+					"name": "Dark Offwhite Color"
+				},
+				{
+					"slug": "success",
+					"color": "#22B567",
+					"name": "Success Color"
+				},
+				{
+					"slug": "success-offwhite",
+					"color": "#C1EED9",
+					"name": "Success Offwhite Color"
+				},
+				{
+					"slug": "danger",
+					"color": "#DE3131",
+					"name": "Danger Color"
+				},
+				{
+					"slug": "danger-offwhite",
+					"color": "#fbbbbb",
+					"name": "Danger Offwhite Color"
+				},
+				{
+					"slug": "warning",
+					"color": "#FAD934",
+					"name": "Warning Color"
+				},
+				{
+					"slug": "warning-offwhite",
+					"color": "#FFE875",
+					"name": "Warning Offwhite Color"
+				},
+				{
+					"slug": "disable",
+					"color": "#ebebeb",
+					"name": "Disable Color"
+				},
+				{
+					"slug": "links",
+					"color": "var(--primary-color)",
+					"name": "Links Color"
+				}
+			]
+		},
+
+		"typography" : {
+			"dropCap": false,
+			"customFontSize": false,
+			"fontWeight": false,
+			"fontStyle": false,
+			"fontFamilies": [],
+			"fontSizes": []
+		},
+
+		"layout": {
+			"contentSize": "920px",
+			"wideSize": "100%"
+		},
+	
+		"spacing": {
+			"blockGap": false,
+			"units": [ "px", "em", "vh", "vw", "%" ]
+		}
+	}
+}

@@ -1,0 +1,83 @@
+/*==== Layout Fix ====*/
+// .wp-site-blocks > * + * {--wp--style--block-gap : 0;}
+
+/*==== Admin-Bar Fix ====*/
+@media screen and (max-width: 782px) {
+	#wpadminbar {
+		margin-top: -46px;
+		.ab-item {position: relative;}
+
+		.ab-item, .ab-item::before, [class*="ab-icon"]::before, [class*="ab-icon"] {
+			width: 40px!important;
+			background-size: 22px!important;
+		}
+
+		.ab-item::before, [class*="ab-icon"]::before {
+			height: auto!important;
+			font-size: 22px!important;
+			display: inline-block!important;
+			vertical-align: middle!important;
+		}
+
+		#wp-admin-bar-wpseo-menu .wpseo-score-icon {
+			top: 50%;
+			left: 100%;
+			position: absolute;
+			margin: 0!important;
+			transform: translateX(-100%);
+		}
+	}
+}
+
+#wpadminbar *:not([class="ab-icon"]) {font-family: var(--secondary-font)!important;}
+
+/*==== Fix View-Port Animation ====*/
+.wp-admin .view-status {visibility: visible;}
+
+/*==== Plugins Fix ====*/
+[name="newsletter[]"] {display:none!important;}
+[name*="honeypot"] {left: 100%;visibility:hidden;position: absolute;}
+.wpcf7 .screen-reader-response, .wpcf7-response-output {display: none;}
+
+/*==== Image Block ====*/
+.wp-block-image img {border-radius: inherit;}
+
+/*==== Table Block ====*/
+.wp-block-table {
+	overflow-x: auto;
+	@include margin-inline(0);
+
+	@include medium('down') {
+		table {width:970px;}
+	}
+}
+
+/*==== Reset Typography ====*/
+.rich-content {
+    /*==== Spaces ====*/
+    h1,h2,h3,h4,h5,h6 {
+		&:not([class*="mb-"]) {margin-bottom: 0.5rem;}
+	}
+    
+	p, ul {
+		&:not([class*="mb-"]) {margin-bottom: REM(25);}
+	}
+
+	.wp-block-columns {
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+
+	.wp-block-column {padding: 0 15px;}
+    /*==== Headline Sizes ====*/
+    // h1 {font-size: REM(32);}
+    // h2 {font-size: REM(28);}
+    // h3 {font-size: REM(25);}
+    // h4 {font-size: REM(23);}
+    // h5 {font-size: REM(20);}
+    // h6 {font-size: REM(17);}
+}
+
+/*==== Core Blocks Fixes ====*/
+figure.fluid img {width: inherit;}
+.block-editor-block-list__block[data-type="enlighter/codeblock"] {background-color: #fff;}

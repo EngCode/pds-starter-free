@@ -1,20 +1,20 @@
 <p align="center">
-  <a href="https://design.phenixthemes.com">
-    <img src="https://design.phenixthemes.com/wp-content/themes/phenix-docs/_front-end/dist/img/px-logo/phenix-design-icon.svg" alt="Phenix Design logo" width="175" height="162">
+  <a href="https://phenixthemes.com/pds-docs">
+    <img src="https://phenixthemes.com/pds-docs/wp-content/themes/phenix-docs/_front-end/dist/img/px-logo/phenix-design-icon.svg" alt="Phenix Design logo" width="175" height="162">
   </a>
 </p>
 
-<h2 align="center">Phenix WP Blocks</h2>
+<h2 align="center">WordPress Starter Theme for Phenix Blocks Plugin</h2>
 
 <p align="center">Phenix WP Blocks is Gutenberg Integration with Phenix Design System Framework.</p>
 <p align="center">
-  <a href="https://design.phenixthemes.com/wp-docs"><strong>Explore Phenix Docs »</strong></a>
+  <a href="https://phenixthemes.com/pds-docs/wp-docs"><strong>Explore Phenix Docs »</strong></a>
 </p>
 <p align="center">
 <a href="https://github.com/EngCode/phenix-blocks/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
 <a href="https://github.com/EngCode/phenix-blocks/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
 <a href="https://phenixthemes.com/">Themes</a>
-<a href="https://design.phenixthemes.com/blog">Blog</a>
+<a href="https://phenixthemes.com/pds-docs/blog">Blog</a>
 </p>
 
 <p align="center">
@@ -31,7 +31,7 @@
 
 ### About Phenix Design System
 
-**[Phenix DS](https://design.phenixthemes.com "About Phenix")** is lightweight user-interface framework build for simple structure, fast execution, and performance is number One concern in mind it was build for personal use and later published as open-source project for web community benefits.
+**[Phenix DS](https://phenixthemes.com/pds-docs "About Phenix")** is lightweight user-interface framework build for simple structure, fast execution, and performance is number One concern in mind it was build for personal use and later published as open-source project for web community benefits.
 
 ---
 
@@ -97,9 +97,9 @@
 
 -----------------------
 
-#### ### Where to Start ? : [Documentation](https://design.phenixthemes.com/wp-docs)
+#### ### Where to Start ? : [Documentation](https://phenixthemes.com/pds-docs/wp-docs)
 
-you can visit the offical website of phenix design system and read the documentation to master the frameowork : [design.phenixthemes.com](https://design.phenixthemes.com) and then you can read the [Designer-Guide](https://design.phenixthemes.com/wp-docs/designer) of phenix blocks for more advanced development you can read the [Developer Docs](https://design.phenixthemes.com/wp-docs/developer) for the Plugin and its Theme.
+you can visit the offical website of phenix design system and read the documentation to master the frameowork : [phenixthemes.com/pds-docs](https://phenixthemes.com/pds-docs) and then you can read the [Designer-Guide](https://phenixthemes.com/pds-docs/wp-docs/designer) of phenix blocks for more advanced development you can read the [Developer Docs](https://phenixthemes.com/pds-docs/wp-docs/developer) for the Plugin and its Theme.
 
 ---
 

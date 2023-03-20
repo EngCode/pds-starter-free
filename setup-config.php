@@ -12,7 +12,7 @@ if (class_exists('Merlin')) :
         $config = array(
             'dev_mode'    => false,
             'directory'   => 'wizard',
-            'merlin_url'  => 'pds-wizard',
+            'merlin_url'  => 'pds-install',
             'parent_slug' => 'theme.php',
             'capability'  => 'manage_options',
             'ready_big_button_url' => admin_url("themes.php?page=advanced-import"),

@@ -117,7 +117,7 @@ if (!function_exists('phenix_register_required_plugins')) :
         $config = array(
             'id'           => 'phenix-plugins',
             'default_path' => get_template_directory().'/wizard/tgm/plugins',
-            'menu'         => 'pds-install-plugins',
+            'menu'         => 'pds-install',
             'parent_slug'  => 'themes.php',
             'capability'   => 'edit_theme_options',
             'has_notices'  => true,

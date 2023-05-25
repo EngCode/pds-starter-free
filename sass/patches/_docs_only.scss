@@ -1,74 +1,17 @@
 /*==== Docs Only ====*/
 $header-size: 60px;
-
 %sticky-element {
     top: $header-size;
     position: -webkit-sticky;
     position: sticky;
-    @include small('down') {top: 55px};
-}
-
-/*==== Main Header ====*/
-.main-header {
-    z-index: var(--header-index);
-    &:not(.is-sticky) {position: relative;}
-    box-shadow: 0 2px 3px 0 rgba(#e1eef7, 0.5);
-    background-image: linear-gradient( var(--primary-offwhite), #FFF);
 }
 
 /*==== Navigator ====*/
 .navigator-menu {
-    overflow-y: auto;
     @extend %sticky-element;
     z-index: var(--header-index);
-    background-color: #fff;
-    border-top: 1px solid var(--primary-offwhite);
-    box-shadow: 2px 0 3px 0 rgba(#e1eef7, 0.5);
-    background-image: linear-gradient( 0deg, var(--primary-offwhite), #FFF);
     /*==== Size ====*/
     @include large() {height: calc(100vh - #{$header-size})};
-
-    /*==== Search ====*/
-    .search-form {
-        padding: 15px 0;
-    }
-
-    /*==== Control Wrapper ====*/
-    .control-wraper {
-        position: relative;
-        width: calc(100% - 51px);
-        @include large() {width: 100%;}
-        /*==== Controler ====*/
-        input {
-            width: 100%;
-            height: REM(36);
-            font-size: 13px;
-            border-radius: 5px;
-            @extend %reset-control;
-            background-color: #F6F6F6;
-            padding-#{$direction-end}: 15px;
-            padding-#{$direction-start}: 35px;
-            @include large() {
-                height: 40px;
-                font-size: 14px;
-            }
-
-            @include small('down') {
-                background-color: #fff;
-                border: 1px solid var(--primary-offwhite);
-            };
-        }
-        /*==== Icon ====*/
-        &::before {
-            top: 50%;
-            opacity: 0.3;
-            font-size: 12px;
-            position: absolute;
-            #{$direction-start}: 12px;
-            transform: translateY(-50%);
-            @include large() {font-size: 14px;}
-        }
-    }
 
     /*==== Main Menu ====*/
     .main-menu {
@@ -99,6 +42,8 @@ $header-size: 60px;
             &:nth-child(2) > a::before {background-image: url('assets/img/px-logo/px-blocks-icon.svg');}
             &:nth-child(3) > a::before {background-image: url('assets/img/px-logo/phenix-icon.svg');}
         }
+
+        > ul > li.px-item-active .submenu {display: block!important;}
     }
 
     /*==== Docs Menu ====*/
@@ -153,52 +98,6 @@ $header-size: 60px;
 @include large() {
     .megamenu-example > ul > li {padding-top: 6px;padding-bottom: 6px;}
 };
-
-/*==== Page Secitons ====*/
-.on-page-menu {
-    overflow-y: auto;
-    padding: 15px 20px;
-    @extend %sticky-element;
-    background-color: var(--primary-offwhite);
-    border-#{$direction-start}-color: var(--primary-offwhite);
-    background-image: linear-gradient(rgba(#FFF, 0.5), rgba(#FFF, 0.5));
-    /*==== Size ====*/
-    @include large() {height: calc(100vh - #{$header-size})};
-
-    /*==== Title ====*/
-    h3 {
-        line-height: 1;
-        font-size: 14px;
-        margin-bottom: 5px;
-        font-weight: var(--medium-weight);
-    }
-    /*==== Submenus ====*/
-    ul {
-        display: block;
-        font-size: 14px;
-        line-height: 1.3;
-        padding-#{$direction-start}: 5px;
-        @extend %reset-list;
-        color: var(--gray-color);
-        &.scrollspy-menu {margin-#{$direction-start}: 5px;}
-        /*==== Links ====*/
-        a {
-            color: inherit;
-            transition: all 0.5s;
-        }
-        /*==== Items ====*/
-        li {
-            padding-top: 5px;
-            padding-bottom: 5px;
-            ul {margin-bottom: -5px;}
-        }
-        /*==== Current Item ====*/
-        .px-active > a, li:hover > a {
-            font-weight: var(--medium-weight);
-            color: var(--dark-color);
-        }
-    }
-}
 
 /*==== Content Side ====*/
 .content-side {
@@ -523,7 +422,6 @@ $header-size: 60px;
 
 /*==== Timer Demo ====*/
 .timer-demo {
-    // padding: 20px;
     span[data-label] {
         line-height: 1.2;
         &::after {
@@ -561,9 +459,10 @@ $header-size: 60px;
 
 /*==== Coloring the Current Active Card ====*/
 #news-thumbnails .post-card {
-
+    /*==== .... ====*/
     .bg-white {transition: all 300ms linear;}
 
+    /*==== .... ====*/
     &.is-active .bg-white {
         color: #FFF;
         background-color: var(--primary-color);
@@ -606,9 +505,7 @@ $header-size: 60px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 50% auto;
-    @include small('down') {
-        background-size: 75% auto;
-    };
+    @include small('down') {background-size: 75% auto;};
     ul li i {
         width: 1em;
         text-align: center;
@@ -616,9 +513,3 @@ $header-size: 60px;
         vertical-align: middle;
     }
 }
-
-@include small('down') {
-    .tx-align-sm-center {text-align: center;}
-};
-
-#wpadminbar {z-index: 999999;}

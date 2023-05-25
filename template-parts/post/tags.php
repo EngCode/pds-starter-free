@@ -9,7 +9,7 @@
 <?php if (!empty(get_the_tags())) : ?>
 <div class="tags-wraper flexbox pdt-20 divider-t">
     <!-- Title -->
-    <h3 class="fluid fs-15 mb-10"><?php __('الكلمات الدلالية', 'phenix') ?></h3>
+    <h3 class="fluid fs-15 mb-10"><?php __('Tags Keywords', 'phenix') ?></h3>
     <!-- Tags -->
     
     <?php foreach(get_the_tags() as $tag) : ?>

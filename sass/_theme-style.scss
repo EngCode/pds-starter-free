@@ -2,16 +2,14 @@
 @import 'patches/wordpress-int';
 
 /*==== Additional UI ====*/
+@import 'patches/docs_only';
 @import 'patches/custom-ui';
 
 /*==== Multiple Used ====*/
-$animated-elements : "img, h2, h3, h4, p, .btn, .form-control, .control-icon, li";
+$animated-elements : "img, h1, h2, h3, h4, h5, h6, p, .btn, .form-control, .control-icon, li, .wp-block-phenix-group";
 
 /*==== Additional Colors ====*/
 .border-offwhite {border: 1px solid #E1EEF7;}
-
-/*==== Additional Fixes ====*/
-.btn {line-height: calc(var(--height) - 2px);}
 .btn.outline::before {position: relative; top: -1px;}
 .position-rv > [class*="container"] {position: static;}
 
@@ -38,8 +36,8 @@ $animated-elements : "img, h2, h3, h4, p, .btn, .form-control, .control-icon, li
 }
 
 /*==== Animations ====*/
-.px-animate.view-active {
-    .wp-block-phenix-row .wp-block-phenix-column, #{$animated-elements} {
+.px-animate.view-active:not([data-animation]) {
+    .wp-block-phenix-column, #{$animated-elements} {
         $delay: 0;
         -webkit-animation: fadeInUp 1s both;
         animation: fadeInUp 1s both;
@@ -56,17 +54,8 @@ $animated-elements : "img, h2, h3, h4, p, .btn, .form-control, .control-icon, li
 /*==== Slider Animation ====*/
 .px-slider:not(.edit-mode) .hero-slide:not(.block-editor-block-list__block) {
     #{$animated-elements} {visibility: hidden;}
-    &.px-media {background-size: cover;}
     /*==== Animations ====*/
-    &.is-active {
-        //===> Background <===//
-        @media screen and (min-width: 1100px) {
-            &.px-media:not(.no-zoom) {-webkit-animation: bgZoomInOut 30s linear infinite;animation: bgZoomInOut 30s linear infinite;}
-        }
-
-        //===> Elements <===//
-        #{$animated-elements} {visibility: visible;-webkit-animation: fadeInUp 1s both;animation: fadeInUp 1s both;}
-    }
+    &.is-active #{$animated-elements} {visibility: visible;-webkit-animation: fadeInUp 1s both;animation: fadeInUp 1s both;}
 }
 
 /*==== Core Slider ====*/
@@ -143,3 +132,22 @@ $animated-elements : "img, h2, h3, h4, p, .btn, .form-control, .control-icon, li
         box-shadow: 3px 0 20px rgba(0, 0, 0, 0.1);
     }
 }
+
+/*==== Mobile Menu ====*/
+@media screen and (max-width: 920px) {
+    .px-navigation[class*="hidden"][data-mobile="dropdown"] {
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 10px 30px;
+        position: absolute;
+        background-color: var(--body-bg);
+        box-shadow: 3px 3px 8px 0 rgba(#000, 0.05);
+        > ul > li {
+            width: 100%;
+            &:not(:last-child) {margin-bottom: 5px;}
+        }
+    }
+}
+
+.navigator-menu .px-item-active > ul {display: block!important;}

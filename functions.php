@@ -11,6 +11,9 @@
  * ========> Reference by Comments <=======
  ** 01 - Theme Support
  ** 02 - Phenix Assets
+ ** 03 - Setup Templates Meta
+ ** 04 - Register the required plugins for this theme.
+ ** 05 - Includes Merlin Wizard Class
 */
 
 //=====> Theme Support <=====//
@@ -26,6 +29,9 @@ if (!function_exists('phenix_support')) :
 	*/
 
 	function phenix_support() {
+        //====> Translation Support <====//
+		load_theme_textdomain('phenix', get_template_directory().'/languages');
+
 		//====> Support Block Styles <====//
         add_theme_support('editor-styles');
 		add_theme_support('wp-block-styles');
@@ -40,9 +46,6 @@ if (!function_exists('phenix_support')) :
         } else {
             add_editor_style('style.css');
         }
-
-		//====> Translation Support <====//
-		load_theme_textdomain('phenix', get_template_directory() . '/languages');
 
 		//====> Support Thumbnails <====//
 		add_theme_support('post-thumbnails');
@@ -84,6 +87,45 @@ if (!function_exists('pds_theme_script')) :
     // add_action('wp_enqueue_scripts', 'pds_theme_script');
 endif;
 
+//====> Setup Templates Meta <====//
+if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_theme_parts")) :
+    function pds_templates_meta_register() {
+        //===> Define Meta Data & Get the Json Files <===//
+        $template_meta = array();
+        $templates_meta_list = array();
+        $templates_meta_files = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-meta"));
+
+        //===> Add the Files to a List <===//
+        foreach ($templates_meta_files as $key => $value) {
+            //===> if its a Directory <===//
+            if(is_array($value)) {
+                //===> Get its Files and add them to the list <===//
+                foreach ($value as $key2 => $value2) $templates_meta_list[] = $key.'/'.$value2;
+            } else {
+                //===> Add the File <===//
+                $templates_meta_list[] = $value;
+            }
+        }
+
+        //===> Get each File Content <===//
+        foreach($templates_meta_list as $key => $value) {
+            $template_json = json_decode(file_get_contents(get_template_directory()."/template-meta/".$value), true);
+            $template_meta[$template_json['name']] = array("features" => $template_json['features'], "options" => $template_json['options']);
+        }
+
+        update_option("templates_meta", $template_meta);
+    };
+
+    function pds_templates_parts_register() {
+        //===> Set Templates Parts <===//
+        $current_theme_parts = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-parts"));
+        update_option('theme_parts', $current_theme_parts);
+    };
+
+    add_action('init', 'pds_templates_parts_register');
+    add_action('init', 'pds_templates_meta_register');
+endif;
+
 //=====> Register the required plugins for this theme. <=====//
 require_once get_template_directory().'/wizard/tgm/class-tgm-plugin-activation.php';
 
@@ -97,7 +139,6 @@ if (!function_exists('phenix_register_required_plugins')) :
     function phenix_register_required_plugins() {
         //===> Define Plugins to Install <===//
         $plugins = array(
-            array('name' => 'Phenix Blocks', 'slug' => 'phenix-blocks', 'source' => 'https://github.com/EngCode/phenix-blocks/archive/master.zip', 'required' => true),
             array('name' => 'Flamingo', 'slug' => 'flamingo', 'required' => true),
             array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
             array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
@@ -107,13 +148,14 @@ if (!function_exists('phenix_register_required_plugins')) :
             array('name' => 'Advanced Export', 'slug' => 'advanced-export', 'required' => false),
             array('name' => 'Yoast SEO', 'slug' => 'wordpress-seo', 'required' => false),
             array('name' => 'W3 Total Cache', 'slug' => 'w3-total-cache', 'required' => false),
+            array('name' => 'Phenix Blocks', 'slug' => 'pds-blocks', 'source' => 'https://phenixthemes.com/PDSWpAddons/pds-blocks-pro.zip', 'required' => true),
             array('name' => 'Theme and plugin translation for Polylang (TTfP)', 'slug' => 'theme-translation-for-polylang', 'required' => false),
-            // array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
-            // array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
-            // array('name' => 'Blocks Product Editor for WooCommerce', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
+            array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
+            array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
+            array('name' => 'Blocks Product Editor for WooCommerce', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
         );
     
-        //===> Array of configuration settings. Amend each line as needed. <===//
+        //===> Array of configuration settings <===//
         $config = array(
             'id'           => 'phenix-plugins',
             'default_path' => get_template_directory().'/wizard/tgm/plugins',

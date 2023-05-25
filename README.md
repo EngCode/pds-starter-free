@@ -4,7 +4,7 @@
   </a>
 </p>
 
-<h2 align="center">WordPress Starter Theme for Phenix Blocks Plugin</h2>
+<h2 align="center">WordPress Premium Theme for PHenix Blocks Plugin</h2>
 
 <p align="center">Phenix WP Blocks is Gutenberg Integration with Phenix Design System Framework.</p>
 <p align="center">

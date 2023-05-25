@@ -11,6 +11,9 @@
 	$post_thumbnail   = get_the_post_thumbnail_url($post->ID, 'full');
     $post_description = strip_tags(get_the_excerpt());
 
+    //===> Meta information's <===//
+    $meta_info = get_post_meta($post->ID);
+
 	//===> Thumbnail Placeholder <===//
 	if ($post_thumbnail === false) {
 		$post_thumbnail = 'https://via.placeholder.com/900x700.webp?text=Media';
@@ -26,7 +29,7 @@
         <!-- Title -->
         <a itemprop="url" href="<?php echo $post_link; ?>" class="color-inherit"><h3 class="fs-16 weight-medium" itemprop="name"><?php echo $post_title; ?></h3></a>
         <!-- Description -->
-        <p class="fs-13" data-max-text="110"  itemprop="description"><?php echo $post_description; ?></p>
+        <p class="fs-13" data-max-text="120"  itemprop="description"><?php echo $post_description; ?></p>
     </div>
 </div>
 <!-- // Block End -->

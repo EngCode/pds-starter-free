@@ -11,6 +11,9 @@
 	$post_thumbnail   = get_the_post_thumbnail_url($post->ID, 'full');
     $post_description = strip_tags(get_the_excerpt());
 
+    //===> Meta information's <===//
+    $meta_info = get_post_meta($post->ID);
+
 	//===> Thumbnail Placeholder <===//
 	if ($post_thumbnail === false) {
 		$post_thumbnail = 'https://via.placeholder.com/900x700.webp?text=Media';

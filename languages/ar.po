@@ -1,18 +1,18 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Phenix Blocks Premium\n"
-"POT-Creation-Date: 2023-03-23 00:25+0200\n"
-"PO-Revision-Date: 2023-03-23 00:36+0200\n"
+"Project-Id-Version: Phenix Themes Store\n"
+"POT-Creation-Date: 2023-05-20 06:30+0300\n"
+"PO-Revision-Date: 2023-05-20 06:31+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
-"X-Poedit-Basepath: ..\n"
 "Plural-Forms: nplurals=6; plural=(n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
 "&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5);\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
@@ -22,96 +22,446 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: setup-config.php:31
-msgid "Theme Setup"
-msgstr "إعادة التنصيب"
+#: edd_templates/account-pending.php:3
+#, fuzzy
+#| msgid "The license activation step has been displayed"
+msgid "An email with an activation link has been sent."
+msgstr "تم عرض خطوة تنشيط الترخيص"
+
+#: edd_templates/account-pending.php:8
+#, php-format
+msgid ""
+"Your account is pending verification. Please click the link in your email to "
+"activate your account. No email? <a href=\"%s\">Click here</a> to send a new "
+"activation code."
+msgstr ""
+
+#: edd_templates/checkout_cart.php:11
+msgid "Item Name"
+msgstr ""
+
+#: edd_templates/checkout_cart.php:12
+msgid "Item Price"
+msgstr ""
+
+#: edd_templates/checkout_cart.php:13
+#, fuzzy
+#| msgid "Options"
+msgid "Actions"
+msgstr "الاختيارات"
+
+#: edd_templates/checkout_cart.php:57 edd_templates/checkout_cart.php:75
+#: edd_templates/shortcode-profile-editor.php:123
+msgid "Remove"
+msgstr ""
+
+#: edd_templates/checkout_cart.php:102 edd_templates/shortcode-receipt.php:76
+msgid "Subtotal"
+msgstr ""
+
+#: edd_templates/checkout_cart.php:120 edd_templates/shortcode-receipt.php:134
+msgid "Tax"
+msgstr ""
+
+#: edd_templates/checkout_cart.php:129 edd_templates/shortcode-receipt.php:163
+msgid "Total"
+msgstr ""
+
+#: edd_templates/history-downloads.php:14
+#: edd_templates/history-purchases.php:13
+msgid "Your account has been successfully verified!"
+msgstr ""
+
+#: edd_templates/history-downloads.php:44
+msgid "Download Name"
+msgstr ""
+
+#: edd_templates/history-downloads.php:46
+msgid "Files"
+msgstr ""
+
+#: edd_templates/history-downloads.php:89
+#: edd_templates/shortcode-receipt.php:306
+msgid "No downloadable files found."
+msgstr ""
+
+#. translators: the order item's status.
+#: edd_templates/history-downloads.php:97
+#, php-format
+msgid "Status: %s"
+msgstr ""
+
+#: edd_templates/history-downloads.php:135
+msgid "You have not purchased any downloads"
+msgstr ""
+
+#: edd_templates/history-purchases.php:51
+msgid "ID"
+msgstr ""
+
+#: edd_templates/history-purchases.php:52
+#: edd_templates/shortcode-receipt.php:69
+msgid "Date"
+msgstr ""
+
+#: edd_templates/history-purchases.php:53
+msgid "Amount"
+msgstr ""
+
+#: edd_templates/history-purchases.php:54
+msgid "Details"
+msgstr ""
+
+#: edd_templates/history-purchases.php:74
+msgid "Complete Purchase"
+msgstr ""
+
+#: edd_templates/history-purchases.php:79
+msgid "View Details and Downloads"
+msgstr ""
+
+#: edd_templates/history-purchases.php:102
+msgid "You have not made any purchases."
+msgstr ""
+
+#: edd_templates/payment-processing.php:2
+#, php-format
+msgid ""
+"Your purchase is processing. This page will reload automatically in 8 "
+"seconds. If it does not, click <a href=\"%s\">here</a>."
+msgstr ""
+
+#: edd_templates/shortcode-login.php:12
+msgid "Log into Your Account"
+msgstr ""
+
+#: edd_templates/shortcode-login.php:15
+msgid "Username or Email"
+msgstr ""
+
+#: edd_templates/shortcode-login.php:19 edd_templates/shortcode-register.php:30
+msgid "Password"
+msgstr ""
+
+#: edd_templates/shortcode-login.php:23
+msgid "Remember Me"
+msgstr ""
+
+#: edd_templates/shortcode-login.php:29
+msgid "Log In"
+msgstr ""
+
+#: edd_templates/shortcode-login.php:33
+msgid "Lost Password?"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:18
+msgid "Saved cart"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:18
+#, php-format
+msgid "You have a saved cart, <a href=\"%s\">click here</a> to restore it."
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:22 wizard/class-merlin.php:1770
+#: wizard/class-merlin.php:1976 wizard/class-merlin.php:1989
+#: wizard/class-merlin.php:2002 wizard/class-merlin.php:2015
+#: wizard/class-merlin.php:2028 wizard/class-merlin.php:2041
+msgid "Success"
+msgstr "تم بنجاح"
+
+#: edd_templates/shortcode-profile-editor.php:22
+msgid "Your profile has been edited successfully."
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:35
+msgid "Change your Name"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:38
+msgid "First Name"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:43
+msgid "Last Name"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:48
+msgid "Display Name"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:68
+msgid "Primary Email Address"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:104
+msgid "Additional Email Addresses"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:139
+msgid "Change your Billing Address"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:142
+msgid "Line 1"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:147
+msgid "Line 2"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:152
+msgid "City"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:157
+msgid "Zip / Postal Code"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:162
+msgid "Country"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:171
+msgid "State / Province"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:195
+msgid "Change your Password"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:198
+msgid "New Password"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:203
+msgid "Re-enter Password"
+msgstr ""
+
+#: edd_templates/shortcode-profile-editor.php:220
+msgid "Save Changes"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:19
+msgid "The specified receipt ID appears to be invalid."
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:42
+#, fuzzy
+#| msgid "Order Now"
+msgctxt "heading"
+msgid "Order"
+msgstr "اطلب الان"
+
+#: edd_templates/shortcode-receipt.php:50
+msgid "Order Status"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:56
+msgid "Payment Key"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:63
+msgid "Payment Method"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:87
+msgid "Discount"
+msgid_plural "Discounts"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: edd_templates/shortcode-receipt.php:116
+#: edd_templates/shortcode-receipt.php:120
+msgid "Fee"
+msgid_plural "Fees"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: edd_templates/shortcode-receipt.php:143
+#: edd_templates/shortcode-receipt.php:147
+msgid "Credit"
+msgid_plural "Credits"
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: edd_templates/shortcode-receipt.php:200
+msgid "Products"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:204
+msgid "Name"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:206
+msgid "SKU"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:209
+msgid "Quantity"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:211
+msgid "Price"
+msgstr ""
+
+#: edd_templates/shortcode-receipt.php:297
+msgid "No downloadable files found for this bundled item."
+msgstr ""
+
+#: edd_templates/shortcode-register.php:15
+msgid "Register New Account"
+msgstr ""
+
+#: edd_templates/shortcode-register.php:20
+msgid "Username"
+msgstr ""
+
+#: edd_templates/shortcode-register.php:25
+msgid "Email"
+msgstr ""
+
+#: edd_templates/shortcode-register.php:35
+msgid "Confirm Password"
+msgstr ""
+
+#: edd_templates/shortcode-register.php:46
+msgid "Register"
+msgstr ""
+
+#: edd_templates/widget-cart-checkout.php:2
+#: edd_templates/widget-cart-empty.php:3
+msgid "Subtotal:"
+msgstr ""
+
+#: edd_templates/widget-cart-checkout.php:3
+#: edd_templates/widget-cart-empty.php:4
+msgid "Estimated Tax:"
+msgstr ""
+
+#: edd_templates/widget-cart-checkout.php:5
+#: edd_templates/widget-cart-empty.php:6
+msgid "Total:"
+msgstr ""
+
+#: edd_templates/widget-cart-checkout.php:6
+#: edd_templates/widget-cart-empty.php:7
+msgid "Checkout"
+msgstr ""
+
+#: edd_templates/widget-cart-item.php:4
+msgid "remove"
+msgstr ""
+
+#: edd_templates/widget-cart.php:9
+msgid "Number of items in cart"
+msgstr ""
 
 #: setup-config.php:32
+#, fuzzy
+#| msgid "Phenix Themes"
+msgid "Phenix Theme Setup"
+msgstr "قوالب فينكس"
+
+#: setup-config.php:33
 #, php-format
 msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
 msgstr "%1$s%2$s قوالب &lsaquo; تنصيب قالب: %3$s%4$s"
 
-#: setup-config.php:33
+#: setup-config.php:34
 msgid "Return to the dashboard"
 msgstr "لوحة التحكم"
 
-#: setup-config.php:34
+#: setup-config.php:35
 msgid "Disable this wizard"
 msgstr "تعطيل هذا التنصيب"
 
-#: setup-config.php:35
+#: setup-config.php:36
 msgid "Skip"
 msgstr "تخطي"
 
-#: setup-config.php:36
+#: setup-config.php:37
 msgid "Next"
 msgstr "التالي"
 
-#: setup-config.php:37
+#: setup-config.php:38
 msgid "Start"
 msgstr "ابدأ"
 
-#: setup-config.php:38
+#: setup-config.php:39
 msgid "Cancel"
 msgstr "الغاء"
 
-#: setup-config.php:39 setup-config.php:40 setup-config.php:41
+#: setup-config.php:40 setup-config.php:41 setup-config.php:42
 #: wizard/tgm/class-tgm-plugin-activation.php:2810
 msgid "Install"
 msgstr "تنصيب"
 
-#: setup-config.php:42
+#: setup-config.php:43
 msgid "Import"
 msgstr "استيراد"
 
-#: setup-config.php:43 wizard/tgm/class-tgm-plugin-activation.php:2819
+#: setup-config.php:44 wizard/tgm/class-tgm-plugin-activation.php:2819
 msgid "Activate"
 msgstr "تفعيل"
 
-#: setup-config.php:44
+#: setup-config.php:45
 msgid "Later"
 msgstr "لاحقاً"
 
-#: setup-config.php:45
+#: setup-config.php:46
 #, php-format
 msgid "Activate %s"
 msgstr "تفعيل %s"
 
-#: setup-config.php:46
+#: setup-config.php:47
 #, php-format
 msgid "%s is Activated"
 msgstr "تم تفعيل %s بنجاح"
 
-#: setup-config.php:47
+#: setup-config.php:48
 msgid "Enter your license key to enable remote updates and theme support."
 msgstr "ادخل رخصة الشراء لتفعيل التحديثات لهذا القالب."
 
-#: setup-config.php:48
+#: setup-config.php:49
 msgid "License key"
 msgstr "مفتاح التفعيل"
 
-#: setup-config.php:49
+#: setup-config.php:50
 msgid "The theme is already registered, so you can go to the next step!"
 msgstr "هذا القالب مسجل بالفعل يمكنك الذهاب الى الخطوة التالية!"
 
-#: setup-config.php:50
+#: setup-config.php:51
 msgid "Your theme is activated! Remote updates and theme support are enabled."
 msgstr "تم تفعيل هذا القالب بنجاح ويمكنك ان تستقبل التحديثات الان."
 
-#: setup-config.php:51
+#: setup-config.php:52
 msgid "Need help?"
 msgstr "تحتاج الى مساعدة ؟"
 
-#: setup-config.php:52
+#: setup-config.php:53
 #, php-format
 msgid "Welcome to %s"
 msgstr "أهلا بك في %s"
 
-#: setup-config.php:53
+#: setup-config.php:54
 msgid "Hi. Welcome back"
 msgstr "مرحبا! اهلا بعودتك"
 
-#: setup-config.php:54
+#: setup-config.php:55
 msgid ""
 "This wizard will set up your theme, install plugins, and import content. It "
 "is optional & should take only a few minutes."
@@ -119,7 +469,7 @@ msgstr ""
 "سيتم الان تنصيب القالب الخاص بك والاضافات المطلوبة لتشغيله والمحتوي "
 "الافتراضي الذي تم شراءه مع القالب في عدة دقائق."
 
-#: setup-config.php:55
+#: setup-config.php:56
 msgid ""
 "You may have already run this theme setup wizard. If you would like to "
 "proceed anyway, click on the \"Start\" button below."
@@ -127,56 +477,58 @@ msgstr ""
 "ربما تكون قد قمت بالفعل بتشغيل معالج إعداد القالب هذا. إذا كنت ترغب في "
 "المتابعة على أي حال ، فانقر فوق الزر \"ابدأ\" أدناه."
 
-#: setup-config.php:56
+#: setup-config.php:57
 msgid "Install Child Theme"
 msgstr "انشاء قالب فرعي من هذا القالب"
 
-#: setup-config.php:57
+#: setup-config.php:58
 msgid "You're good to go!"
 msgstr ""
 "لقد تم التنصيب بنجاح يمكنك الان البدا في تعديل واضافة محتوي موقعك كما تشاء!"
 
-#: setup-config.php:58
+#: setup-config.php:59
 msgid ""
 "Let's build & activate a child theme so you may easily make theme changes."
 msgstr ""
 "القوالب الفرعية تمكنك من التطوير على القالب بدون المساس بكود القالب الأساسي "
 "يمكنك تخطي هذه الخطوة ان لم تكن تعرف ماذا يعني هذا الكلام."
 
-#: setup-config.php:59
+#: setup-config.php:60
 msgid ""
 "Your child theme has already been installed and is now activated, if it "
 "wasn't already."
 msgstr "لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
 
-#: setup-config.php:60
+#: setup-config.php:61
 msgid "Learn about child themes"
 msgstr "تعلم المزيد حول القوالب الفرعية"
 
-#: setup-config.php:61
+#: setup-config.php:62
 msgid ""
 "Awesome. Your child theme has already been installed and is now activated."
 msgstr "رائع لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
 
-#: setup-config.php:62
+#: setup-config.php:63
 msgid "Awesome. Your child theme has been created and is now activated."
 msgstr "لقد تم تنصيب قالبك الفرعي وجاري تفعيلة الان."
 
-#: setup-config.php:63 wizard/tgm/class-tgm-plugin-activation.php:335
-msgid "Install Plugins"
-msgstr "تنصيب الاضافات"
-
 #: setup-config.php:64
+#, fuzzy
+#| msgid "Phenix Themes"
+msgid "Phenix Theme Installer"
+msgstr "قوالب فينكس"
+
+#: setup-config.php:65
 msgid "You're up to speed!"
 msgstr "احسنت لقد شارفت على الانتهاء!"
 
-#: setup-config.php:65
+#: setup-config.php:66
 msgid ""
 "Let's install some essential WordPress plugins to get your site up to speed."
 msgstr ""
 "دعنا الان ننصب بعض الإضافات الأساسية لسهولة وسرعة البدأ في تشغيل موقعك."
 
-#: setup-config.php:66
+#: setup-config.php:67
 msgid ""
 "The required WordPress plugins are all installed and up to date. Press \"Next"
 "\" to continue the setup wizard."
@@ -184,15 +536,15 @@ msgstr ""
 "لقد تم تنصيب جميع الإضافات المطلوبة وتم تحديثها لأخر اصدار ويمكنك الان انت "
 "تضغط على التالي للاستمرار."
 
-#: setup-config.php:67 setup-config.php:70
+#: setup-config.php:68 setup-config.php:71
 msgid "Advanced"
 msgstr "متقدم"
 
-#: setup-config.php:68 setup-config.php:74
+#: setup-config.php:69 setup-config.php:75
 msgid "Import Content"
 msgstr "استيراد المحتوي"
 
-#: setup-config.php:69
+#: setup-config.php:70
 msgid ""
 "Let's import content to your website, to help you get familiar with the "
 "theme."
@@ -200,11 +552,11 @@ msgstr ""
 "دعنا نستورد المحتوى إلى موقع الويب الخاص بك ، لمساعدتك في التعرف على القالب "
 "وسهولة التعديل عليه واضافة محتوي جديد."
 
-#: setup-config.php:71
+#: setup-config.php:72
 msgid "One More Step to Go"
 msgstr "بقيت خطوة واحدة للانتهاء"
 
-#: setup-config.php:72
+#: setup-config.php:73
 #, php-format
 msgid ""
 "Your theme has been all set up and one step remaining is to import your demo "
@@ -213,57 +565,87 @@ msgstr ""
 "تم إعداد القالب الخاص بك بالكامل وهناك خطوة واحدة متبقية وهي استيراد بيانات "
 "المحتوي التوضيحي الخاصة بك والاستمتاع بموقع الويب الجديد الخاص بك بواسطة %s."
 
-#: setup-config.php:73
+#: setup-config.php:74
 msgid "Extras"
 msgstr "المزيد"
 
-#: setup-config.php:75
+#: setup-config.php:76
 msgid "Explore More Themes"
 msgstr "المزيد من القوالب"
 
-#: setup-config.php:76
+#: setup-config.php:77
 msgid "Get Theme Support"
 msgstr "الدعم الفني"
 
-#: setup-config.php:77
+#: setup-config.php:78
 msgid "Start Customizing"
 msgstr "البدا في التعديل"
-
-#: setup-config.php:99
-msgid "Advanced Systems"
-msgstr "أنظمة متقدمة"
-
-#: setup-config.php:103
-msgid "Phenix Themes"
-msgstr "قوالب فينكس"
 
 #: template-parts/_placeholder.php:2
 msgid "Theme Part Placeholder"
 msgstr "هذا قالب مؤقت افتراضي حتي يتم اختيار واحد من الإعدادات"
 
-#: template-parts/cards/blog.php:35
+#: template-parts/cards/blog.php:38
 msgid "Read More"
 msgstr "قراءة المزيد"
 
-#: template-parts/cards/service-icon.php:27
-msgid "Order Now"
-msgstr "اطلب الان"
+#: template-parts/cards/standard.php:41
+msgid "Add to Card"
+msgstr "شراء القالب"
 
-#: template-parts/dynamic/search-bar.php:18
+#: template-parts/dynamic/search-bar.php:26
 msgid "Search keywords"
 msgstr "كلمات البحث"
 
-#: template-parts/dynamic/search-bar.php:31
+#: template-parts/dynamic/search-bar.php:37
 msgid "Show All"
 msgstr "عرض الكل"
 
-#: template-parts/dynamic/search-bar.php:46
+#: template-parts/dynamic/search-bar.php:51
 msgid "Search Now"
 msgstr "ابحث الان"
+
+#: template-parts/post/info.php:21
+msgid "Share via Facebook"
+msgstr ""
+
+#: template-parts/post/info.php:22
+msgid "Share via Twitter"
+msgstr ""
+
+#: template-parts/post/info.php:23
+msgid "Share via Linked-In"
+msgstr ""
+
+#: template-parts/post/info.php:24
+msgid "Share via WhatsApp"
+msgstr ""
 
 #: template-parts/post/tags.php:12
 msgid "Tags Keywords"
 msgstr "الكلمات الدلالية"
+
+#: template-parts/zdocs/search-form.php:12
+#, fuzzy
+#| msgid "Search keywords"
+msgid "keywords"
+msgstr "كلمات البحث"
+
+#: template-parts/zdocs/search-form.php:25
+msgid "- All Categories -"
+msgstr ""
+
+#: template-parts/zdocs/search-form.php:29
+#, fuzzy
+#| msgid "Search Now"
+msgid "Search"
+msgstr "ابحث الان"
+
+#: template-parts/zdocs/search-sidebar.php:12
+#, fuzzy
+#| msgid "Search Now"
+msgid "Search Docs"
+msgstr "ابحث الان"
 
 #: wizard/class-merlin.php:447
 msgid "Something went wrong. Please refresh the page and try again!"
@@ -293,7 +675,7 @@ msgstr "رخصة"
 msgid "Plugins"
 msgstr "اضافات"
 
-#: wizard/class-merlin.php:736 wizard/class-merlin.php:1976
+#: wizard/class-merlin.php:736 wizard/class-merlin.php:1972
 msgid "Content"
 msgstr "محتوي"
 
@@ -301,172 +683,165 @@ msgstr "محتوي"
 msgid "Ready"
 msgstr "جاهز"
 
-#: wizard/class-merlin.php:847
+#: wizard/class-merlin.php:843
 msgid "The welcome step has been displayed"
 msgstr "تم عرض خطوة الترحيب"
 
-#: wizard/class-merlin.php:941
+#: wizard/class-merlin.php:937
 msgid "The license activation step has been displayed"
 msgstr "تم عرض خطوة تنشيط الترخيص"
 
-#: wizard/class-merlin.php:1011
+#: wizard/class-merlin.php:1007
 msgid "The child theme installation step has been displayed"
 msgstr "تم عرض خطوة تثبيت السمة الفرعية"
 
-#: wizard/class-merlin.php:1098 wizard/tgm/class-tgm-plugin-activation.php:2366
+#: wizard/class-merlin.php:1094 wizard/tgm/class-tgm-plugin-activation.php:2366
 msgid "Required"
 msgstr "مطلوب"
 
-#: wizard/class-merlin.php:1099
+#: wizard/class-merlin.php:1095
 msgid "req"
 msgstr "req"
 
-#: wizard/class-merlin.php:1139
+#: wizard/class-merlin.php:1135
 msgid "The plugin installation step has been displayed"
 msgstr "تم عرض خطوة تثبيت البرنامج المساعد"
 
-#: wizard/class-merlin.php:1185
+#: wizard/class-merlin.php:1181
 msgid "Select Demo"
 msgstr "اختر من القوالب"
 
-#: wizard/class-merlin.php:1223
+#: wizard/class-merlin.php:1219
 msgid "The content import step has been displayed"
 msgstr "تم عرض خطوة استيراد المحتوى"
 
-#: wizard/class-merlin.php:1303
+#: wizard/class-merlin.php:1299
 msgid "The final step has been displayed"
 msgstr "تم عرض الخطوة الأخيرة"
 
-#: wizard/class-merlin.php:1380
+#: wizard/class-merlin.php:1376
 msgid "The existing child theme was activated"
 msgstr "تم تنشيط القالب الفرعي الموجود"
 
-#: wizard/class-merlin.php:1397
+#: wizard/class-merlin.php:1393
 msgid "The newly generated child theme was activated"
 msgstr "تم تنشيط القالب الفرعي الذي تم إنشاؤه حديثًا"
 
-#: wizard/class-merlin.php:1418
+#: wizard/class-merlin.php:1414
 msgid ""
 "Yikes! The theme activation failed. Please try again or contact support."
 msgstr "ييكيس! فشل تنشيط الموضوع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم."
 
-#: wizard/class-merlin.php:1427
+#: wizard/class-merlin.php:1423
 msgid "Please add your license key before attempting to activate one."
 msgstr "الرجاء إضافة مفتاح الترخيص الخاص بك قبل محاولة تنشيط واحد."
 
-#: wizard/class-merlin.php:1440
+#: wizard/class-merlin.php:1436
 msgid "The license activation was performed with the following results"
 msgstr "تم تفعيل الترخيص بالنتائج التالية"
 
-#: wizard/class-merlin.php:1486 wizard/class-merlin.php:1527
+#: wizard/class-merlin.php:1482 wizard/class-merlin.php:1523
 msgid "An error occurred, please try again."
 msgstr "حدث خطأ ، يرجى المحاولة مرة أخرى."
 
 #. translators: Expiration date
-#: wizard/class-merlin.php:1499
+#: wizard/class-merlin.php:1495
 #, php-format
 msgid "Your license key expired on %s."
 msgstr "انتهت صلاحية مفتاح الترخيص الخاص بك في %s."
 
-#: wizard/class-merlin.php:1505
+#: wizard/class-merlin.php:1501
 msgid "Your license key has been disabled."
 msgstr "تم تعطيل مفتاح الترخيص الخاص بك."
 
-#: wizard/class-merlin.php:1509
+#: wizard/class-merlin.php:1505
 msgid ""
 "This appears to be an invalid license key. Please try again or contact "
 "support."
 msgstr ""
 "يبدو أن هذا مفتاح ترخيص غير صالح. يرجى المحاولة مرة أخرى أو الاتصال بالدعم."
 
-#: wizard/class-merlin.php:1514
+#: wizard/class-merlin.php:1510
 msgid "Your license is not active for this URL."
 msgstr "الترخيص الخاص بك ليس نشطًا لعنوان URL هذا."
 
 #. translators: EDD Item Name
-#: wizard/class-merlin.php:1519
+#: wizard/class-merlin.php:1515
 #, php-format
 msgid "This appears to be an invalid license key for %s."
 msgstr "يبدو أن هذا مفتاح ترخيص غير صالح لـ %s."
 
-#: wizard/class-merlin.php:1523
+#: wizard/class-merlin.php:1519
 msgid "Your license key has reached its activation limit."
 msgstr "وصل مفتاح الترخيص الخاص بك إلى حد التنشيط."
 
-#: wizard/class-merlin.php:1617
+#: wizard/class-merlin.php:1613
 msgid "The child theme functions.php content was generated"
 msgstr "تم إنشاء محتوى القالب الفرعية function.php"
 
-#: wizard/class-merlin.php:1648
+#: wizard/class-merlin.php:1644
 msgid "The child theme style.css content was generated"
 msgstr "تم إنشاء محتوى style.css للقالب الفرعية"
 
-#: wizard/class-merlin.php:1682
+#: wizard/class-merlin.php:1678
 msgid ""
 "The child theme screenshot was copied to the child theme, with the following "
 "result"
 msgstr ""
 "تم نسخ لقطة الشاشة للقالب الفرعي إلى القالب الفرعي ، مع النتيجة التالية"
 
-#: wizard/class-merlin.php:1684
+#: wizard/class-merlin.php:1680
 msgid "The child theme screenshot was not generated, because of these results"
 msgstr "لم يتم إنشاء لقطة الشاشة للمظهر الفرعي بسبب هذه النتائج"
 
-#: wizard/class-merlin.php:1713
+#: wizard/class-merlin.php:1709
 msgid "Activating"
 msgstr "جاري التفعيل"
 
-#: wizard/class-merlin.php:1729
+#: wizard/class-merlin.php:1725
 msgid "Updating"
 msgstr "جاري التحديث"
 
-#: wizard/class-merlin.php:1745 wizard/class-merlin.php:1761
-#: wizard/class-merlin.php:1979 wizard/class-merlin.php:1992
-#: wizard/class-merlin.php:2005 wizard/class-merlin.php:2018
-#: wizard/class-merlin.php:2031 wizard/class-merlin.php:2044
-#: wizard/class-merlin.php:2087
+#: wizard/class-merlin.php:1741 wizard/class-merlin.php:1757
+#: wizard/class-merlin.php:1975 wizard/class-merlin.php:1988
+#: wizard/class-merlin.php:2001 wizard/class-merlin.php:2014
+#: wizard/class-merlin.php:2027 wizard/class-merlin.php:2040
+#: wizard/class-merlin.php:2083
 msgid "Installing"
 msgstr "جاري التنصيب"
 
-#: wizard/class-merlin.php:1753
+#: wizard/class-merlin.php:1749
 msgid "A plugin with the following data will be processed"
 msgstr "ستتم معالجة البرنامج المساعد بالبيانات التالية"
 
-#: wizard/class-merlin.php:1765
+#: wizard/class-merlin.php:1761
 msgid "A plugin with the following data was processed"
 msgstr "تمت معالجة مكون إضافي بالبيانات التالية"
 
-#: wizard/class-merlin.php:1774 wizard/class-merlin.php:1980
-#: wizard/class-merlin.php:1993 wizard/class-merlin.php:2006
-#: wizard/class-merlin.php:2019 wizard/class-merlin.php:2032
-#: wizard/class-merlin.php:2045
-msgid "Success"
-msgstr "تم بنجاح"
-
-#: wizard/class-merlin.php:1797
+#: wizard/class-merlin.php:1793
 msgid ""
 "The content importer AJAX call failed to start, because of incorrect data"
 msgstr ""
 "فشل بدء استدعاء AJAX الخاص ببرنامج استيراد المحتوى ، بسبب البيانات غير "
 "الصحيحة"
 
-#: wizard/class-merlin.php:1802
+#: wizard/class-merlin.php:1798
 msgid "Invalid content!"
 msgstr "محتوى غير صالح!"
 
-#: wizard/class-merlin.php:1813
+#: wizard/class-merlin.php:1809
 msgid "The content import AJAX call will be executed with this import data"
 msgstr "سيتم تنفيذ استدعاء AJAX لاستيراد المحتوى باستخدام بيانات الاستيراد هذه"
 
-#: wizard/class-merlin.php:1855
+#: wizard/class-merlin.php:1851
 msgid "The content import AJAX call failed with this passed data"
 msgstr "فشل استدعاء AJAX لاستيراد المحتوى مع هذه البيانات التي تم تمريرها"
 
-#: wizard/class-merlin.php:1866
+#: wizard/class-merlin.php:1862
 msgid "Error"
 msgstr "خطأ"
 
-#: wizard/class-merlin.php:1880
+#: wizard/class-merlin.php:1876
 msgid ""
 "The content importer AJAX call for retrieving total content import items "
 "failed to start, because of incorrect data."
@@ -474,77 +849,77 @@ msgstr ""
 "فشل استدعاء AJAX الخاص ببرنامج استيراد المحتوى لاسترداد إجمالي عناصر استيراد "
 "المحتوى ، بسبب البيانات غير الصحيحة."
 
-#: wizard/class-merlin.php:1885
+#: wizard/class-merlin.php:1881
 msgid "Invalid data!"
 msgstr "بيانات غير صالحة!"
 
-#: wizard/class-merlin.php:1977
+#: wizard/class-merlin.php:1973
 msgid "Demo content data."
 msgstr "بيانات المحتوى التجريبي."
 
-#: wizard/class-merlin.php:1978 wizard/class-merlin.php:1991
-#: wizard/class-merlin.php:2004 wizard/class-merlin.php:2017
-#: wizard/class-merlin.php:2030 wizard/class-merlin.php:2043
+#: wizard/class-merlin.php:1974 wizard/class-merlin.php:1987
+#: wizard/class-merlin.php:2000 wizard/class-merlin.php:2013
+#: wizard/class-merlin.php:2026 wizard/class-merlin.php:2039
 msgid "Pending"
 msgstr "قيد الانتظار"
 
-#: wizard/class-merlin.php:1989
+#: wizard/class-merlin.php:1985
 msgid "Widgets"
 msgstr "وديجات"
 
-#: wizard/class-merlin.php:1990
+#: wizard/class-merlin.php:1986
 msgid "Sample widgets data."
 msgstr "محتوي ويدج تجريبي."
 
-#: wizard/class-merlin.php:2002
+#: wizard/class-merlin.php:1998
 msgid "Revolution Slider"
 msgstr "السلايدر الثوري"
 
-#: wizard/class-merlin.php:2003
+#: wizard/class-merlin.php:1999
 msgid "Sample Revolution sliders data."
 msgstr "Sample Revolution sliders data."
 
-#: wizard/class-merlin.php:2015
+#: wizard/class-merlin.php:2011
 msgid "Options"
 msgstr "الاختيارات"
 
-#: wizard/class-merlin.php:2016
+#: wizard/class-merlin.php:2012
 msgid "Sample theme options data."
 msgstr "عينة من بيانات الاختيارات."
 
-#: wizard/class-merlin.php:2028
+#: wizard/class-merlin.php:2024
 msgid "Redux Options"
 msgstr ""
 
-#: wizard/class-merlin.php:2029
+#: wizard/class-merlin.php:2025
 msgid "Redux framework options."
 msgstr ""
 
-#: wizard/class-merlin.php:2041
+#: wizard/class-merlin.php:2037
 msgid "After import setup"
 msgstr ""
 
-#: wizard/class-merlin.php:2042
+#: wizard/class-merlin.php:2038
 msgid "After import setup."
 msgstr ""
 
-#: wizard/class-merlin.php:2071
+#: wizard/class-merlin.php:2067
 msgid "The revolution slider import was executed"
 msgstr ""
 
-#: wizard/class-merlin.php:2108
+#: wizard/class-merlin.php:2104
 msgid "The home page was set"
 msgstr ""
 
-#: wizard/class-merlin.php:2118
+#: wizard/class-merlin.php:2114
 msgid "The blog page was set"
 msgstr ""
 
-#: wizard/class-merlin.php:2133
+#: wizard/class-merlin.php:2129
 msgid "The Hello world post status was set to draft"
 msgstr ""
 
-#: wizard/class-merlin.php:2157
+#: wizard/class-merlin.php:2153
 msgid ""
 "This predefined demo import does not have the name parameter: "
 "import_file_name"
@@ -640,6 +1015,10 @@ msgstr ""
 #: wizard/tgm/class-tgm-plugin-activation.php:334
 msgid "Install Required Plugins"
 msgstr ""
+
+#: wizard/tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr "تنصيب الاضافات"
 
 #. translators: %s: plugin name.
 #: wizard/tgm/class-tgm-plugin-activation.php:337
@@ -1380,8 +1759,10 @@ msgid "Remapping featured image ID %d to new ID %d for post ID %d"
 msgstr ""
 
 #. Theme Name of the plugin/theme
-msgid "Phenix Blocks Premium"
-msgstr ""
+#, fuzzy
+#| msgid "Phenix Themes"
+msgid "Phenix Themes Store"
+msgstr "قوالب فينكس"
 
 #. Theme URI of the plugin/theme
 #. Author URI of the plugin/theme
@@ -1395,6 +1776,12 @@ msgstr ""
 #. Author of the plugin/theme
 msgid "Phenix Themes {Abdullah.Ramadan}"
 msgstr ""
+
+#~ msgid "Theme Setup"
+#~ msgstr "إعادة التنصيب"
+
+#~ msgid "Advanced Systems"
+#~ msgstr "أنظمة متقدمة"
 
 #~ msgid "قراءة المزيد"
 #~ msgstr "قراءة المزيد"

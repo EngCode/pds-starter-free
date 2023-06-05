@@ -828,13 +828,9 @@ class Merlin {
 		?>
 
 		<div class="merlin__content--transition">
-
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'welcome' ) ), $this->svg_allowed_html() ); ?>
-
+			<img class="icon" src="<?php echo get_template_directory_uri()."/assets/img/px-logo/phenix-icon.svg"; ?>" width="100" />
 			<h1><?php echo esc_html( sprintf( $header, $theme ) ); ?></h1>
-
 			<p><?php echo esc_html( sprintf( $paragraph, $theme ) ); ?></p>
-
 		</div>
 
 		<footer class="merlin__content__footer">
@@ -977,7 +973,7 @@ class Merlin {
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'child' ) ), $this->svg_allowed_html() ); ?>
+			<img class="icon" src="<?php echo get_template_directory_uri()."/assets/img/px-logo/px-blocks-icon.svg"; ?>" width="100" />
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -1062,7 +1058,7 @@ class Merlin {
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'plugins' ) ), $this->svg_allowed_html() ); ?>
+			<img class="icon" src="<?php echo get_template_directory_uri()."/assets/img/px-logo/px-blocks-icon.svg"; ?>" width="100" />
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>
@@ -1161,7 +1157,7 @@ class Merlin {
 
 		<div class="merlin__content--transition">
 
-			<?php echo wp_kses( $this->svg( array( 'icon' => 'content' ) ), $this->svg_allowed_html() ); ?>
+			<img class="icon" src="<?php echo get_template_directory_uri()."/assets/img/px-logo/pds-icon.svg"; ?>" width="100" />
 
 			<svg class="icon icon--checkmark" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 52 52">
 				<circle class="icon--checkmark__circle" cx="26" cy="26" r="25" fill="none"/><path class="icon--checkmark__check" fill="none" d="M14.1 27.2l7.1 7.2 16.7-16.8"/>

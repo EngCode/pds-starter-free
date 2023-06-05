@@ -84,7 +84,7 @@ if (!function_exists('pds_theme_script')) :
     }
 
     //===> Include Phenix Core in the Plugin Page <===//
-    // add_action('wp_enqueue_scripts', 'pds_theme_script');
+    add_action('wp_enqueue_scripts', 'pds_theme_script');
 endif;
 
 //====> Setup Templates Meta <====//
@@ -139,20 +139,25 @@ if (!function_exists('phenix_register_required_plugins')) :
     function phenix_register_required_plugins() {
         //===> Define Plugins to Install <===//
         $plugins = array(
-            array('name' => 'Flamingo', 'slug' => 'flamingo', 'required' => true),
-            array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
-            array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
+            //===> Main Plugins <===//
+            array('name' => 'Data Importer', 'slug' => 'all-in-one-wp-migration', 'source' => 'https://phenixthemes.com/PDSWpAddons/data-importer.zip', 'required' => true),
+            array('name' => 'Phenix Blocks (PRO)', 'slug' => 'pds-blocks', 'source' => 'https://phenixthemes.com/PDSWpAddons/pds-blocks-pro.zip', 'required' => true),
             array('name' => 'SVG Support', 'slug' => 'svg-support', 'required' => true),
-            array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => true),
-            array('name' => 'Advanced Import', 'slug' => 'advanced-import', 'required' => true),
-            array('name' => 'Advanced Export', 'slug' => 'advanced-export', 'required' => false),
+            // array('name' => 'Phenix Blocks (Free)', 'slug' => 'pds-blocks', 'source' => 'https://github.com/EngCode/phenix-blocks/archive/master.zip', 'required' => true),
+            //===> Utilites Plugins <===//
             array('name' => 'Yoast SEO', 'slug' => 'wordpress-seo', 'required' => false),
             array('name' => 'W3 Total Cache', 'slug' => 'w3-total-cache', 'required' => false),
-            array('name' => 'Phenix Blocks', 'slug' => 'pds-blocks', 'source' => 'https://phenixthemes.com/PDSWpAddons/pds-blocks-pro.zip', 'required' => true),
-            array('name' => 'Theme and plugin translation for Polylang (TTfP)', 'slug' => 'theme-translation-for-polylang', 'required' => false),
-            array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
-            array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
-            array('name' => 'Blocks Product Editor for WooCommerce', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
+            //===> Contact Plugins <===//
+            array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
+            array('name' => 'CF7 Flamingo', 'slug' => 'flamingo', 'required' => false),
+            array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => false),
+            //===> WooCommerce Plugins <===//
+            // array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
+            // array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
+            // array('name' => 'WooCommerce Blocks Editor', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
+            //===> Multi-Language Plugins <===//
+            array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
+            // array('name' => 'PolyLang Theme Translation', 'slug' => 'theme-translation-for-polylang', 'required' => false),
         );
     
         //===> Array of configuration settings <===//

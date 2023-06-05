@@ -7,21 +7,6 @@
 			"name": "blank",
 			"title": "Blank",
 			"postTypes": ["page", "post"]
-		},
-		{
-			"name": "archive",
-			"title": "Blog Archive",
-			"postTypes": ["page", "post"]
-		},
-		{
-			"name": "index",
-			"title": "Home Page",
-			"postTypes": ["page", "post"]
-		},
-		{
-			"name": "single",
-			"title": "Blog Details",
-			"postTypes": ["page", "post"]
 		}
 	],
 

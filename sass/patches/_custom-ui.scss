@@ -1,3 +1,48 @@
+/*==== Mobile Menu ====*/
+@media screen and (max-width: 920px) {
+    .px-navigation[class*="hidden"][data-mobile="dropdown"] {
+        left: 0;
+        top: 100%;
+        width: 100%;
+        padding: 10px 30px;
+        position: absolute;
+        background-color: var(--body-bg);
+        box-shadow: 3px 3px 8px 0 rgba(#000, 0.05);
+        > ul > li {
+            width: 100%;
+            &:not(:last-child) {margin-bottom: 5px;}
+        }
+    }
+}
+
+.navigator-menu .px-item-active > ul {display: block!important;}
+
+/*==== Core Slider ====*/
+.px-slider {
+    /*==== Show Controls on Hover ====*/
+    .px-slider-controls {opacity: 1;visibility: visible;transition: all 0.3s;}
+    &:not(:hover) .px-slider-controls {visibility: hidden;opacity: 0;}
+
+    /*==== Fix Arrow Space ====*/
+    &.carousel-slider .px-slider-controls {padding: 0;}
+
+    /*==== Side Bullet ====*/
+    &.side-bullets .px-slider-pagination {
+        top: 50%;
+        padding: 0;
+        width: 10px;
+        bottom: auto;
+        #{$direction-start}: 30px;
+        transform: translateY(-50%);
+        @if($direction == "rtl") { left: 0; }
+        li {
+            width: 100%;
+            margin: 5px 0;
+            button {margin: 0;width: 100%;height: 25px; border-radius: 20px;}
+        }
+    }
+}
+
 /*==== Checklist Items ====*/
 .check-list li {
     margin-bottom: 8px;
@@ -15,6 +60,7 @@
 
 /*==== Links List ====*/
 .links-list li {
+    transition: all 0.3s;
     /*==== Links ====*/
     a {display: block;}
 
@@ -31,8 +77,143 @@
     }
 }
 
+/*==== Logo Block ====*/
+[class*="logo-block"] {
+    --max-size: 60px;
+    /*==== ... ====*/
+    line-height: var(--max-size);
+    .wp-block-phenix-group {min-height: 100%;}
+    img {width: auto; max-height: calc(var(--max-size) - 10px);}
+    /*==== ... ====*/
+    &.logo-block-lg {--max-size: 75px;}
+}
+
+/*==== Gallery Card ====*/
+.gallery-card {
+    .content-box {transition: background-color 0.3s ease;}
+    .px-media:hover .content-box {background-color: var(--primary-color);}
+}
+
 /*==== Front-End Only ====*/
 body:not([class*="block-editor"]):not([class*="site-editor"]) {
     .full-screen-wide {min-height: 75vh;}
     .full-screen {min-height: 100vh;}
+}
+
+/*==== Multiple Used ====*/
+$animated-elements : "img, h1, h2, h3, h4, h5, h6, p, .btn, .form-control, .control-icon, li, .wp-block-phenix-group";
+
+/*==== Additional Colors ====*/
+.bg-dark-lvl-2 {background-color: #14171E;}
+.border-offwhite {border: 1px solid #E1EEF7;}
+.btn.outline::before {position: relative; top: -1px;}
+.position-rv > [class*="container"] {position: static;}
+
+/*==== extra icons options ====*/
+.icon-lg::before {font-size: 1.25em;}
+.icon-primary::before {color: var(--primary-color);}
+.icon-secondary::before {color: var(--secondary-color);}
+.avatar-image-sm img {max-width: REM(36);max-height: REM(36);}
+.avatar-image img {max-width: REM(42);max-height: REM(42);}
+
+/*==== Side line ====*/
+@include medium() {
+    .side-border {
+        border-#{$direction-start}-width: 7px;
+        border-#{$direction-start}-style: solid;
+        padding-#{$direction-start}: 30px!important;
+    }
+};
+
+/*==== Header & Breadcrumb ====*/
+.px-breadcrumb.custom-icon:not([data-icon]) {
+    @if ($direction == 'ltr') { --divider-icon : '\f101'; }
+    @else { --divider-icon : '\f100'; }
+}
+
+/*==== Animations ====*/
+.px-animate.view-active:not([data-animation]) {
+    .wp-block-phenix-column, #{$animated-elements} {
+        $delay: 0;
+        -webkit-animation: fadeInUp 1s both;
+        animation: fadeInUp 1s both;
+        //===> Delay each by 100 <===//
+        @media screen and (min-width: 1100px) {
+            @for $index from 1 to 5 {
+                $delay: $delay + 100;
+                &:nth-child(#{$index}) {-webkit-animation-delay: #{$delay}ms;animation-delay: #{$delay}ms;}
+            }
+        }
+    }
+}
+
+/*==== Slider Animation ====*/
+.px-slider:not(.edit-mode) .hero-slide:not(.block-editor-block-list__block) {
+    #{$animated-elements} {visibility: hidden;}
+    &.px-media {background-size: cover;}
+    /*==== Animations ====*/
+    &.is-active {
+        //===> Background <===//
+        @media screen and (min-width: 1100px) {
+            &.px-media:not(.no-zoom) {-webkit-animation: bgZoomInOut 30s linear infinite;animation: bgZoomInOut 30s linear infinite;}
+        }
+
+        //===> Elements <===//
+        #{$animated-elements} {visibility: visible;-webkit-animation: fadeInUp 1s both;animation: fadeInUp 1s both;}
+    }
+}
+
+/*==== Cards Hover ====*/
+.blog-card .content-box, .standard-card .content-box {
+    transition: box-shadow 0.3s ease, border-color 0.3s;
+    &:hover {
+        border-color: transparent;
+        box-shadow: 1px 1px 8px 0 rgba(#000, 0.15);
+    }
+}
+
+/*==== Service Icon Card ====*/
+.service-icon-card .content-wrapper {
+    transition: box-shadow 0.3s, color 0.3s;
+    &:hover {
+        color: var(--primary-color);
+        box-shadow: 3px 0 20px rgba(0, 0, 0, 0.1);
+    }
+}
+
+/*==== File Upload Input ====*/
+.px-uploader:not([data-uploader="advanced"]) {
+    position:relative;
+    overflow: hidden;
+    line-height: calc(var(--height) - 3px);
+    @extend .form-control;
+    /*==== Value Text ====*/ 
+    &::before {
+        content: attr(data-placeholder);
+        line-height: inherit;
+    }
+    /*==== Browse Button ====*/
+    &::after {
+        content:attr(data-btn);
+        position: absolute;
+        #{$direction-end}:0;
+        top:0;
+        height: 100%;
+        padding:0 1.563rem;
+        background-color: var(--primary-color);
+        color:var(--primary-reverse);
+        line-height: calc(var(--height) - 3px);
+    }
+    /*==== Upload Input ====*/ 
+    input[type="file"] {
+        position:absolute;
+        opacity:0;
+        cursor:pointer;
+        margin:0;
+        top:0;
+        #{$direction-start}:0;
+        width:100%;
+        height: 100%;
+        z-index:1;
+    }
 }

@@ -14,7 +14,7 @@
         $current_language = pll_current_language();
 ?>
 <!-- Phenix Dropdown -->
-<div class="px-dropdown header-language-btn" data-effect="fade" data-position="bottom, end">
+<div class="px-dropdown pds-language-switcher" data-effect="fade" data-position="bottom, end">
     <?php if ($the_languages) : ?>
     <!-- button -->
     <?php foreach ($the_languages as $language) : ?>

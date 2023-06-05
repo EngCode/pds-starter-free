@@ -16,11 +16,11 @@
 
 	//===> Thumbnail Placeholder <===//
 	if ($post_thumbnail === false) {
-		$post_thumbnail = 'https://via.placeholder.com/900x700.webp?text=Media';
+		$post_thumbnail = 'https://via.placeholder.com/200x200';
 	}
 ?>
 <!-- Block Start -->
-<div class="service-card col-auto tx-align-center" itemtype="https://schema.org/LocalBusiness" itemscope>
+<div class="icon-info-card col-auto tx-align-center" itemtype="https://schema.org/LocalBusiness" itemscope>
     <div class="content-wrapper bg-white radius-lg border-1 border-solid border-alpha-10 pdy-25 pdy-lg-30 pdx-25">
         <!-- Image -->
         <a itemprop="url" href="<?php echo $post_link; ?>" class="icon">

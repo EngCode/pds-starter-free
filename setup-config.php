@@ -15,20 +15,21 @@ if (class_exists('Merlin')) :
             'merlin_url'  => 'pds-install',
             'parent_slug' => 'theme.php',
             'capability'  => 'manage_options',
-            'ready_big_button_url' => admin_url("themes.php?page=advanced-import"),
+            'ready_big_button_url' => admin_url("admin.php?page=ai1wm_import"),
             'child_action_btn_url' => false, // URL for the 'child-action-link'.
             //====> License Settings <====//
             'license_step' => false, //====> EDD license activation step.
-            'license_required' => false, // Require the license activation step.
-            'license_help_url' => '', // URL for the 'license-tooltip'.
+            'license_required' => true, // Require the license activation step.
+            'license_help_url' => 'https://localhost', // URL for the 'license-tooltip'.
             //====> Easy Digital Downloads Software License activation <====//
             'edd_remote_api_url'   => '', // EDD_Theme_Updater_Admin remote_api_url.
-            'edd_item_name'        => 'pds-starter', // EDD_Theme_Updater_Admin item_name.
-            'edd_theme_slug'       => 'pds-starter', // EDD_Theme_Updater_Admin item_slug.
+            'edd_item_name'        => 'pds-theme', // EDD_Theme_Updater_Admin item_name.
+            'edd_theme_slug'       => 'pds-theme', // EDD_Theme_Updater_Admin item_slug.
         ),
+
         //===> Wizard Content <===//
         $strings = array(
-            'admin-menu'               => esc_html__('Theme Setup', 'phenix'),
+            'admin-menu'               => esc_html__('Phenix Theme Setup', 'phenix'),
             'title%s%s%s%s'            => esc_html__( '%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s', 'phenix' ),
             'return-to-dashboard'      => esc_html__( 'Return to the dashboard', 'phenix' ),
             'ignore'                   => esc_html__( 'Disable this wizard', 'phenix' ),
@@ -60,7 +61,7 @@ if (class_exists('Merlin')) :
             'child-action-link'        => esc_html__( 'Learn about child themes', 'phenix' ),
             'child-json-success%s'     => esc_html__( 'Awesome. Your child theme has already been installed and is now activated.', 'phenix' ),
             'child-json-already%s'     => esc_html__( 'Awesome. Your child theme has been created and is now activated.', 'phenix' ),
-            'plugins-header'           => esc_html__( 'Install Plugins', 'phenix' ),
+            'plugins-header'           => esc_html__( 'Phenix Theme Installer', 'phenix' ),
             'plugins-header-success'   => esc_html__( 'You\'re up to speed!', 'phenix' ),
             'plugins'                  => esc_html__( 'Let\'s install some essential WordPress plugins to get your site up to speed.', 'phenix' ),
             'plugins-success%s'        => esc_html__( 'The required WordPress plugins are all installed and up to date. Press "Next" to continue the setup wizard.', 'phenix' ),
@@ -72,48 +73,25 @@ if (class_exists('Merlin')) :
             'ready%s'                  => esc_html__( 'Your theme has been all set up and one step remaining is to import your demo data and Enjoy your new website by %s.', 'phenix' ),
             'ready-action-link'        => esc_html__( 'Extras', 'phenix' ),
             'ready-big-button'         => esc_html__( 'Import Content', 'phenix' ),
-            'ready-link-1'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://phenixthemes/themes/', esc_html__( 'Explore More Themes', 'phenix' ) ),
-            'ready-link-2'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://phenixthemes.com', esc_html__( 'Get Theme Support', 'phenix' ) ),
-            'ready-link-3'             => sprintf( '<a href="%1$s">%2$s</a>', admin_url('site-editor.php'), esc_html__( 'Start Customizing', 'phenix' ) ),
+            'ready-link-1'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://phenixthemes/downloads/', esc_html__('Explore More Themes', 'phenix')),
+            'ready-link-2'             => sprintf( '<a href="%1$s" target="_blank">%2$s</a>', 'https://phenixthemes.com', esc_html__('Get Theme Support', 'phenix')),
+            'ready-link-3'             => sprintf( '<a href="%1$s">%2$s</a>', admin_url('admin.php?page=ai1wm_import'), esc_html__('Start Customizing', 'phenix')),
         )
     );
 endif;
 
 //====> Advanced Demo Importer <======//
-if (!function_exists('phenix_demo_import_lists')) :
+if (!function_exists('pds_data_importer')) :
 	/**
 	 * Setup Phenix Themes Demos
 	 * @since Phenix WP 1.0
 	 * @return void
 	*/
 
-    function phenix_demo_import_lists(){
-        //===> Define Data <===//
-        $data_dir = get_template_directory_uri().'/data';
-
-        //===> Demos List <===//
-        $demo_lists = array(
-            'advanced-systems' =>array(
-                'is_pro'   => false,
-                'type'     => 'Business',
-                'title'    => __('Advanced Systems', 'phenix'),
-                'demo_url' => 'https://phenixthemes.com/asfco',
-                'keywords'   => array('business', 'multipurpose'),
-                'categories' => array('business','multipurpose' ),
-                'author'     => __( 'Phenix Themes', 'phenix'),
-                'screenshot_url' => $data_dir.'/advanced-systems/screenshot.jpg',
-                //===> Data Path <===//
-                'template_url' => array(
-                    'content' => $data_dir.'/advanced-systems/content.json',
-                    'options' => $data_dir.'/advanced-systems/options.json',
-                    'widgets' => $data_dir.'/advanced-systems/widgets.json',
-                )
-            ),
-        );
-
-        //===> Send the List <===//
-        return $demo_lists;
+    //===> Redirect to AIO <===//
+    function pds_merlin_import_files() {
+        // wp_redirect(admin_url("admin.php?page=ai1wm_import"));
     }
 
-    add_filter('advanced_import_demo_lists', 'phenix_demo_import_lists');
+    // add_filter('merlin_import_files', 'pds_merlin_import_files');
 endif;

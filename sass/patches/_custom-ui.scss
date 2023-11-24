@@ -163,57 +163,53 @@ $animated-elements : "img, h1, h2, h3, h4, h5, h6, p, .btn, .form-control, .cont
     }
 }
 
-/*==== Cards Hover ====*/
-.blog-card .content-box, .standard-card .content-box {
-    transition: box-shadow 0.3s ease, border-color 0.3s;
-    &:hover {
-        border-color: transparent;
-        box-shadow: 1px 1px 8px 0 rgba(#000, 0.15);
+/*==== Core Slider ====*/
+.px-slider {
+    /*==== Show Controls on Hover ====*/
+    .px-slider-controls {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s;
     }
-}
 
-/*==== Service Icon Card ====*/
-.service-icon-card .content-wrapper {
-    transition: box-shadow 0.3s, color 0.3s;
-    &:hover {
-        color: var(--primary-color);
-        box-shadow: 3px 0 20px rgba(0, 0, 0, 0.1);
+    &:not(:hover) .px-slider-controls {
+        visibility: hidden;
+        opacity: 0;
     }
-}
 
-/*==== File Upload Input ====*/
-.px-uploader:not([data-uploader="advanced"]) {
-    position:relative;
-    overflow: hidden;
-    line-height: calc(var(--height) - 3px);
-    @extend .form-control;
-    /*==== Value Text ====*/ 
-    &::before {
-        content: attr(data-placeholder);
-        line-height: inherit;
+    /*==== Fix Arrow Space ====*/
+    &.carousel-slider .px-slider-controls {
+        @include medium() {
+            margin-left: -15px;
+            margin-right: -15px;
+            width: calc(100% + 30px);
+        };
+
+        @include small('down') {
+            padding-left: 15px;
+            padding-right: 15px;
+        };
     }
-    /*==== Browse Button ====*/
-    &::after {
-        content:attr(data-btn);
-        position: absolute;
-        #{$direction-end}:0;
-        top:0;
-        height: 100%;
-        padding:0 1.563rem;
-        background-color: var(--primary-color);
-        color:var(--primary-reverse);
-        line-height: calc(var(--height) - 3px);
-    }
-    /*==== Upload Input ====*/ 
-    input[type="file"] {
-        position:absolute;
-        opacity:0;
-        cursor:pointer;
-        margin:0;
-        top:0;
-        #{$direction-start}:0;
-        width:100%;
-        height: 100%;
-        z-index:1;
+
+    /*==== Side Bullet ====*/
+    &.side-bullets .px-slider-pagination  {
+        top: 50%;
+        padding: 0;
+        width: 10px;
+        bottom: auto;
+        #{$direction-start}: 30px;
+        transform: translateY(-50%);
+        @if($direction == "rtl") { left: 0; }
+        /*==== Pagination Items ====*/
+        li {
+            width: 100%;
+            margin: 5px 0;
+            button {
+                margin: 0;
+                width: 100%;
+                height: 25px;
+                border-radius: 20px;
+            }
+        }
     }
 }

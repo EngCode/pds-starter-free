@@ -16,6 +16,9 @@
  ** 05 - Includes Merlin Wizard Class
 */
 
+//===> make sure Plugins are loaded <===//
+include_once( ABSPATH . 'wp-admin/includes/plugin.php' );
+
 //=====> Theme Support <=====//
 if (!function_exists('phenix_support')) :
 	/**
@@ -96,21 +99,25 @@ if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_
         $templates_meta_files = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-meta"));
 
         //===> Add the Files to a List <===//
-        foreach ($templates_meta_files as $key => $value) {
-            //===> if its a Directory <===//
-            if(is_array($value)) {
-                //===> Get its Files and add them to the list <===//
-                foreach ($value as $key2 => $value2) $templates_meta_list[] = $key.'/'.$value2;
-            } else {
-                //===> Add the File <===//
-                $templates_meta_list[] = $value;
+        if (count($templates_meta_files) > 0) {
+            foreach ($templates_meta_files as $key => $value) {
+                //===> if its a Directory <===//
+                if(is_array($value)) {
+                    //===> Get its Files and add them to the list <===//
+                    foreach ($value as $key2 => $value2) $templates_meta_list[] = $key.'/'.$value2;
+                } else {
+                    //===> Add the File <===//
+                    $templates_meta_list[] = $value;
+                }
             }
         }
 
         //===> Get each File Content <===//
-        foreach($templates_meta_list as $key => $value) {
-            $template_json = json_decode(file_get_contents(get_template_directory()."/template-meta/".$value), true);
-            $template_meta[$template_json['name']] = array("features" => $template_json['features'], "options" => $template_json['options']);
+        if (count($templates_meta_list) > 0) {
+            foreach($templates_meta_list as $key => $value) {
+                $template_json = json_decode(file_get_contents(get_template_directory()."/template-meta/".$value), true);
+                $template_meta[$template_json['name']] = array("features" => $template_json['features'], "options" => $template_json['options']);
+            }
         }
 
         update_option("templates_meta", $template_meta);
@@ -126,61 +133,85 @@ if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_
     add_action('init', 'pds_templates_meta_register');
 endif;
 
-//=====> Register the required plugins for this theme. <=====//
-require_once get_template_directory().'/wizard/tgm/class-tgm-plugin-activation.php';
 
-if (!function_exists('phenix_register_required_plugins')) :
-	/**
-	 * Setup Phenix Design System Plugins
-	 * @since Phenix WP 1.0
-	 * @return void
-	*/
+//===> ACF Fallback <===//
+if (!is_plugin_active('advanced-custom-fields/acf.php')) {
+    function get_field() { return 'ACF is Not Enabled.'; }
+    function the_field() { return 'ACF is Not Enabled.'; }
+}
 
-    function phenix_register_required_plugins() {
-        //===> Define Plugins to Install <===//
-        $plugins = array(
-            //===> Main Plugins <===//
-            array('name' => 'Data Importer', 'slug' => 'all-in-one-wp-migration', 'source' => 'https://phenixthemes.com/PDSWpAddons/data-importer.zip', 'required' => true),
-            array('name' => 'Phenix Blocks (PRO)', 'slug' => 'pds-blocks', 'source' => 'https://phenixthemes.com/PDSWpAddons/pds-blocks-pro.zip', 'required' => true),
-            array('name' => 'SVG Support', 'slug' => 'svg-support', 'required' => true),
-            // array('name' => 'Phenix Blocks (Free)', 'slug' => 'pds-blocks', 'source' => 'https://github.com/EngCode/phenix-blocks/archive/master.zip', 'required' => true),
-            //===> Utilites Plugins <===//
-            array('name' => 'Yoast SEO', 'slug' => 'wordpress-seo', 'required' => false),
-            array('name' => 'W3 Total Cache', 'slug' => 'w3-total-cache', 'required' => false),
-            //===> Contact Plugins <===//
-            array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
-            array('name' => 'CF7 Flamingo', 'slug' => 'flamingo', 'required' => false),
-            array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => false),
-            //===> WooCommerce Plugins <===//
-            // array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
-            // array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
-            // array('name' => 'WooCommerce Blocks Editor', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
-            //===> Multi-Language Plugins <===//
-            array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
-            // array('name' => 'PolyLang Theme Translation', 'slug' => 'theme-translation-for-polylang', 'required' => false),
-        );
-    
-        //===> Array of configuration settings <===//
-        $config = array(
-            'id'           => 'phenix-plugins',
-            'default_path' => get_template_directory().'/wizard/tgm/plugins',
-            'menu'         => 'pds-install',
-            'parent_slug'  => 'themes.php',
-            'capability'   => 'edit_theme_options',
-            'has_notices'  => true,
-            'dismissable'  => true,
-            'dismiss_msg'  => '',
-            'is_automatic' => true,
-            'message'      => '',
-        );
-
-        tgmpa($plugins, $config);
+//===> Disable THumbnails Generating <===//
+add_action('init', function() {
+    foreach ( ['thumbnail', 'medium', 'large'] as $size ) {
+        update_option( "{$size}_size_w", 0 );
+        update_option( "{$size}_size_h", 0 );
     }
+});
 
-    add_action('tgmpa_register', 'phenix_register_required_plugins');
-endif;
+add_action('init', function () {
+    foreach ( get_intermediate_image_sizes() as $size ) {
+        if ( in_array( $size, ['thumbnail', 'medium', 'medium_large', 'large'] ) ) {
+            continue;
+        }
+        remove_image_size( $size );
+    }
+});
 
-//=====> Includes Merlin Wizard Class <=====//
-require_once get_template_directory().'/wizard/vendor/autoload.php';
-require_once get_template_directory().'/wizard/class-merlin.php';
-require_once get_template_directory().'/setup-config.php';
+// //=====> Register the required plugins for this theme. <=====//
+// require_once get_template_directory().'/wizard/tgm/class-tgm-plugin-activation.php';
+
+// if (!function_exists('phenix_register_required_plugins')) :
+// 	/**
+// 	 * Setup Phenix Design System Plugins
+// 	 * @since Phenix WP 1.0
+// 	 * @return void
+// 	*/
+
+//     function phenix_register_required_plugins() {
+//         //===> Define Plugins to Install <===//
+//         $plugins = array(
+//             //===> Main Plugins <===//
+//             array('name' => 'Data Importer', 'slug' => 'all-in-one-wp-migration', 'source' => 'https://phenixthemes.com/PDSWpAddons/data-importer.zip', 'required' => true),
+//             array('name' => 'Phenix Blocks (PRO)', 'slug' => 'pds-blocks', 'source' => 'https://phenixthemes.com/PDSWpAddons/pds-blocks-pro.zip', 'required' => true),
+//             array('name' => 'SVG Support', 'slug' => 'svg-support', 'required' => true),
+//             array('name' => 'Advanced Custom Fields (ACF)', 'slug' => 'advanced-custom-fields', 'required' => true),
+//             //===> Utilites Plugins <===//
+//             array('name' => 'Yoast SEO', 'slug' => 'wordpress-seo', 'required' => false),
+//             array('name' => 'W3 Total Cache', 'slug' => 'w3-total-cache', 'required' => false),
+//             //===> Contact Plugins <===//
+//             array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
+//             array('name' => 'CF7 Flamingo', 'slug' => 'flamingo', 'required' => false),
+//             array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => false),
+//             //===> WooCommerce Plugins <===//
+//             // array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
+//             // array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
+//             // array('name' => 'WooCommerce Blocks Editor', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
+//             //===> Multi-Language Plugins <===//
+//             array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
+//             // array('name' => 'PolyLang Theme Translation', 'slug' => 'theme-translation-for-polylang', 'required' => false),
+//         );
+    
+//         //===> Array of configuration settings <===//
+//         $config = array(
+//             'id'           => 'phenix-plugins',
+//             'default_path' => get_template_directory().'/wizard/tgm/plugins',
+//             'menu'         => 'pds-install',
+//             'parent_slug'  => 'themes.php',
+//             'capability'   => 'edit_theme_options',
+//             'has_notices'  => true,
+//             'dismissable'  => true,
+//             'dismiss_msg'  => '',
+//             'is_automatic' => true,
+//             'message'      => '',
+//         );
+
+//         tgmpa($plugins, $config);
+//     }
+
+//     add_action('tgmpa_register', 'phenix_register_required_plugins');
+// endif;
+
+// //=====> Includes Merlin Wizard Class <=====//
+// require_once get_template_directory().'/wizard/vendor/autoload.php';
+// require_once get_template_directory().'/wizard/class-merlin.php';
+// require_once get_template_directory().'/setup-config.php';

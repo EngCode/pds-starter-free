@@ -133,14 +133,13 @@ if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_
     add_action('init', 'pds_templates_meta_register');
 endif;
 
-
 //===> ACF Fallback <===//
-if (!is_plugin_active('advanced-custom-fields/acf.php')) {
+if (!is_plugin_active('advanced-custom-fields/acf.php') || !is_plugin_active('advanced-custom-fields-pro/acf.php')) {
     function get_field() { return 'ACF is Not Enabled.'; }
     function the_field() { return 'ACF is Not Enabled.'; }
 }
 
-//===> Disable THumbnails Generating <===//
+//===> Disable Thumbnails Generating <===//
 add_action('init', function() {
     foreach ( ['thumbnail', 'medium', 'large'] as $size ) {
         update_option( "{$size}_size_w", 0 );

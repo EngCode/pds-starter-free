@@ -20,14 +20,16 @@
 			"name": "footer",
 			"title": "Footer",
 			"area": "footer"
+		},
+		{
+			"name": "page-head",
+			"title": "Breadcrumb Header",
+			"area": "uncategorized"
 		}
 	],
 
 	"styles": {
-		"color": {
-			"background" : "#F7F9FC",
-			"text": "#555555"
-		},
+		"color": {},
 		"spacing": {"blockGap": "0"}
 	},
 
@@ -35,15 +37,86 @@
 		"appearanceTools": true,
 
 		"color": {
+            "link": false,
+            "text": true,
+			"custom": true,
+            "duotone": [],
+            "gradients": [],
+            "background": true,
 			"defaultDuotone": false,
 			"customDuotone" : false,
+            "defaultPalette": true,
+            "defaultGradients": true,
 
 			"palette": [
 				{
 					"slug": "background",
 					"color": "#F7F9FC",
-					"name": "Document BG"
+					"name": "Document Background"
 				},
+				{
+					"slug": "text",
+					"color": "var(--dark-color)",
+					"name": "Document Text"
+				},
+				{
+					"slug" : "links",
+					"color": "var(--primary-color)",
+					"name" : "Links Color"
+				},{
+					"slug": "gray",
+					"color": "#868e96",
+					"name": "Gray Color"
+				},
+				{
+					"slug": "gray-offwhite",
+					"color": "#d9dde1",
+					"name": "Gray Offwhite Color"
+				},
+				{
+					"slug": "dark",
+					"color": "#343a40",
+					"name": "Dark Color"
+				},
+				{
+					"slug": "dark-offwhite",
+					"color": "#343a40",
+					"name": "Dark Offwhite Color"
+				},
+
+
+				{
+					"slug": "component-bg-lvl-1",
+					"color": "#FFFFFF",
+					"name": "Component BG Lvl.1"
+				},
+				{
+					"slug": "component-bg-lvl-2",
+					"color": "#F2F2F2",
+					"name": "Component BG Lvl.2"
+				},
+				{
+					"slug": "component-bg-lvl-3",
+					"color": "#F5F5F5",
+					"name": "Component BG Lvl.3"
+				},
+
+				{
+					"slug": "component-tx-lvl-1",
+					"color": "var(--dark-color)",
+					"name": "Component Text Lvl.1"
+				},
+				{
+					"slug": "component-tx-lvl-2",
+					"color": "var(--gray-color)",
+					"name": "Component Text Lvl.2"
+				},
+				{
+					"slug": "component-tx-lvl-3",
+					"color": "var(--dark-light)",
+					"name": "Component Text Lvl.3"
+				},
+
 				{
 					"slug": "primary",
 					"color": "#0C97F9",
@@ -69,6 +142,8 @@
 					"color": "#14243C",
 					"name": "Primary Dark"
 				},
+
+
 				{
 					"slug": "secondary",
 					"color": "#F8C25B",
@@ -94,6 +169,8 @@
 					"color": "#120E2E",
 					"name": "Secondary Dark"
 				},
+
+
 				{
 					"slug": "info",
 					"color": "#816CF3",
@@ -103,26 +180,6 @@
 					"slug": "info-offwhite",
 					"color": "#CECCF9",
 					"name": "Info Offwhite Color"
-				},
-				{
-					"slug": "gray",
-					"color": "#868e96",
-					"name": "Gray Color"
-				},
-				{
-					"slug": "gray-offwhite",
-					"color": "#d9dde1",
-					"name": "Gray Offwhite Color"
-				},
-				{
-					"slug": "dark",
-					"color": "#343a40",
-					"name": "Dark Color"
-				},
-				{
-					"slug": "dark-offwhite",
-					"color": "#343a40",
-					"name": "Dark Offwhite Color"
 				},
 				{
 					"slug": "success",
@@ -158,23 +215,23 @@
 					"slug": "disable",
 					"color": "#ebebeb",
 					"name": "Disable Color"
-				},
-				{
-					"slug": "links",
-					"color": "var(--primary-color)",
-					"name": "Links Color"
 				}
 			]
 		},
 
-		"typography" : {
-			"dropCap": false,
-			"customFontSize": false,
-			"fontWeight": false,
-			"fontStyle": false,
-			"fontFamilies": [],
-			"fontSizes": []
-		},
+		"typography": {
+            "customFontSize": false,
+            "lineHeight": false,
+            "dropCap": false,
+            "fluid": false,
+            "fontStyle": false,
+            "fontWeight": false,
+            "letterSpacing": false,
+            "textDecoration": false,
+            "textTransform": false,
+            "fontSizes": [],
+            "fontFamilies": []
+        },
 
 		"layout": {
 			"contentSize": "920px",
@@ -182,8 +239,17 @@
 		},
 	
 		"spacing": {
-			"blockGap": false,
-			"units": [ "px", "em", "vh", "vw", "%" ]
-		}
+			"margin": false,
+			"padding": false,
+			"blockGap": null,
+			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
+		},
+
+		"border": {
+            "radius": false,
+            "color": false,
+            "style": false,
+            "width": false
+        }
 	}
 }

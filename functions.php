@@ -139,23 +139,6 @@ if (!is_plugin_active('advanced-custom-fields/acf.php') || !is_plugin_active('ad
     function the_field() { return 'ACF is Not Enabled.'; }
 }
 
-//===> Disable Thumbnails Generating <===//
-add_action('init', function() {
-    foreach ( ['thumbnail', 'medium', 'large'] as $size ) {
-        update_option( "{$size}_size_w", 0 );
-        update_option( "{$size}_size_h", 0 );
-    }
-});
-
-add_action('init', function () {
-    foreach ( get_intermediate_image_sizes() as $size ) {
-        if ( in_array( $size, ['thumbnail', 'medium', 'medium_large', 'large'] ) ) {
-            continue;
-        }
-        remove_image_size( $size );
-    }
-});
-
 // //=====> Register the required plugins for this theme. <=====//
 // require_once get_template_directory().'/wizard/tgm/class-tgm-plugin-activation.php';
 

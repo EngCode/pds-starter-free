@@ -1,5 +1,5 @@
 
-## Phenix Blocks WordPress Plugin
+## Phenix Starter WordPress Theme
 
 ![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.jpeg)
 

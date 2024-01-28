@@ -1,107 +1,81 @@
-<p align="center">
-  <a href="https://phenixthemes.com/pds-docs">
-    <img src="https://phenixthemes.com/pds-docs/wp-content/uploads/sites/2/2022/09/phenix-design-icon.svg" alt="Phenix Design logo" width="175" height="162">
-  </a>
-</p>
 
-<h2 align="center">WordPress Premium Theme for PHenix Blocks Plugin</h2>
+## Phenix Blocks WordPress Plugin
 
-<p align="center">Phenix WP Blocks is Gutenberg Integration with Phenix Design System Framework.</p>
-<p align="center">
-  <a href="https://phenixthemes.com/pds-docs/wp-docs"><strong>Explore Phenix Docs »</strong></a>
-</p>
-<p align="center">
-<a href="https://github.com/EngCode/phenix-blocks/issues/new?assignees=-&labels=bug&template=bug_report.yml">Report bug</a>
-<a href="https://github.com/EngCode/phenix-blocks/issues/new?assignees=&labels=feature&template=feature_request.yml">Request feature</a>
-<a href="https://phenixthemes.com/">Themes</a>
-<a href="https://phenixthemes.com/pds-docs/blog">Blog</a>
-</p>
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.jpeg)
 
-<p align="center">
-  <img src="https://img.shields.io/badge/build-v0.1-blue.svg" alt="" />
-  <img src="https://img.shields.io/github/languages/code-size/EngCode/phenix-blocks.svg" alt="" />
-  <img src="https://img.shields.io/github/repo-size/EngCode/phenix-blocks.svg" alt="" />
-  <img src="https://img.shields.io/github/issues/EngCode/phenix-blocks.svg" alt="" />
-  <img src="https://img.shields.io/badge/wordpress-v5.9-blue.svg" alt="" />
-  <img src="https://img.shields.io/badge/php->%3D7.4.1-blue.svg" alt="" />
-</p>
-</div>
 
----
+Phenix Starter Theme is WordPress Block based theme created for integration with Phenix Design System and Phenix Blocks plugin, this theme makes you control the plugin colors, and use its blocks to develop the theme more further, make sure you at least using the **"theme.json"** from the starter theme.
+.
+  
+## Phenix Blocks WordPress Plugin
 
-### About Phenix Design System
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-01.png)
 
-**[Phenix DS](https://phenixthemes.com/pds-docs "About Phenix")** is lightweight user-interface framework build for simple structure, fast execution, and performance is number One concern in mind it was build for personal use and later published as open-source project for web community benefits.
+Phenix Blocks is a WordPress plugin that allows users to easily build custom websites. This plugin represents a comprehensive design system that includes a variety of pre-made blocks and different settings that can be used to quickly and easily create web pages.
 
----
+## Core Design System
 
-#### 🚀 Phenix Blocks Key-Features
-<ul style="list-style:none;padding:0;margin:0 25px;">
-    <li>✅ Site-Editor Full Integration</li>
-    <li>✅ CSS and JavaScript Optimization</li>
-    <li>✅ WordPress Optimizing Options</li>
-    <li>✅ Core GB Blocks Optimizer</li>
-    <li>✅ Menu Locations Generator</li>
-    <li>✅ Container Block</li>
-    <li>✅ Grid Row Block</li>
-    <li>✅ Grid Column Block</li>
-    <li>✅ Responsive Logo</li>
-    <li>✅ Navigation Menu</li>
-    <li>✅ Phenix Buttons</li>
-    <li>✅ Phenix Query</li>
-    <li>✅ Phenix Taxonomies</li>
-    <li>✅ Phenix Page-Head</li>
-    <li>✴️ </li>
-</ul>
+![enter image description here](https://phenixthemes.com/px-plugins/design-showcase.jpg)
+**[Phenix Design System](https://phenixthemes.com/demo/)** is lightweight user-interface framework build for simple structure, fast execution, and performance is number One concern in mind it was build for personal use and later published as open-source project for web community benefits.
 
-#### 🚀 Phenix GB Components
-<ul style="list-style:none;padding:0;margin:0 25px;">
-    <li>✅ Phenix Text Colors</li>
-    <li>✅ Media Uploader</li>
-    <li>✅ Phenix Backgrounds</li>
-    <li>✅ Responsive Alignment</li>
-    <li>✅ Responsive Spacing</li>
-    <li>✴️ Phenix Typography</li>
-    <li>✴️ Display & Visibility</li>
-    <li>✴️ Position Controller</li>
-    <li>✴️ Element Effects
-      <ul style="list-style:none;padding:0;margin:0 25px;">
-        <li>✴️ Box Border</li>
-        <li>✴️ Box Shadow</li>
-        <li>✴️ Transition Speed</li>
-        <li>✴️ Spaced icon/text</li>
-        <li>✴️ Popup Trigger</li>
-      </ul>
-    </li>
-    <li>✴️ Phenix Animations</li>
-    <li>✴️ Font-Awesome Integration</li>
-    <li>✴️ Width & Height Utilities</li>
-    <li>✴️ Custom Data Generator</li>
-    <li>✴️ Accessibility Support</li>
-</ul>
----
+this project is a full-integration for the design system with WordPress with helpful Developers Toolbox to extend and grow your websites as needed
 
-#### Changelog Update v0.1.5 {WIP}
+----------
 
-```
-04 - [new] Theme Typography Options
-01 - [new] Custom Post-Types Generator
-02 - [new] Custom Meta-boxes Generator
-03 - [new] Custom Taxonomies Generator
-04 - [update] Phenix Row Block
-04 - [update] Phenix Column Block
-04 - [update] Phenix Navigation Block
-04 - [update] Phenix Query Block
-04 - [update] Phenix Taxonomies Block
-```
+### **References**
 
------------------------
+🧩 Plugin Link| 🎨 Theme Link | Documentation | Design System |
+--- | --- | --- | ---
+🧩 [Phenix Blocks](https://github.com/EngCode/phenix-blocks) |🎨 [Starter Theme](https://github.com/EngCode/pds-starter-free) | 📖 [Blocks Docs](https://phenixthemes.notion.site/Phenix-Blocks-Documentation-b7ae033ce7484e8f98209d7587a94792?pvs=74) | 📘 [Developers Docs](https://phenixthemes.notion.site/Phenix-Design-System-efcfa4d3839946989a4f94ee5e0480c3?pvs=74)
 
-#### ### Where to Start ? : [Documentation](https://phenixthemes.com/pds-docs/wp-docs)
+----------
 
-you can visit the offical website of phenix design system and read the documentation to master the frameowork : [phenixthemes.com/pds-docs](https://phenixthemes.com/pds-docs) and then you can read the [Designer-Guide](https://phenixthemes.com/pds-docs/wp-docs/designer) of phenix blocks for more advanced development you can read the [Developer Docs](https://phenixthemes.com/pds-docs/wp-docs/developer) for the Plugin and its Theme.
+### **Features List**
 
----
+![enter image description here](https://phenixthemes.com/px-plugins/block-list.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/features-1.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/features-2.png)
+
+  
+
+----------
+
+### **Screenshots**
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-08.png)
+
+  
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-02.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-03.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-04.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-05.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-06.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.png)
+
+![enter image description here](https://phenixthemes.com/px-plugins/toolbar.png)
+
+  ----------
+
+### Developer and Data Tools
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-09.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-10.jpeg)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-11.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-12.jpeg)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-13.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-15.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-16.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-17.png)
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-18.png)
+
+----------
 
 ### Credits
 

@@ -63,7 +63,8 @@
 					"slug" : "links",
 					"color": "var(--primary-color)",
 					"name" : "Links Color"
-				},{
+				},
+				{
 					"slug": "gray",
 					"color": "#868e96",
 					"name": "Gray Color"
@@ -161,7 +162,7 @@
 				},
 				{
 					"slug": "secondary-txt",
-					"color": "#FFFFFF",
+					"color": "#1c1c1c",
 					"name": "Secondary Text"
 				},
 				{

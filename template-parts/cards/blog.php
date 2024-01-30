@@ -22,7 +22,7 @@
 ?>
 <!-- Block Start -->
 <div class="blog-card mb-30 col-auto" itemtype="https://schema.org/NewsArticle" itemscope>
-    <div class="content-box bg-white radius-lg border-1 border-solid border-alpha-10 h-min-100">
+    <div class="content-box bg-component-lvl-1 radius-lg border-1 border-solid border-alpha-10 h-min-100">
         <!-- Image -->
         <meta itemprop="image" content="<?php echo $post_thumbnail;?>" />
         <a itemprop="url" href="<?php echo $post_link; ?>" data-src="<?php echo $post_thumbnail;?>" class="px-media ratio-4x3 mb-20 radius-lg radius-top"></a>

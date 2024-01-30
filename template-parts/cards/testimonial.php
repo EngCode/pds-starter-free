@@ -13,7 +13,7 @@
 ?>
 <!-- Testimonial Card -->
 <div class="testimonail-card mb-30 col-12 col-md-6 col-lg-4">
-    <div class="content-box bg-white position-rv radius-md pd-25 pd-md-30 far fa-quote-left h-min-100">
+    <div class="content-box bg-component-lvl-1 position-rv radius-md pd-25 pd-md-30 far fa-quote-left h-min-100">
         <?php if (get_field('sound-file')) : ?>
             <button data-audio="<?php echo get_field('sound-file'); ?>" class="btn square radius-circle far fa-volume-up position-ab pos-top-20 pos-end-20 primary small"></button>
         <?php endif; ?>

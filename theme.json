@@ -52,7 +52,7 @@
 				{
 					"slug": "background",
 					"color": "#F7F9FC",
-					"name": "Document Background"
+					"name": "Document Body"
 				},
 				{
 					"slug": "text",
@@ -84,8 +84,8 @@
 					"color": "#343a40",
 					"name": "Dark Offwhite Color"
 				},
-
-
+	
+	
 				{
 					"slug": "component-bg-lvl-1",
 					"color": "#FFFFFF",
@@ -101,7 +101,7 @@
 					"color": "#F5F5F5",
 					"name": "Component BG Lvl.3"
 				},
-
+	
 				{
 					"slug": "component-tx-lvl-1",
 					"color": "var(--dark-color)",
@@ -117,7 +117,7 @@
 					"color": "var(--dark-light)",
 					"name": "Component Text Lvl.3"
 				},
-
+	
 				{
 					"slug": "primary",
 					"color": "#0C97F9",
@@ -143,8 +143,8 @@
 					"color": "#14243C",
 					"name": "Primary Dark"
 				},
-
-
+	
+	
 				{
 					"slug": "secondary",
 					"color": "#F8C25B",
@@ -170,8 +170,8 @@
 					"color": "#120E2E",
 					"name": "Secondary Dark"
 				},
-
-
+	
+	
 				{
 					"slug": "info",
 					"color": "#816CF3",

@@ -1,0 +1,23 @@
+/*==== Carousel Slider Arrows ====*/
+@include large(){
+    .px-slider.featured-controls {
+        &:not(:hover) .px-controls {opacity: 0!important;}
+
+        .px-slider-controls {
+            left: -15px;
+            right: -15px;
+            width: calc(100% + 30px);
+        }
+    }
+};
+
+.carousel-slider .px-slider-controls {
+    margin-bottom: 30px;
+    .btn {margin-#{$direction-start}: 15px;}
+}
+
+.sectors-list-page > ul {
+    gap: 15px;
+    display: flex;
+    > li {min-width: calc(20% - 15px);}
+}

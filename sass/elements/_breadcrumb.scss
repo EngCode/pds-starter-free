@@ -1,0 +1,5 @@
+/*==== Header & Breadcrumb ====*/
+.px-breadcrumb.custom-icon:not([data-icon]) {
+    @if ($direction == 'ltr') { --divider-icon : '\f101'; }
+    @else { --divider-icon : '\f100'; }
+}

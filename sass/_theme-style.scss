@@ -4,4 +4,44 @@
 /*==== Additional UI ====*/
 @import 'patches/custom-ui';
 
-/*==== Your Custom Code ====*/
+/*==== Header ====*/
+@import 'elements/header';
+
+/*==== Breadcrumb ====*/
+@import 'elements/breadcrumb';
+
+/*==== Mobile Menu Style ====*/
+@import 'elements/mobile-menu';
+
+/*==== Carousel Slider Arrows ====*/
+@import 'elements/carousel-arrows';
+
+/*==== Sections Title ====*/
+@import 'elements/section-title';
+
+/*==== Floating Icon ====*/
+@import 'elements/floating-play-icon';
+
+/*==== Logo Block ====*/
+@import 'elements/logo-block';
+
+/*==== Gallery Card ====*/
+@import 'elements/gallery-card';
+
+
+/*==== Forms Controls ====*/
+.form-control {--border-color: rgba(0,0,0, 0.20);}
+
+/*==== Secondary Menu Fix ====*/
+@include medium('down'){
+    #secondary-menu {--color: var(--dark-color);}
+};
+
+/*==== Side line ====*/
+@include medium() {
+    .side-border {
+        border-#{$direction-start}-width: 7px;
+        border-#{$direction-start}-style: solid;
+        padding-#{$direction-start}: 30px!important;
+    }
+};

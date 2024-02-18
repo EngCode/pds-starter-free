@@ -1,0 +1,26 @@
+/*==== Sections Title ====*/
+.section-title {
+    position: relative;
+    transform: translateZ(0);
+    /*==== Color Fix ====*/
+    .color-primary {color: var(--primary-color);}
+
+    /*==== Big Dash ====*/
+    &::after {
+        bottom: 15%;
+        width: 30%;
+        content: '';
+        z-index: -1;
+        opacity: 0.7;
+        height: REM(20);
+        position: absolute;
+        #{$direction-start}: 0;
+        background-color: var(--primary-color);
+    }
+}
+
+/*==== Reverse Section Title ====*/
+.color-white .section-title {
+    .color-primary {color: #FFFFFF;}
+    &::after {background-color:var(--dark-color);}
+}

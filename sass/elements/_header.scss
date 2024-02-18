@@ -1,0 +1,38 @@
+/*==== Header Wrappers ====*/
+.has-header {
+    position: relative;
+    /*==== Floating Mode ====*/
+    &.floating-header .main-header {
+        top: 0;
+        left: 0;
+        right: 0;
+        position: absolute;
+        @include large(){ top: 30px; };
+    }
+
+    /*==== Boxed Header ====*/
+    &.boxed-header {
+        .main-header {
+            max-width: 1200px;
+            @include xlarge(){ max-width: 1400px; };
+        }
+        /*==== Header and Navbar ====*/
+        .header-top, .header-bottom {
+            > .container-xl {padding-left: 20px; padding-right: 20px;}
+        }
+    
+        .header-top {border-radius: 8px 8px 0 0;}
+    
+        .header-bottom {
+            margin-left: 15px;
+            margin-right: 15px;
+            border-radius: 0 0 8px 8px;
+        }
+    }
+
+    /*==== Header ====*/
+    .main-header {
+        margin: auto;
+        z-index: var(--header-index);
+    }
+}

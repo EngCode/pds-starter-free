@@ -33,7 +33,7 @@
             <!-- Title -->
             <a itemprop="url" href="<?php echo $post_link; ?>"><h3 class="fs-15 weight-medium tx-nowrap" itemprop="name"><?php echo $post_title; ?></h3></a>
             <!-- Description -->
-            <p class="fs-14 mb-10" data-max-text="150" itemprop="description"><?php echo $post_description; ?></p>
+            <p class="fs-14 mb-10 tx-line-clamp" style="--max-lines: 3;" itemprop="description"><?php echo $post_description; ?></p>
             <!-- Read More -->
             <a itemprop="url" href="<?php echo $post_link; ?>" class="display-block fs-13 tx-align-end"><?php echo __('Read More', "phenix"); ?></a>
         </div>

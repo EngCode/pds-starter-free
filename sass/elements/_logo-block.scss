@@ -5,6 +5,9 @@
     line-height: var(--max-size);
     .wp-block-phenix-group {min-height: 100%;}
     img {width: auto; max-height: calc(var(--max-size) - 10px);}
-    /*==== ... ====*/
+
+    /*==== Sizes ====*/
     &.logo-block-lg {--max-size: 75px;}
+    &.logo-block-xl {--max-size: 100px;}
+    &.logo-block-xxl {--max-size: 125px;}
 }

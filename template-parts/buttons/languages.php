@@ -19,14 +19,14 @@
     <!-- button -->
     <?php foreach ($the_languages as $language) : ?>
         <?php if ($language['slug'] == $current_language) : ?>
-        <button class="btn btn-responsive pdx-0 pdx-md-15 small fs-12 light outline border-alpha-15 radius-height px-toggle tx-uppercase btn-icon fas fa-globe">
-            <!-- <img src="<?php echo $language['flag']; ?>" alt="" width="16px" class="icon" /> -->
+        <button class="btn outline radius-sm pdx-15 border-gray fs-12 weight-medium small bg-transparent px-toggle tx-uppercase btn-icon">
+            <img src="<?php echo $language['flag']; ?>" alt="" width="16px" class="icon" />
             <?php echo $language['slug']; ?>
         </button>
         <?php endif; ?>
     <?php endforeach; ?>
     <!-- List -->
-    <ul class="px-dropdown-list reset-list bg-white fs-14 w-125 bx-shadow-dp-1 border-1 border-solid border-alpha-10 radius-md primary-font">
+    <ul class="px-dropdown-list reset-list bg-white pd-5 fs-14 w-125 bx-shadow-dp-1 border-1 border-solid border-alpha-10 radius-md primary-font">
         <?php foreach ($the_languages as $language) : ?>
         <li class="item pdx-15 pdy-5">
             <a href="<?php echo $language['url']; ?>"><img src="<?php echo $language['flag']; ?>" alt="" width="16px" class="me-5"> <?php echo $language['name']; ?></a>

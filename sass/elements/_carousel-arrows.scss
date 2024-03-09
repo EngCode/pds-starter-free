@@ -1,23 +1,45 @@
-/*==== Carousel Slider Arrows ====*/
-@include large(){
-    .px-slider.featured-controls {
-        &:not(:hover) .px-controls {opacity: 0!important;}
+/*==== Core Slider ====*/
+.px-slider {
+    /*==== Show Controls on Hover ====*/
+    .px-slider-controls {
+        opacity: 1;
+        visibility: visible;
+        transition: opacity 0.3s;
+    }
 
-        .px-slider-controls {
-            left: -15px;
-            right: -15px;
+    /*==== Fix Arrow Space ====*/
+    &.carousel-slider .px-slider-controls {
+        @include medium() {
+            margin-left: -15px;
+            margin-right: -15px;
             width: calc(100% + 30px);
+        };
+
+        @include small('down') {
+            padding-left: 15px;
+            padding-right: 15px;
+        };
+    }
+
+    /*==== Side Bullet ====*/
+    &.side-bullets .px-slider-pagination  {
+        top: 50%;
+        padding: 0;
+        width: 10px;
+        bottom: auto;
+        #{$direction-start}: 30px;
+        transform: translateY(-50%);
+        @if($direction == "rtl") { left: 0; }
+        /*==== Pagination Items ====*/
+        li {
+            width: 100%;
+            margin: 5px 0;
+            button {
+                margin: 0;
+                width: 100%;
+                height: 25px;
+                border-radius: 20px;
+            }
         }
     }
-};
-
-.carousel-slider .px-slider-controls {
-    margin-bottom: 30px;
-    .btn {margin-#{$direction-start}: 15px;}
-}
-
-.sectors-list-page > ul {
-    gap: 15px;
-    display: flex;
-    > li {min-width: calc(20% - 15px);}
 }

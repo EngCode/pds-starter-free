@@ -1,51 +1,6 @@
 /*==== Multiple Used Elements ====*/
 $animated-elements : "img, h1, h2, h3, h4, h5, h6, p, .btn, .form-control, .control-icon, li, .wp-block-phenix-group";
 
-/*==== Core Slider ====*/
-.px-slider {
-    /*==== Show Controls on Hover ====*/
-    .px-slider-controls {opacity: 1;visibility: visible;transition: all 0.3s;}
-    &:not(:hover) .px-slider-controls {visibility: hidden;opacity: 0;}
-
-    /*==== Fix Arrow Space ====*/
-    &.carousel-slider .px-slider-controls {padding: 0;}
-
-    /*==== Side Bullet ====*/
-    &.side-bullets .px-slider-pagination {
-        top: 50%;
-        padding: 0;
-        width: 10px;
-        bottom: auto;
-        #{$direction-start}: 30px;
-        transform: translateY(-50%);
-        @if($direction == "rtl") { left: 0; }
-        li {
-            width: 100%;
-            margin: 5px 0;
-            button {margin: 0;width: 100%;height: 25px; border-radius: 20px;}
-        }
-    }
-}
-
-/*==== Links List ====*/
-.links-list li {
-    transition: all 0.3s;
-    /*==== Links ====*/
-    a {display: block;}
-
-    /*==== Hover ====*/
-    &:hover {@include padding-inline(5px, 'start');}
-
-    /*==== Icon ====*/
-    a::before {
-        content: "\f0c1";
-        @extend %inline-block;
-        color: var(--gray-color);
-        margin-#{$direction-end}: 8px;
-        font-family: var(--icons-font);
-    }
-}
-
 /*==== Front-End Only ====*/
 body:not([class*="block-editor"]):not([class*="site-editor"]) {
     .full-screen-wide {min-height: 75vh;}
@@ -76,57 +31,6 @@ body:not([class*="block-editor"]):not([class*="site-editor"]) {
             @for $index from 1 to 5 {
                 $delay: $delay + 100;
                 &:nth-child(#{$index}) {-webkit-animation-delay: #{$delay}ms;animation-delay: #{$delay}ms;}
-            }
-        }
-    }
-}
-
-/*==== Core Slider ====*/
-.px-slider {
-    /*==== Show Controls on Hover ====*/
-    .px-slider-controls {
-        opacity: 1;
-        visibility: visible;
-        transition: opacity 0.3s;
-    }
-
-    &:not(:hover) .px-slider-controls {
-        visibility: hidden;
-        opacity: 0;
-    }
-
-    /*==== Fix Arrow Space ====*/
-    &.carousel-slider .px-slider-controls {
-        @include medium() {
-            margin-left: -15px;
-            margin-right: -15px;
-            width: calc(100% + 30px);
-        };
-
-        @include small('down') {
-            padding-left: 15px;
-            padding-right: 15px;
-        };
-    }
-
-    /*==== Side Bullet ====*/
-    &.side-bullets .px-slider-pagination  {
-        top: 50%;
-        padding: 0;
-        width: 10px;
-        bottom: auto;
-        #{$direction-start}: 30px;
-        transform: translateY(-50%);
-        @if($direction == "rtl") { left: 0; }
-        /*==== Pagination Items ====*/
-        li {
-            width: 100%;
-            margin: 5px 0;
-            button {
-                margin: 0;
-                width: 100%;
-                height: 25px;
-                border-radius: 20px;
             }
         }
     }

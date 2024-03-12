@@ -20,20 +20,23 @@
 	}
 ?>
 <!-- Block Start -->
-<div class="featured-service-card col-auto pdy-15" itemtype="https://schema.org/LocalBusiness" itemscope>
+<div class="featured-service-card col-auto pdy-15 tx-align-center" itemtype="https://schema.org/LocalBusiness" itemscope>
     <div class="position-rv content-box bg-white radius-lg border-1 border-solid border-alpha-10 h-min-100 radius-md pd-30 pdx-lg-35 bx-shadow-dp-1y">
         <!-- Image -->
-        <a itemprop="url" href="<?php echo $post_link; ?>" style="line-height: 70px;">
-            <img class="mb-20" src="<?php echo $post_thumbnail;?>" alt="<?php echo $post_title; ?>" style="max-height: 62px;" itemprop="image" />
+        <a itemprop="url" href="<?php echo $post_link; ?>" style="line-height: 110px;" title="<?php echo $post_title; ?>">
+            <img class="mb-20" src="<?php echo $post_thumbnail;?>" alt="<?php echo $post_title; ?>" style="max-height: 100px;" itemprop="image" />
         </a>
         <!-- Title -->
         <a itemprop="url" href="<?php echo $post_link; ?>">
             <h3 class="fs-18" itemprop="name"><?php echo $post_title; ?></h3>
         </a>
         <!-- Description -->
-        <p class="fs-14 mb-0 tx-line-clamp" style="--max-lines: 3;" itemprop="description"><?php echo $post_description; ?></p>
-        <!-- More Button -->
-        <a href="<?php echo $post_link; ?>" class="tooltip-bottom btn square radius-sm bg-alpha-05 fas fa-up-right-from-square position-ab pos-top-25 pos-end-25" title="<?php echo __("قراءة المزيد", "phenix"); ?>"></a>
+        <p class="fs-14 tx-line-clamp" style="--max-lines: 3;" itemprop="description"><?php echo $post_description; ?></p>
+        <!-- Buttons -->
+        <div class="flexbox align-between">
+            <a href="<?php echo $post_link; ?>" class="fs-13 weight-medium btn btn-icon radius-sm bg-alpha-05 fas fa-up-right-from-square"><?php echo __("قراءة المزيد", "phenix"); ?></a>
+            <button data-modal="service-order" class="fs-13 weight-medium btn primary btn-icon radius-sm fas fa-briefcase"><?php echo __("طلب الخدمة", "phenix"); ?></button>
+        </div>
     </div>
 </div>
 <!-- // Block End -->

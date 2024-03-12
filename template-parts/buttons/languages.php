@@ -19,8 +19,8 @@
     <!-- button -->
     <?php foreach ($the_languages as $language) : ?>
         <?php if ($language['slug'] == $current_language) : ?>
-        <button class="btn outline radius-sm pdx-15 border-gray fs-12 weight-medium small bg-transparent px-toggle tx-uppercase btn-icon">
-            <img src="<?php echo $language['flag']; ?>" alt="" width="16px" class="icon" />
+        <button class="btn outline dark radius-sm pdx-15 weight-medium px-toggle tx-uppercase btn-icon">
+            <img src="<?php echo $language['flag']; ?>" alt="" width="20px" class="icon" />
             <?php echo $language['slug']; ?>
         </button>
         <?php endif; ?>

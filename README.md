@@ -1,11 +1,8 @@
-
-## Phenix Starter WordPress Theme
-
-![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.jpeg)
-
+## Phenix Starter Pro Theme
 
 Phenix Starter Theme is WordPress Block based theme created for integration with Phenix Design System and Phenix Blocks plugin, this theme makes you control the plugin colors, and use its blocks to develop the theme more further, make sure you at least using the **"theme.json"** from the starter theme.
 .
+
   
 ## Phenix Blocks WordPress Plugin
 
@@ -13,7 +10,7 @@ Phenix Starter Theme is WordPress Block based theme created for integration with
 
 Phenix Blocks is a WordPress plugin that allows users to easily build custom websites. This plugin represents a comprehensive design system that includes a variety of pre-made blocks and different settings that can be used to quickly and easily create web pages.
 
-## Core Design System
+  ## Core Design System
 
 ![enter image description here](https://phenixthemes.com/px-plugins/design-showcase.jpg)
 **[Phenix Design System](https://phenixthemes.com/demo/)** is lightweight user-interface framework build for simple structure, fast execution, and performance is number One concern in mind it was build for personal use and later published as open-source project for web community benefits.
@@ -77,16 +74,53 @@ this project is a full-integration for the design system with WordPress with hel
 
 ----------
 
-### Credits
+### Warning Read Carefully
 
-this project was created in 2021 as part of **[Phenix Themes](https://phenixthemes.com/ "https://phenixthemes.com")** Tools and Design System.
+![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.jpeg)
 
-- [Abdullah Ramadan](https://www.facebook.com/Eng.AbdallahPS) - Phenix Founder
-- Naotoshi Fujita - [SplideJS]([](https://github.com/Splidejs/splide)) Creator
-- Daniel Eden - [Animate.css](https://animate.style/) Creator
+this plugin needs its starter theme to makes you control the plugin colors, and use its blocks to develop the theme more further, make sure you at least using the **"theme.json"** from the starter theme.
 
---------------------
+  
+
+----
+
+  
 
 ### License
 
-Copyright (c) 2016-present, [Abdullah Ramadan](https://www.facebook.com/Eng.AbdallahPS). Licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+Copyright (c) 2016-present, [Abdullah Ramadan](https://phenixthemes.com/abdullah-ramadan). Licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).
+
+----
+
+<a href="https://phenixthemes.com" target="_blank" rel="external">Phenix Themes - فينكس ثيمز</a>
+<a href="https://phenixthemes.com/portfolio/" target="_blank" rel="external">Portfolio - اعمال ابداعية</a>
+<a href="https://phenixthemes.com/services/" target="_blank" rel="external">تصميم وتطوير المواقع وقوالب وتطبيقات الويب  - Web Design and Development Services</a>
+<a href="https://phenixthemes.com/demo/" target="_blank" rel="external">Phenix Design System - نظام تصميم فينكس</a>
+
+
+#### DEV NOTES v1.0.6+:
+  - Assets CDN **[ pds-assets.php ]**, (Phenix Core => "CDN"), (Phenix Assets => "CDN") on "pre-release" only.
+  - Assets CDN **[ pds-assets.php ]**, (Phenix Core => "Self"), (Phenix Assets => "CDN") on "main" only.
+
+### Hot-fixes v1.0.7:
+
+1. Improve Responsive UHD Scaler.
+4. Add New Effects and Animations.
+2. Gradient Text Coloring Editing Style Fix.
+3. Media Uploader Control Multiple Popups Fix.
+
+### Hot-fixes v1.0.6:
+
+1. Template Parts Block Listing Fix.
+2. Logo REM Function fix.
+3. Taxonomies Creator Labels translation remove.
+4. Remove Pro Fonts for Official Release.
+5. Fix Loading Media Uploader opens multiple times.
+6. RM... deprecated emoji style remover
+7. Convert to CDN Assets and WebFonts.
+8. Upgrade Query Block to get posts by taxonomies.
+9. adding FHD to the scaling responsive 2k/4k.
+11. Update CPT Creator, and Query Block to get posts by taxonomies.
+12. WP 6.5 Update Fixes.
+13. fix loading spinner size.
+14. icons sizes to rem.

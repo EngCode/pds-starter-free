@@ -10,14 +10,14 @@
     /*==== Fix Arrow Space ====*/
     &.carousel-slider .px-slider-controls {
         @include medium() {
-            margin-left: -15px;
-            margin-right: -15px;
-            width: calc(100% + 30px);
+            margin-left: -#{REM(15)};
+            margin-right: -#{REM(15)};
+            width: calc(100% + #{REM(30)});
         };
 
         @include small('down') {
-            padding-left: 15px;
-            padding-right: 15px;
+            padding-left: #{REM(15)};
+            padding-right: #{REM(15)};
         };
     }
 
@@ -25,20 +25,20 @@
     &.side-bullets .px-slider-pagination  {
         top: 50%;
         padding: 0;
-        width: 10px;
+        width: #{REM(10)};
         bottom: auto;
-        #{$direction-start}: 30px;
+        #{$direction-start}: #{REM(30)};
         transform: translateY(-50%);
         @if($direction == "rtl") { left: 0; }
         /*==== Pagination Items ====*/
         li {
             width: 100%;
-            margin: 5px 0;
+            margin: #{REM(5)} 0;
             button {
                 margin: 0;
                 width: 100%;
-                height: 25px;
-                border-radius: 20px;
+                height: #{REM(25)};
+                border-radius: #{REM(20)};
             }
         }
     }

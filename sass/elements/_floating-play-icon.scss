@@ -1,11 +1,11 @@
 /*==== Floating Icon ====*/
 .floating-play-icon::before {
     /*==== Options ====*/
-    --outline-size: 2px;
-    --border-size: 10px;
+    --outline-size: #{REM(2)};
+    --border-size: #{REM(10)};
     --border-color: rgba(255,255,255, 0.05);
     --background: rgba(255,255,255, 0.2);
-    --text-shadow: 0 0 2px rgba(0,0,0, 0.5);
+    --text-shadow: 0 0 #{REM(2)} rgba(0,0,0, 0.5);
 
     /*==== Properties ====*/
     top: 50%;

@@ -1,16 +1,16 @@
 /*==== Mobile Menu ====*/
-@media screen and (max-width: 920px) {
+@media screen and (max-width: #{REM(920)}) {
     .px-navigation[class*="hidden"][data-mobile="dropdown"] {
         left: 0;
         top: 100%;
         width: 100%;
-        padding: 10px 30px;
+        padding: #{REM(10)} #{REM(30)};
         position: absolute;
         background-color: var(--body-bg);
-        box-shadow: 3px 3px 8px 0 rgba(#000, 0.05);
+        box-shadow: #{REM(3)} #{REM(3)} #{REM(8)} 0 rgba(#000, 0.05);
         > ul > li {
             width: 100%;
-            &:not(:last-child) {margin-bottom: 5px;}
+            &:not(:last-child) {margin-bottom: #{REM(5)};}
         }
     }
 }

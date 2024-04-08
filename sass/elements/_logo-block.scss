@@ -5,16 +5,21 @@
     line-height: var(--max-size);
     .wp-block-phenix-group {min-height: 100%;}
     img {width: auto; max-height: calc(var(--max-size) - #{REM(10)});}
+
     /*==== Vertical ====*/
-    &.logo-block-v {--max-size: #{REM(150)};}
+    &.logo-block-v {--max-size: #{REM(120)};}
+
     /*==== Large ====*/
-    &.logo-block-lg {
-        --max-size: #{REM(75)};
+    &.logo-block-lg {--max-size: #{REM(75)};}
+
+    /*==== Image Fix ====*/
+    &.logo-block-v, &.logo-block-lg {
         img {max-height: calc(var(--max-size) - #{REM(15)});}
     }
+
     /*==== Large Vertical ====*/
-    &.logo-block-lgv {
-        --max-size: #{REM(200)};
+    &.logo-block-v-lg {
+        --max-size: #{REM(150)};
         img {max-height: calc(var(--max-size) - #{REM(20)});}
     }
 }

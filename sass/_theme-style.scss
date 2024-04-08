@@ -51,22 +51,6 @@
     box-shadow: none;
 }
 
-/*==== First Hero Section ====*/
-.first-view-hero {
-    background-repeat: no-repeat;
-    background-size: auto 75%, auto 75%;
-    background-position: bottom #{$direction-end}, 50% center;
-    background-image: url('./assets/img/illistration-#{$direction-end}.svg'), url('./assets/img/cubes-animated.svg');
-    .h-min-75vh {min-height: calc(100vh - 120px);}
-}
-
-/*==== Typed List ====*/
-.typed-list li {
-    padding: 5px;
-    font-size: 14px;
-    border-bottom: 1px solid rgba(0,0,0, 0.20);
-}
-
 /*==== Services Section ====*/
 .services-tabs .tab-item {
     /*==== Main ====*/
@@ -113,18 +97,10 @@
 
 /*==== Front-End Only ====*/
 body:not(.wp-admin):not([class*="editor"]) {
-    /*==== Typed List ====*/
-    .typed-list {display: none;}
-
-    /*==== Marquee Theme ====*/
-    .px-marquee, .px-marquee-reverse {
-        .paragraph {font-size: inherit;}
-    }
-
     /*==== Marquee Section ====*/
     .cta-animated-text-section {
         overflow: hidden;
-    
+
         .px-marquee, .px-marquee-reverse {
             left: 0;
             right: 0;

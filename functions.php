@@ -157,7 +157,6 @@ if (!function_exists('phenix_register_required_plugins')) :
             array('name' => 'Phenix Blocks', 'slug' => 'pds-blocks', 'source' => 'https://github.com/EngCode/phenix-blocks', 'required' => true),
             array('name' => 'SVG Support', 'slug' => 'svg-support', 'required' => true),
             //===> Utilites Plugins <===//
-            array('name' => 'Yoast SEO', 'slug' => 'wordpress-seo', 'required' => false),
             array('name' => 'W3 Total Cache', 'slug' => 'w3-total-cache', 'required' => false),
             //===> Contact Plugins <===//
             array('name' => 'Newsletter', 'slug' => 'newsletter', 'required' => false),
@@ -165,11 +164,10 @@ if (!function_exists('phenix_register_required_plugins')) :
             array('name' => 'Contact Form 7', 'slug' => 'contact-form-7', 'required' => false),
             //===> WooCommerce Plugins <===//
             // array('name' => 'WooCommerce', 'slug' => 'woocommerce', 'required' => false),
-            // array('name' => 'WooCommerce PayPal Payments', 'slug' => 'woocommerce-paypal-payments', 'required' => false),
             // array('name' => 'WooCommerce Blocks Editor', 'slug' => 'blocks-product-editor-for-woocommerce', 'required' => false),
             //===> Multi-Language Plugins <===//
             array('name' => 'Polylang', 'slug' => 'polylang', 'required' => false),
-            // array('name' => 'PolyLang Theme Translation', 'slug' => 'theme-translation-for-polylang', 'required' => false),
+            array('name' => 'PolyLang Theme Translation', 'slug' => 'theme-translation-for-polylang', 'required' => false),
         );
     
         //===> Array of configuration settings <===//

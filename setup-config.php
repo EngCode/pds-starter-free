@@ -20,8 +20,8 @@ if (class_exists('Merlin')) :
             //====> License Settings <====//
             'license_step' => false, //====> EDD license activation step.
             'license_required' => true, // Require the license activation step.
-            'license_help_url' => 'https://localhost', // URL for the 'license-tooltip'.
-            //====> Easy Digital Downloads Software License activation <====//
+            'license_help_url' => 'https://phenixthemes.com', // URL for the 'license-tooltip'.
+            // //====> Easy Digital Downloads Software License activation <====//
             'edd_remote_api_url'   => '', // EDD_Theme_Updater_Admin remote_api_url.
             'edd_item_name'        => 'pds-theme', // EDD_Theme_Updater_Admin item_name.
             'edd_theme_slug'       => 'pds-theme', // EDD_Theme_Updater_Admin item_slug.

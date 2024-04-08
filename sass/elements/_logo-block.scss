@@ -1,10 +1,20 @@
 /*==== Logo Block ====*/
 [class*="logo-block"] {
-    --max-size: 60px;
+    --max-size: #{REM(60)};
     /*==== ... ====*/
     line-height: var(--max-size);
     .wp-block-phenix-group {min-height: 100%;}
-    img {width: auto; max-height: calc(var(--max-size) - 10px);}
-    /*==== ... ====*/
-    &.logo-block-lg {--max-size: 75px;}
+    img {width: auto; max-height: calc(var(--max-size) - #{REM(10)});}
+    /*==== Vertical ====*/
+    &.logo-block-v {--max-size: #{REM(150)};}
+    /*==== Large ====*/
+    &.logo-block-lg {
+        --max-size: #{REM(75)};
+        img {max-height: calc(var(--max-size) - #{REM(15)});}
+    }
+    /*==== Large Vertical ====*/
+    &.logo-block-lgv {
+        --max-size: #{REM(200)};
+        img {max-height: calc(var(--max-size) - #{REM(20)});}
+    }
 }

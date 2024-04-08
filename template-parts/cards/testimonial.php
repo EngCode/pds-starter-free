@@ -20,7 +20,7 @@
 ?>
 <!-- Testimonial Card -->
 <div class="testimonial-card mb-30 col-12 col-md-6 col-lg-4 pdy-15">
-    <div class="content-box bg-component-lvl-1 color-component-lvl-1 position-rv radius-md pd-25 pd-md-30 h-min-100">
+    <div class="content-box bg-component-lvl-1 color-component-lvl-1 position-rv radius-md pd-25 pd-md-30 h-min-100 border-1 border-alpha-10 border-solid">
         <!-- Client Info -->
         <div class="flexbox flow-nowrap align-center-y pdb-15 divider-b">
             <!-- Avatar -->

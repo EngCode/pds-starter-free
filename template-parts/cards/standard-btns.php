@@ -35,6 +35,12 @@
             <!-- Description -->
             <p class="fs-13 fs-md-16 tx-line-clamp" style="--max-lines: 4;" itemprop="description"><?php echo $post_description; ?></p>
             <?php endif; ?>
+            <!-- Buttons -->
+            <div class="flexbox align-between">
+                <a href="<?php echo $post_link; ?>" class="fs-13 weight-medium btn btn-icon radius-sm bg-alpha-05 fas fa-up-right-from-square"><?php echo __("قراءة المزيد", "phenix"); ?></a>
+                <button data-modal="service-order" class="fs-13 weight-medium btn primary btn-icon radius-sm fas fa-briefcase"><?php echo __("طلب الخدمة", "phenix"); ?></button>
+            </div>
+            <!-- // Buttons -->
         </div>
         <!-- // info -->
     </div>

@@ -74,18 +74,6 @@ this project is a full-integration for the design system with WordPress with hel
 
 ----------
 
-### Warning Read Carefully
-
-![enter image description here](https://phenixthemes.com/px-plugins/pdb-07.jpeg)
-
-this plugin needs its starter theme to makes you control the plugin colors, and use its blocks to develop the theme more further, make sure you at least using the **"theme.json"** from the starter theme.
-
-  
-
-----
-
-  
-
 ### License
 
 Copyright (c) 2016-present, [Abdullah Ramadan](https://phenixthemes.com/abdullah-ramadan). Licensed under the terms of the [MIT License](https://opensource.org/licenses/MIT).

@@ -191,6 +191,6 @@ if (!function_exists('phenix_register_required_plugins')) :
 endif;
 
 //=====> Includes Merlin Wizard Class <=====//
-require_once get_template_directory().'/wizard/vendor/autoload.php';
-require_once get_template_directory().'/wizard/class-merlin.php';
-require_once get_template_directory().'/setup-config.php';
+// require_once get_template_directory().'/wizard/vendor/autoload.php';
+// require_once get_template_directory().'/wizard/class-merlin.php';
+// require_once get_template_directory().'/setup-config.php';

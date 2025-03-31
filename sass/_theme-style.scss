@@ -31,76 +31,99 @@
 /*==== Forms Controls ====*/
 .form-control {--border-color: rgba(0,0,0, 0.20);}
 
-/*==== Secondary Menu Fix ====*/
-@include medium('down'){
-    #secondary-menu {--color: var(--dark-color);}
-};
-
-/*==== Side line ====*/
-@include medium() {
-    .side-border {
-        border-#{$direction-start}-width: 7px;
-        border-#{$direction-start}-style: solid;
-        padding-#{$direction-start}: 30px!important;
-    }
-};
-
-/*==== Fixed Header ====*/
-.has-header .main-header:not(.is-sticky) {
-    background-color: transparent;
-    box-shadow: none;
+/*===> Form Control Outline <====*/
+.form-control:focus, .px-uploader:focus:not([data-uploader=advanced]) {
+    outline: var(--border-size) solid var(--primary-color);
 }
 
-/*==== Services Section ====*/
-.services-tabs .tab-item {
-    /*==== Main ====*/
-    @include large(){ width: 20%; };
-    .wp-block-phenix-group {
+/*==== Icons Colors ====*/
+.primary-icon::before {color: var(--primary-color);}
+.primary-2nd-icon::before {color: var(--primary-hover);}
+.danger-icon::before {color: var(--danger-color);}
+.danger-icons li::before {color: var(--danger-color);}
+.success-icon::before {color: var(--success-color);}
+.success-icons li::before {color: var(--success-color);}
+
+/*==== Sticky Header Scroll Space ====*/
+html, body {scroll-padding: 150px;}
+
+/*===> Navigation Hover Effect <====*/
+.main-header .px-navigation > ul > li {
+    position: relative;
+    /*==== BG Shape ====*/
+    &::before {
+        top: 0;
+        left: -5px;
+        right: -5px;
+        z-index: 0;
+        content: '';
+        height: 100%;
+        position: absolute;
         transition: all 0.3s;
-        background-image: linear-gradient(transparent, rgba(0,0,0,.1));
-    }
-    .wp-block-phenix-icon-element { transition: all 0.3s; }
+        background-color: var(--primary-color);
+        clip-path: polygon(15% 0%, 100% 0%, 85% 100%, 0% 100%);
 
-    /*==== Mobile View ====*/
-    @include small('down'){
-        .wp-block-phenix-icon-element { display: none; }
-    };
+    }
+    /*==== Link Order ====*/
+    > a {position: relative; z-index: 1;}
+    /*==== Hover/Active Mode ====*/
+    &:not(:hover):not(.px-item-active)::before {opacity: 0;}
+}
 
-    /*==== Tint Colorful Image to White ====*/
-    &.active:not(:nth-child(5)) .wp-block-phenix-icon-element,
-    &:hover:not(:nth-child(5)) .wp-block-phenix-icon-element {
-        -webkit-filter: grayscale(1) invert(100%) brightness(10);
-            filter: grayscale(1) invert(100%) brightness(10);
+/*===> Mobile Menu Style <====*/
+.px-custom-menu {
+    /*==== Container ====*/
+    .menu-wrapper {
+        width: 90%;
+        align-self: end;
+        border-radius: 0;
+        background-color: var(--dark-color);
+        /*==== Items ====*/
+        > ul > li {
+            padding: 10px 0;
+            font-weight: 700;
+            font-size: 1.15rem;
+            &:not(:last-child) {border-bottom: 1px solid rgba(0,0,0,.1);}
+
+            /*==== Sub Menus ====*/
+            .submenu {
+                font-size: 1rem;
+                font-weight: 500;
+                li {padding: 5px 15px;}
+            }
+        }
     }
 
-    /*==== Coloring Boxes ====*/
-    &:nth-child(1).active, &:nth-child(1):hover {
-        .wp-block-phenix-group {background-color: var(--primary-color); color: #FFF;}
-    }
-    /*==== ... ====*/
-    &:nth-child(2).active, &:nth-child(2):hover {
-        .wp-block-phenix-group {background-color: var(--secondary-color); color: #FFF;}
-    }
-    /*==== ... ====*/
-    &:nth-child(3).active, &:nth-child(3):hover {
-        .wp-block-phenix-group {background-color: var(--success-color); color: #FFF;}
-    }
-    /*==== ... ====*/
-    &:nth-child(4).active, &:nth-child(4):hover {
-        .wp-block-phenix-group {background-color: var(--danger-color); color: #FFF;}
-    }
-    /*==== ... ====*/
-    &:nth-child(5).active, &:nth-child(5):hover {
-        .wp-block-phenix-group {background-color: var(--warning-color);}
+    /*==== Menu Toggle button ====*/ 
+    // .menu-toggle.px-active::before {content: "\f00d"; }
+}
+
+/*==== Columns Connected Divider ====*/
+.ccd-v1 {
+    position: relative;
+    &::before {
+        left: 50%;
+        width: 80%;
+        content: '';
+        top: REM(22);
+        height: REM(2);
+        position: absolute;
+        transform: translateX(-50%);
+        background-color: var(--primary-color);
     }
 }
 
 /*==== Front-End Only ====*/
-body:not(.wp-admin):not([class*="editor"]) {
+body:not([class*="editor"]) {
+    /*==== Remove White Space for Container ====*/
+    @include large(){
+        .container-free > div {padding-left: 0; padding-right: 0;}
+    };
+    
     /*==== Marquee Section ====*/
     .cta-animated-text-section {
         overflow: hidden;
-
+    
         .px-marquee, .px-marquee-reverse {
             left: 0;
             right: 0;
@@ -129,7 +152,3 @@ body:not(.wp-admin):not([class*="editor"]) {
     }
 }
 
-.success-icon::before {color: var(--success-color);}
-.danger-icon::before {color: var(--danger-color);}
-.success-icons li::before {color: var(--success-color);}
-.danger-icons li::before {color: var(--danger-color);}

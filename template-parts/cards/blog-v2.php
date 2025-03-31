@@ -25,17 +25,22 @@
     <div class="content-box bg-component-lvl-1 radius-lg border-1 border-solid border-alpha-10 h-min-100">
         <!-- Image -->
         <meta itemprop="image" content="<?php echo $post_thumbnail;?>" />
-        <a itemprop="url" href="<?php echo $post_link; ?>" data-src="<?php echo $post_thumbnail;?>" class="px-media ratio-4x3 mb-20 radius-lg radius-top"></a>
+        <a itemprop="url" href="<?php echo $post_link; ?>" data-src="<?php echo $post_thumbnail;?>" class="px-media ratio-4x3 radius-lg radius-top"></a>
         <!-- info -->
-        <div class="pdb-20 pdx-25">
-            <!-- Date -->
-            <span class="fs-12 tx-icon far fa-clock" itemprop="datePublished"><?php echo $post_date;?></span>
+        <div class="pd-25 pd-md-30">
             <!-- Title -->
-            <a itemprop="url" href="<?php echo $post_link; ?>" class="reset-link"><h3 class="fs-15 fs-md-17 weight-medium color-primary" itemprop="name"><?php echo $post_title; ?></h3></a>
+            <a itemprop="url" href="<?php echo $post_link; ?>" class="reset-link color-component-lvl-1">
+                <h3 class="fs-17 fs-md-20 weight-strong mb-20 lineheight-150" itemprop="name"><?php echo $post_title; ?></h3>
+            </a>
             <!-- Description -->
-            <p class="fs-14 mb-10 color-gray tx-line-clamp" style="--max-lines: 3;" itemprop="description"><?php echo $post_description; ?></p>
-            <!-- Read More -->
-            <a itemprop="url" href="<?php echo $post_link; ?>" class="display-block fs-13 tx-align-end color-primary"><?php echo __('Read More', "phenix"); ?></a>
+            <p class="fs-14 mb-20 tx-line-clamp" style="--max-lines: 3;" itemprop="description"><?php echo $post_description; ?></p>
+            <!-- Group -->
+            <div class="flexbox align-between align-center-y">
+                <!-- Date -->
+                <span class="fs-14 tx-icon far fa-calendar-day icon-lg" itemprop="datePublished"><?php echo $post_date;?></span>
+                <!-- Read More -->
+                <a itemprop="url" href="<?php echo $post_link; ?>" class="btn primary small radius-sm"><?php echo __('Read More', "phenix"); ?></a>
+            </div>
         </div>
         <!-- // info -->
     </div>

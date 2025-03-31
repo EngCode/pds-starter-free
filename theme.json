@@ -1,256 +1,251 @@
 {
-	"$schema": "https://schemas.wp.org/trunk/theme.json",
-	"version": 2,
-
+	"$schema": "https://schemas.wp.org/wp/6.6/theme.json",
 	"customTemplates": [
 		{
 			"name": "blank",
-			"title": "Blank",
-			"postTypes": ["page", "post"]
+			"postTypes": [
+				"page",
+				"post"
+			],
+			"title": "Blank"
 		}
 	],
-
-	"templateParts": [
-		{
-			"name": "header",
-			"title": "Header",
-			"area": "header"
-		},
-		{
-			"name": "footer",
-			"title": "Footer",
-			"area": "footer"
-		},
-		{
-			"name": "page-head",
-			"title": "Breadcrumb Header",
-			"area": "uncategorized"
-		}
-	],
-
-	"styles": {
-		"color": {},
-		"spacing": {"blockGap": "0"}
-	},
-
 	"settings": {
 		"appearanceTools": true,
-
+		"border": {
+			"color": false,
+			"radius": false,
+			"style": false,
+			"width": false
+		},
 		"color": {
-            "link": false,
-            "text": true,
+			"background": true,
 			"custom": true,
-            "duotone": [],
-            "gradients": [],
-            "background": true,
+			"customDuotone": false,
 			"defaultDuotone": false,
-			"customDuotone" : false,
-            "defaultPalette": true,
-            "defaultGradients": true,
-
+			"defaultGradients": true,
+			"defaultPalette": true,
+			"duotone": [],
+			"gradients": [],
+			"link": false,
 			"palette": [
 				{
-					"slug": "background",
 					"color": "#F7F9FC",
-					"name": "Document Body"
+					"name": "Document Body",
+					"slug": "background"
 				},
 				{
-					"slug": "text",
 					"color": "var(--dark-color)",
-					"name": "Document Text"
+					"name": "Document Text",
+					"slug": "text"
 				},
 				{
-					"slug" : "links",
 					"color": "var(--primary-color)",
-					"name" : "Links Color"
+					"name": "Links Color",
+					"slug": "links"
 				},
 				{
-					"slug": "gray",
 					"color": "#868e96",
-					"name": "Gray Color"
+					"name": "Gray Color",
+					"slug": "gray"
 				},
 				{
-					"slug": "gray-offwhite",
 					"color": "#d9dde1",
-					"name": "Gray Offwhite Color"
+					"name": "Gray Offwhite Color",
+					"slug": "gray-offwhite"
 				},
 				{
-					"slug": "dark",
+					"color": "#14171a",
+					"name": "Dark Color",
+					"slug": "dark"
+				},
+				{
 					"color": "#343a40",
-					"name": "Dark Color"
+					"name": "Dark Offwhite Color",
+					"slug": "dark-offwhite"
 				},
 				{
-					"slug": "dark-offwhite",
-					"color": "#343a40",
-					"name": "Dark Offwhite Color"
-				},
-	
-	
-				{
-					"slug": "component-bg-lvl-1",
 					"color": "#FFFFFF",
-					"name": "Component BG Lvl.1"
+					"name": "Component BG Lvl.1",
+					"slug": "component-bg-lvl-1"
 				},
 				{
-					"slug": "component-bg-lvl-2",
 					"color": "#F2F2F2",
-					"name": "Component BG Lvl.2"
+					"name": "Component BG Lvl.2",
+					"slug": "component-bg-lvl-2"
 				},
 				{
-					"slug": "component-bg-lvl-3",
 					"color": "#F5F5F5",
-					"name": "Component BG Lvl.3"
+					"name": "Component BG Lvl.3",
+					"slug": "component-bg-lvl-3"
 				},
-	
 				{
-					"slug": "component-tx-lvl-1",
 					"color": "var(--dark-color)",
-					"name": "Component Text Lvl.1"
+					"name": "Component Text Lvl.1",
+					"slug": "component-tx-lvl-1"
 				},
 				{
-					"slug": "component-tx-lvl-2",
 					"color": "var(--gray-color)",
-					"name": "Component Text Lvl.2"
+					"name": "Component Text Lvl.2",
+					"slug": "component-tx-lvl-2"
 				},
 				{
-					"slug": "component-tx-lvl-3",
 					"color": "var(--dark-light)",
-					"name": "Component Text Lvl.3"
+					"name": "Component Text Lvl.3",
+					"slug": "component-tx-lvl-3"
 				},
-	
 				{
-					"slug": "primary",
 					"color": "#0C97F9",
-					"name": "Primary"
+					"name": "Primary",
+					"slug": "primary"
 				},
 				{
-					"slug": "primary-hvr",
 					"color": "#1A69F4",
-					"name": "Primary Hover"
+					"name": "Primary Hover",
+					"slug": "primary-hvr"
 				},
 				{
-					"slug": "primary-offwhite",
 					"color": "#e1eef7",
-					"name": "Primary Offwhite"
+					"name": "Primary Offwhite",
+					"slug": "primary-offwhite"
 				},
 				{
-					"slug": "primary-txt",
 					"color": "#FFFFFF",
-					"name": "Primary Text"
+					"name": "Primary Text",
+					"slug": "primary-txt"
 				},
 				{
-					"slug": "primary-dark",
 					"color": "#14243C",
-					"name": "Primary Dark"
+					"name": "Primary Dark",
+					"slug": "primary-dark"
 				},
-	
-	
 				{
-					"slug": "secondary",
 					"color": "#F8C25B",
-					"name": "Secondary"
+					"name": "Secondary",
+					"slug": "secondary"
 				},
 				{
-					"slug": "secondary-hvr",
 					"color": "#FFB800",
-					"name": "Secondary Hover"
+					"name": "Secondary Hover",
+					"slug": "secondary-hvr"
 				},
 				{
-					"slug": "secondary-offwhite",
 					"color": "#fddfa8",
-					"name": "Secondary Offwhite"
+					"name": "Secondary Offwhite",
+					"slug": "secondary-offwhite"
 				},
 				{
-					"slug": "secondary-txt",
 					"color": "#1c1c1c",
-					"name": "Secondary Text"
+					"name": "Secondary Text",
+					"slug": "secondary-txt"
 				},
 				{
-					"slug": "secondary-dark",
 					"color": "#120E2E",
-					"name": "Secondary Dark"
+					"name": "Secondary Dark",
+					"slug": "secondary-dark"
 				},
-	
-	
 				{
-					"slug": "info",
 					"color": "#816CF3",
-					"name": "Informative Color"
+					"name": "Informative Color",
+					"slug": "info"
 				},
 				{
-					"slug": "info-offwhite",
 					"color": "#CECCF9",
-					"name": "Info Offwhite Color"
+					"name": "Info Offwhite Color",
+					"slug": "info-offwhite"
 				},
 				{
-					"slug": "success",
 					"color": "#22B567",
-					"name": "Success Color"
+					"name": "Success Color",
+					"slug": "success"
 				},
 				{
-					"slug": "success-offwhite",
 					"color": "#C1EED9",
-					"name": "Success Offwhite Color"
+					"name": "Success Offwhite Color",
+					"slug": "success-offwhite"
 				},
 				{
-					"slug": "danger",
 					"color": "#DE3131",
-					"name": "Danger Color"
+					"name": "Danger Color",
+					"slug": "danger"
 				},
 				{
-					"slug": "danger-offwhite",
 					"color": "#fbbbbb",
-					"name": "Danger Offwhite Color"
+					"name": "Danger Offwhite Color",
+					"slug": "danger-offwhite"
 				},
 				{
-					"slug": "warning",
 					"color": "#FAD934",
-					"name": "Warning Color"
+					"name": "Warning Color",
+					"slug": "warning"
 				},
 				{
-					"slug": "warning-offwhite",
 					"color": "#FFE875",
-					"name": "Warning Offwhite Color"
+					"name": "Warning Offwhite Color",
+					"slug": "warning-offwhite"
 				},
 				{
-					"slug": "disable",
 					"color": "#ebebeb",
-					"name": "Disable Color"
+					"name": "Disable Color",
+					"slug": "disable"
 				}
-			]
+			],
+			"text": true
 		},
-
-		"typography": {
-            "customFontSize": false,
-            "lineHeight": false,
-            "dropCap": false,
-            "fluid": false,
-            "fontStyle": false,
-            "fontWeight": false,
-            "letterSpacing": false,
-            "textDecoration": false,
-            "textTransform": false,
-            "fontSizes": [],
-            "fontFamilies": []
-        },
-
 		"layout": {
 			"contentSize": "920px",
 			"wideSize": "100%"
 		},
-	
 		"spacing": {
+			"blockGap": null,
 			"margin": false,
 			"padding": false,
-			"blockGap": null,
-			"units": [ "px", "em", "rem", "vh", "vw", "%" ]
+			"units": [
+				"px",
+				"em",
+				"rem",
+				"vh",
+				"vw",
+				"%"
+			]
 		},
-
-		"border": {
-            "radius": false,
-            "color": false,
-            "style": false,
-            "width": false
-        }
-	}
+		"typography": {
+			"customFontSize": false,
+			"defaultFontSizes": false,
+			"dropCap": false,
+			"fluid": false,
+			"fontFamilies": [],
+			"fontSizes": [],
+			"fontStyle": false,
+			"fontWeight": false,
+			"letterSpacing": false,
+			"lineHeight": false,
+			"textDecoration": false,
+			"textTransform": false
+		}
+	},
+	"styles": {
+		"color": [],
+		"spacing": {
+			"blockGap": "0"
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "Header"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Footer"
+		},
+		{
+			"area": "uncategorized",
+			"name": "page-head",
+			"title": "Breadcrumb Header"
+		}
+	],
+	"version": 3
 }

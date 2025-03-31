@@ -7,19 +7,6 @@ body:not([class*="block-editor"]):not([class*="site-editor"]) {
     .full-screen {min-height: 100vh;}
 }
 
-/*==== Button Fixes ====*/
-.btn.outline::before {position: relative; top: -1px;}
-
-/*==== Position Fixes ====*/
-.position-rv > [class*="container"] {position: static;}
-
-/*==== extra icons options ====*/
-.icon-lg::before {font-size: 1.25em;}
-.icon-primary::before {color: var(--primary-color);}
-.icon-secondary::before {color: var(--secondary-color);}
-.avatar-image-sm img {max-width: REM(36);max-height: REM(36);}
-.avatar-image img {max-width: REM(42);max-height: REM(42);}
-
 /*==== Animations ====*/
 .px-animate.view-active:not([data-animation]) {
     .wp-block-phenix-column, #{$animated-elements} {

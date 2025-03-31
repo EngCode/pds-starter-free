@@ -24,7 +24,7 @@
     <div class="content-wrapper bg-component-lvl-1 radius-lg border-1 border-solid border-alpha-10 pdy-25 pdy-lg-30 pdx-25">
         <!-- Image -->
         <a itemprop="url" href="<?php echo $post_link; ?>" class="icon">
-            <img itemprop="image" src="<?php echo $post_thumbnail;?>" width="75" alt="<?php echo $post_title; ?>" class="mb-15" />
+            <img itemprop="image" src="<?php echo $post_thumbnail;?>" style="width: 4.688rem;" alt="<?php echo $post_title; ?>" class="mb-15" />
         </a>
         <!-- Title -->
         <a itemprop="url" href="<?php echo $post_link; ?>" class="color-inherit">

@@ -20,25 +20,25 @@
 	}
 ?>
 <!-- Block Start -->
-<div class="standard-card col-auto" itemtype="https://schema.org/LocalBusiness" itemscope>
-    <div class="content-box bg-component-lvl-1 radius-lg border-1 border-solid border-alpha-10 h-min-100 tx-align-center">
+<div class="standard-card col-auto pdy-10" itemtype="https://schema.org/LocalBusiness" itemscope>
+    <div class="content-box bg-component-lvl-1 radius-lg border-1 border-solid border-alpha-10 h-min-100 tx-align-center bx-shadow-dp-1y">
         <!-- Image -->
         <meta itemprop="image" content="<?php echo $post_thumbnail;?>" />
         <a itemprop="url" href="<?php echo $post_link; ?>" data-src="<?php echo $post_thumbnail;?>" class="px-media ratio-4x3 mb-20 radius-lg radius-top"></a>
         <!-- info -->
-        <div class="<?php if (isset($post_description)) { echo 'pdb-25';} else { echo 'pdy-15'; }; ?> pdx-25">
+        <div class="<?php if (isset($post_description)) { echo 'pdb-25';} else { echo 'pdy-15'; }; ?> pdx-20">
             <!-- Title -->
             <a itemprop="url" href="<?php echo $post_link; ?>">
-                <h3 class="fs-16 fs-md-18" itemprop="name"><?php echo $post_title; ?></h3>
+                <h3 class="fs-15 fs-md-16" itemprop="name"><?php echo $post_title; ?></h3>
             </a>
             <?php if (isset($post_description)) : ?>
             <!-- Description -->
-            <p class="fs-13 fs-md-16 tx-line-clamp" style="--max-lines: 4;" itemprop="description"><?php echo $post_description; ?></p>
+            <p class="fs-13 tx-line-clamp" style="--max-lines: 4;" itemprop="description"><?php echo $post_description; ?></p>
             <?php endif; ?>
             <!-- Buttons -->
-            <div class="flexbox align-between">
-                <a href="<?php echo $post_link; ?>" class="fs-13 weight-medium btn btn-icon radius-sm bg-alpha-05 fas fa-up-right-from-square"><?php echo __("قراءة المزيد", "phenix"); ?></a>
-                <button data-modal="service-order" class="fs-13 weight-medium btn primary btn-icon radius-sm fas fa-briefcase"><?php echo __("طلب الخدمة", "phenix"); ?></button>
+            <div class="px-group radius-sm">
+                <a href="<?php echo $post_link; ?>" class="col fs-13 weight-medium btn dark btn-icon fas fa-up-right-from-square"><?php echo __("Read More", "phenix"); ?></a>
+                <button data-modal="service-order" class="col fs-13 weight-medium btn primary btn-icon fas fa-graduation-cap"><?php echo __("طلب الخدمة", "phenix"); ?></button>
             </div>
             <!-- // Buttons -->
         </div>

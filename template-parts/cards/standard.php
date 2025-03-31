@@ -28,12 +28,12 @@
         <!-- info -->
         <div class="<?php if (isset($post_description)) { echo 'pdb-25';} else { echo 'pdy-15'; }; ?> pdx-25">
             <!-- Title -->
-            <a itemprop="url" href="<?php echo $post_link; ?>">
-                <h3 class="fs-16 fs-md-18" itemprop="name"><?php echo $post_title; ?></h3>
+            <a itemprop="url" href="<?php echo $post_link; ?>" class="reset-link color-dark">
+                <h3 class="fs-16" itemprop="name"><?php echo $post_title; ?></h3>
             </a>
             <?php if (isset($post_description)) : ?>
             <!-- Description -->
-            <p class="fs-13 fs-md-16 tx-line-clamp" style="--max-lines: 4;" itemprop="description"><?php echo $post_description; ?></p>
+            <!-- <p class="fs-13 fs-md-16 tx-line-clamp" style="--max-lines: 4;" itemprop="description"><?php echo $post_description; ?></p> -->
             <?php endif; ?>
         </div>
         <!-- // info -->

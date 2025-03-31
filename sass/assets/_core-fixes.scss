@@ -57,11 +57,3 @@ body.admin-bar {margin-top: 0!important;padding-top: 0!important;}
 
 //====> Fix Tables Head <====//
 .wp-block-table thead {border-bottom: 0 none;}
-
-/*==== PDS Identity ====*/
-#wpadminbar #wp-admin-bar-wp-logo > .ab-item {
-    background-image: url('assets/img/ap-icon.svg');
-    background-size: 100% auto;
-    background-position: center;
-    .ab-icon::before {content: '';}
-}

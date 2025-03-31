@@ -12,8 +12,8 @@
  ** 01 - Theme Support
  ** 02 - Phenix Assets
  ** 03 - Setup Templates Meta
- ** 04 - Register the required plugins for this theme.
- ** 05 - Includes Merlin Wizard Class
+ ** 04 - ACF Fallback
+ ** 05 - Add Dynamic Options to CF7 Dropdowns
 */
 
 //===> make sure Plugins are loaded <===//
@@ -57,7 +57,7 @@ endif;
 
 add_action('after_setup_theme', 'phenix_support');
 
-//=====> Theme Style.css <=====//
+//=====> Phenix Assets CSS <=====//
 if (!function_exists('theme_style')) :
 	/**
 	 * Setup Phenix Design Fonts and Third-Party
@@ -78,9 +78,10 @@ if (!function_exists('theme_style')) :
     add_action('admin_enqueue_scripts', 'theme_style');
     add_action('login_enqueue_scripts', 'theme_style');
     add_action('enqueue_block_editor_assets', 'theme_style');
+    add_action('enqueue_block_assets', 'theme_style');
 endif;
 
-//=====> Theme Scripts <=====//
+//=====> Phenix Assets Scripts <=====//
 if (!function_exists('pds_theme_script')) :
     function pds_theme_script() {
         wp_enqueue_script('pds-script', get_template_directory_uri().'/style.js', 'phenix' , NULL , true);
@@ -90,39 +91,8 @@ if (!function_exists('pds_theme_script')) :
     add_action('wp_enqueue_scripts', 'pds_theme_script');
 endif;
 
-//====> Setup Templates Meta <====//
+//====> Setup Templates Parts <====//
 if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_theme_parts")) :
-    function pds_templates_meta_register() {
-        //===> Define Meta Data & Get the Json Files <===//
-        $template_meta = array();
-        $templates_meta_list = array();
-        $templates_meta_files = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-meta"));
-
-        //===> Add the Files to a List <===//
-        if (count($templates_meta_files) > 0) {
-            foreach ($templates_meta_files as $key => $value) {
-                //===> if its a Directory <===//
-                if(is_array($value)) {
-                    //===> Get its Files and add them to the list <===//
-                    foreach ($value as $key2 => $value2) $templates_meta_list[] = $key.'/'.$value2;
-                } else {
-                    //===> Add the File <===//
-                    $templates_meta_list[] = $value;
-                }
-            }
-        }
-
-        //===> Get each File Content <===//
-        if (count($templates_meta_list) > 0) {
-            foreach($templates_meta_list as $key => $value) {
-                $template_json = json_decode(file_get_contents(get_template_directory()."/template-meta/".$value), true);
-                $template_meta[$template_json['name']] = array("features" => $template_json['features'], "options" => $template_json['options']);
-            }
-        }
-
-        update_option("templates_meta", $template_meta);
-    };
-
     function pds_templates_parts_register() {
         //===> Set Templates Parts <===//
         $current_theme_parts = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-parts"));
@@ -130,11 +100,63 @@ if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_
     };
 
     add_action('init', 'pds_templates_parts_register');
-    add_action('init', 'pds_templates_meta_register');
 endif;
 
-//===> ACF Fallback <===//
-if (!is_plugin_active('advanced-custom-fields/acf.php') || !is_plugin_active('advanced-custom-fields-pro/acf.php')) {
-    function get_field() { return 'ACF is Not Enabled.'; }
-    function the_field() { return 'ACF is Not Enabled.'; }
-}
+//===> Add Dynamic Options to CF7 Dropdowns <===//
+if (!function_exists('pds_cf7_dd_options')):
+    function pds_cf7_dd_options($form_control, $unused ) {
+        //===> Add a Post Type Options <===//
+        if (str_contains($form_control['name'], "cpt-")) {
+            //===> Get the Current Post Type Within a Post <===//
+            $post_type = str_replace("cpt-", "", $form_control['name']);
+
+            //===> Get Current Post Type <===//
+            if ($form_control['name'] === "cpt-current") {
+                if (isset($post) && $post->ID) {
+                    $post_type = get_post_type($post->ID);
+                } else {
+                    $post_type = get_post_type();
+                }
+            }
+
+            /*==== Query Data =====*/
+            $the_query = new WP_Query(array('post_type' => $post_type, 'posts_per_page' => -1));
+            //==== Start Query =====//
+            if ($the_query->have_posts()) :
+                //===> Get the First Post <===//
+                while ($the_query->have_posts()): $the_query->the_post();
+                    $form_control['raw_values'][] = get_the_title();
+                    $form_control['labels'][] = get_the_title();
+                endwhile;
+                //==== RESET Query =====//
+                wp_reset_postdata();
+            endif;
+        }
+
+        //===> Add the Options to the "pickup-location" <===//
+        else if (str_contains($form_control['name'], "taxonomy-")) {
+            //===> Add the Locations to the Options <===//
+            $taxonomies_terms = get_categories(array('taxonomy' => str_replace("taxonomy-", "", $form_control['name']), 'hide_empty' => false));
+
+            if (!empty($taxonomies_terms)) {
+                //===> Loop Through Categories <===//
+                foreach ($taxonomies_terms as $term) :
+                    $form_control['labels'][] = $term->label;
+                    $form_control['raw_values'][] = $term->name;
+                endforeach;
+            }
+        }
+
+        //===> Pass the Options to CF7 <===//
+        if (str_contains($form_control['name'], "cpt-") || str_contains($form_control['name'], "taxonomy-")) {
+            $pipes = new WPCF7_Pipes($form_control['raw_values']);
+            $form_control['values'] = $pipes->collect_befores();
+            $form_control['pipes'] = $pipes;
+        }
+
+        //===> Return the Field <===//
+        return $form_control;
+    }
+
+    add_filter('wpcf7_form_tag', 'pds_cf7_dd_options', 10, 2);
+endif;

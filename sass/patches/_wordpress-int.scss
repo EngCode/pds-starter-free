@@ -2,7 +2,7 @@
 // .wp-site-blocks > * + * {--wp--style--block-gap : 0;}
 
 /*==== Admin-Bar Fix ====*/
-#wpadminbar {z-index: 999999;}
+#wpadminbar {z-index: 999;}
 
 @media screen and (max-width: 782px) {
 	#wpadminbar {

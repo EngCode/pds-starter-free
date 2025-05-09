@@ -17,7 +17,7 @@
     $audio_file = get_post_meta($post->ID, 'sound-file', true);
 
 	//===> Thumbnail Placeholder <===//
-	if ($post_thumbnail === false) { $post_thumbnail = 'https://via.placeholder.com/200x200.webp'; }
+	if ($post_thumbnail === false) { $post_thumbnail = 'https://placehold.co/200x200.webp'; }
 ?>
 <!-- Testimonial Card -->
 <div class="testimonial-card-float col-12">

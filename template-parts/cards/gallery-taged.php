@@ -17,7 +17,7 @@
 
 	//===> Thumbnail Placeholder <===//
 	if ($post_thumbnail === false) {
-		$post_thumbnail = 'https://via.placeholder.com/960x700';
+		$post_thumbnail = 'https://placehold.co/960x700';
 	}
 ?>
 <!-- Block Start -->

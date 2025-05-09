@@ -11,7 +11,7 @@
 
 	//===> Thumbnail Placeholder <===//
 	if (!$tax_thumbnail) {
-		$tax_thumbnail = 'https://via.placeholder.com/480x300';
+		$tax_thumbnail = 'https://placehold.co/480x300';
 	}
 ?>
 <!-- Sector Card -->

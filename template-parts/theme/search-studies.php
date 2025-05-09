@@ -19,7 +19,7 @@
                 //===> Get Meta Info <===//
                 $tax_thumbnail = get_field('icon', 'category_'.$term->cat_ID);
                 //===> Thumbnail Placeholder <===//
-                if (!$tax_thumbnail) {$tax_thumbnail = 'https://via.placeholder.com/480x300';}
+                if (!$tax_thumbnail) {$tax_thumbnail = 'https://placehold.co/480x300';}
         ?>
         <option data-image="<?php echo $tax_thumbnail; ?>" value="<?php echo $term->name; ?>"><?php echo $term->name; ?></option>
         <?php endforeach; ?>

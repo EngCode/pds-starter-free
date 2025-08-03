@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Phenix Themes Store\n"
-"POT-Creation-Date: 2023-05-20 06:30+0300\n"
-"PO-Revision-Date: 2023-05-20 06:31+0300\n"
+"Project-Id-Version: Playora Multimedia\n"
+"POT-Creation-Date: 2025-08-01 05:14+0300\n"
+"PO-Revision-Date: 2025-08-01 05:14+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "Language: ar\n"
@@ -22,1751 +22,1068 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: edd_templates/account-pending.php:3
-#, fuzzy
-#| msgid "The license activation step has been displayed"
-msgid "An email with an activation link has been sent."
-msgstr "تم عرض خطوة تنشيط الترخيص"
+#: functions.php:26
+msgid "Required contact form plugin for the site"
+msgstr "إضافة نموذج الاتصال المطلوبة للموقع"
 
-#: edd_templates/account-pending.php:8
+#: functions.php:34
+msgid "Site performance optimization plugin"
+msgstr "إضافة تحسين أداء الموقع"
+
+#: functions.php:42
+msgid "A set of tools to improve site performance"
+msgstr "مجموعة أدوات لتحسين أداء الموقع"
+
+#: functions.php:50
+msgid "Optimize embedded media performance."
+msgstr "تحسين أداء الوسائط المضمنة."
+
+#: functions.php:58
+msgid "Adds support for modern image formats WebP and AVIF."
+msgstr "إضافة دعم لصيغ الصور الحديثة WebP وAVIF."
+
+#: functions.php:66
+msgid "Improve page loading through preloading."
+msgstr "تحسين تحميل الصفحات من خلال التحميل المسبق."
+
+#: functions.php:74
+msgid "Analyze site performance and provide optimization recommendations."
+msgstr "تحليل أداء الموقع وتقديم توصيات للتحسين."
+
+#: functions.php:82
+msgid "Improve translation performance on the site."
+msgstr "تحسين أداء الترجمة في الموقع."
+
+#: functions.php:185 functions.php:187 functions.php:188 functions.php:203
+#: template-parts/single/media-content.php:200
+msgid "Seasons"
+msgstr "المواسم"
+
+#: functions.php:186 template-parts/cards/media-card.php:59
+msgid "Season"
+msgstr "موسم"
+
+#: functions.php:189
+msgid "All Seasons"
+msgstr "كل المواسم"
+
+#: functions.php:190 functions.php:191
+msgid "Add New Season"
+msgstr "إضافة موسم جديد"
+
+#: functions.php:192
+msgid "Edit Season"
+msgstr "تعديل الموسم"
+
+#: functions.php:193
+msgid "New Season"
+msgstr "موسم جديد"
+
+#: functions.php:194
+msgid "View Season"
+msgstr "عرض الموسم"
+
+#: functions.php:195
+msgid "Search Seasons"
+msgstr "البحث في المواسم"
+
+#: functions.php:204
+msgid "TV Show Seasons management"
+msgstr "إدارة مواسم المسلسلات"
+
+#: functions.php:224 functions.php:226 functions.php:227 functions.php:242
+#: template-parts/single/details-tabs.php:59
+#: template-parts/single/media-content.php:199
+#: template-parts/single/media-content.php:246
+msgid "Episodes"
+msgstr "الحلقات"
+
+#: functions.php:225 template-parts/cards/media-card.php:70
+msgid "Episode"
+msgstr "حلقة"
+
+#: functions.php:228
+msgid "All Episodes"
+msgstr "كل الحلقات"
+
+#: functions.php:229 functions.php:230
+msgid "Add New Episode"
+msgstr "إضافة حلقة جديدة"
+
+#: functions.php:231
+msgid "Edit Episode"
+msgstr "تعديل الحلقة"
+
+#: functions.php:232
+msgid "New Episode"
+msgstr "حلقة جديدة"
+
+#: functions.php:233
+msgid "View Episode"
+msgstr "عرض الحلقة"
+
+#: functions.php:234
+msgid "Search Episodes"
+msgstr "بحث في الحلقات"
+
+#: functions.php:243
+msgid "TV Show Episodes management"
+msgstr "إدارة حلقات المسلسلات"
+
+#: functions.php:839
+msgid "Specials"
+msgstr "العروض الخاصة"
+
+#: functions.php:839
 #, php-format
-msgid ""
-"Your account is pending verification. Please click the link in your email to "
-"activate your account. No email? <a href=\"%s\">Click here</a> to send a new "
-"activation code."
-msgstr ""
+msgid "Season %s"
+msgstr "موسم %s"
 
-#: edd_templates/checkout_cart.php:11
-msgid "Item Name"
-msgstr ""
-
-#: edd_templates/checkout_cart.php:12
-msgid "Item Price"
-msgstr ""
-
-#: edd_templates/checkout_cart.php:13
-#, fuzzy
-#| msgid "Options"
-msgid "Actions"
-msgstr "الاختيارات"
-
-#: edd_templates/checkout_cart.php:57 edd_templates/checkout_cart.php:75
-#: edd_templates/shortcode-profile-editor.php:123
-msgid "Remove"
-msgstr ""
-
-#: edd_templates/checkout_cart.php:102 edd_templates/shortcode-receipt.php:76
-msgid "Subtotal"
-msgstr ""
-
-#: edd_templates/checkout_cart.php:120 edd_templates/shortcode-receipt.php:134
-msgid "Tax"
-msgstr ""
-
-#: edd_templates/checkout_cart.php:129 edd_templates/shortcode-receipt.php:163
-msgid "Total"
-msgstr ""
-
-#: edd_templates/history-downloads.php:14
-#: edd_templates/history-purchases.php:13
-msgid "Your account has been successfully verified!"
-msgstr ""
-
-#: edd_templates/history-downloads.php:44
-msgid "Download Name"
-msgstr ""
-
-#: edd_templates/history-downloads.php:46
-msgid "Files"
-msgstr ""
-
-#: edd_templates/history-downloads.php:89
-#: edd_templates/shortcode-receipt.php:306
-msgid "No downloadable files found."
-msgstr ""
-
-#. translators: the order item's status.
-#: edd_templates/history-downloads.php:97
+#: functions.php:880
 #, php-format
-msgid "Status: %s"
-msgstr ""
+msgid "Episode %s"
+msgstr "حلقة %s"
 
-#: edd_templates/history-downloads.php:135
-msgid "You have not purchased any downloads"
-msgstr ""
+#: functions.php:1139
+msgid "Featured"
+msgstr "مثبت"
 
-#: edd_templates/history-purchases.php:51
-msgid "ID"
-msgstr ""
+#: functions.php:1151 functions.php:1211
+msgid "Unmark as featured"
+msgstr "الغاء التثبيت"
 
-#: edd_templates/history-purchases.php:52
-#: edd_templates/shortcode-receipt.php:69
-msgid "Date"
-msgstr ""
+#: functions.php:1151 functions.php:1205
+msgid "Mark as featured"
+msgstr "تثبيت"
 
-#: edd_templates/history-purchases.php:53
-msgid "Amount"
-msgstr ""
+#: inc/api-settings.php:14 inc/api-settings.php:15
+#: inc/api/api-import-form.php:80
+msgid "API Manager"
+msgstr "API Manager"
 
-#: edd_templates/history-purchases.php:54
-msgid "Details"
-msgstr ""
+#: inc/api/api-import-form.php:45
+msgid "Movie"
+msgstr "فيلم"
 
-#: edd_templates/history-purchases.php:74
-msgid "Complete Purchase"
-msgstr ""
+#: inc/api/api-import-form.php:45
+msgid "TV Show"
+msgstr "مسلسل"
 
-#: edd_templates/history-purchases.php:79
-msgid "View Details and Downloads"
-msgstr ""
-
-#: edd_templates/history-purchases.php:102
-msgid "You have not made any purchases."
-msgstr ""
-
-#: edd_templates/payment-processing.php:2
+#: inc/api/api-import-form.php:46
 #, php-format
-msgid ""
-"Your purchase is processing. This page will reload automatically in 8 "
-"seconds. If it does not, click <a href=\"%s\">here</a>."
-msgstr ""
+msgid "Import %s from %s"
+msgstr "استيراد %s من %s"
 
-#: edd_templates/shortcode-login.php:12
-msgid "Log into Your Account"
-msgstr ""
-
-#: edd_templates/shortcode-login.php:15
-msgid "Username or Email"
-msgstr ""
-
-#: edd_templates/shortcode-login.php:19 edd_templates/shortcode-register.php:30
-msgid "Password"
-msgstr ""
-
-#: edd_templates/shortcode-login.php:23
-msgid "Remember Me"
-msgstr ""
-
-#: edd_templates/shortcode-login.php:29
-msgid "Log In"
-msgstr ""
-
-#: edd_templates/shortcode-login.php:33
-msgid "Lost Password?"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:18
-msgid "Saved cart"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:18
+#: inc/api/api-import-form.php:53
 #, php-format
-msgid "You have a saved cart, <a href=\"%s\">click here</a> to restore it."
-msgstr ""
+msgid "%s ID or URL:"
+msgstr "%s ID or URL:"
 
-#: edd_templates/shortcode-profile-editor.php:22 wizard/class-merlin.php:1770
-#: wizard/class-merlin.php:1976 wizard/class-merlin.php:1989
-#: wizard/class-merlin.php:2002 wizard/class-merlin.php:2015
-#: wizard/class-merlin.php:2028 wizard/class-merlin.php:2041
-msgid "Success"
-msgstr "تم بنجاح"
+#: inc/api/api-import-form.php:60
+msgid "e.g., tt0137523 or Fight Club"
+msgstr "e.g., tt0137523 or Fight Club"
 
-#: edd_templates/shortcode-profile-editor.php:22
-msgid "Your profile has been edited successfully."
-msgstr ""
+#: inc/api/api-import-form.php:60
+msgid "e.g., tt0903747 or Breaking Bad"
+msgstr "e.g., tt0903747 or Breaking Bad"
 
-#: edd_templates/shortcode-profile-editor.php:35
-msgid "Change your Name"
-msgstr ""
+#: inc/api/api-import-form.php:62
+msgid "e.g., 550 or https://www.themoviedb.org/movie/550"
+msgstr "e.g., 550 or https://www.themoviedb.org/movie/550"
 
-#: edd_templates/shortcode-profile-editor.php:38
-msgid "First Name"
-msgstr ""
+#: inc/api/api-import-form.php:62
+msgid "e.g., 1396 or https://www.themoviedb.org/tv/1396"
+msgstr "e.g., 1396 or https://www.themoviedb.org/tv/1396"
 
-#: edd_templates/shortcode-profile-editor.php:43
-msgid "Last Name"
-msgstr ""
+#: inc/api/api-import-form.php:66
+msgid "API key required in Theme Settings"
+msgstr "مفتاح API مطلوب في إعدادات القالب"
 
-#: edd_templates/shortcode-profile-editor.php:48
-msgid "Display Name"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:68
-msgid "Primary Email Address"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:104
-msgid "Additional Email Addresses"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:139
-msgid "Change your Billing Address"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:142
-msgid "Line 1"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:147
-msgid "Line 2"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:152
-msgid "City"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:157
-msgid "Zip / Postal Code"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:162
-msgid "Country"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:171
-msgid "State / Province"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:195
-msgid "Change your Password"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:198
-msgid "New Password"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:203
-msgid "Re-enter Password"
-msgstr ""
-
-#: edd_templates/shortcode-profile-editor.php:220
-msgid "Save Changes"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:19
-msgid "The specified receipt ID appears to be invalid."
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:42
-#, fuzzy
-#| msgid "Order Now"
-msgctxt "heading"
-msgid "Order"
-msgstr "اطلب الان"
-
-#: edd_templates/shortcode-receipt.php:50
-msgid "Order Status"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:56
-msgid "Payment Key"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:63
-msgid "Payment Method"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:87
-msgid "Discount"
-msgid_plural "Discounts"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: edd_templates/shortcode-receipt.php:116
-#: edd_templates/shortcode-receipt.php:120
-msgid "Fee"
-msgid_plural "Fees"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: edd_templates/shortcode-receipt.php:143
-#: edd_templates/shortcode-receipt.php:147
-msgid "Credit"
-msgid_plural "Credits"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: edd_templates/shortcode-receipt.php:200
-msgid "Products"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:204
-msgid "Name"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:206
-msgid "SKU"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:209
-msgid "Quantity"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:211
-msgid "Price"
-msgstr ""
-
-#: edd_templates/shortcode-receipt.php:297
-msgid "No downloadable files found for this bundled item."
-msgstr ""
-
-#: edd_templates/shortcode-register.php:15
-msgid "Register New Account"
-msgstr ""
-
-#: edd_templates/shortcode-register.php:20
-msgid "Username"
-msgstr ""
-
-#: edd_templates/shortcode-register.php:25
-msgid "Email"
-msgstr ""
-
-#: edd_templates/shortcode-register.php:35
-msgid "Confirm Password"
-msgstr ""
-
-#: edd_templates/shortcode-register.php:46
-msgid "Register"
-msgstr ""
-
-#: edd_templates/widget-cart-checkout.php:2
-#: edd_templates/widget-cart-empty.php:3
-msgid "Subtotal:"
-msgstr ""
-
-#: edd_templates/widget-cart-checkout.php:3
-#: edd_templates/widget-cart-empty.php:4
-msgid "Estimated Tax:"
-msgstr ""
-
-#: edd_templates/widget-cart-checkout.php:5
-#: edd_templates/widget-cart-empty.php:6
-msgid "Total:"
-msgstr ""
-
-#: edd_templates/widget-cart-checkout.php:6
-#: edd_templates/widget-cart-empty.php:7
-msgid "Checkout"
-msgstr ""
-
-#: edd_templates/widget-cart-item.php:4
-msgid "remove"
-msgstr ""
-
-#: edd_templates/widget-cart.php:9
-msgid "Number of items in cart"
-msgstr ""
-
-#: setup-config.php:32
-#, fuzzy
-#| msgid "Phenix Themes"
-msgid "Phenix Theme Setup"
-msgstr "قوالب فينكس"
-
-#: setup-config.php:33
-#, php-format
-msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
-msgstr "%1$s%2$s قوالب &lsaquo; تنصيب قالب: %3$s%4$s"
-
-#: setup-config.php:34
-msgid "Return to the dashboard"
-msgstr "لوحة التحكم"
-
-#: setup-config.php:35
-msgid "Disable this wizard"
-msgstr "تعطيل هذا التنصيب"
-
-#: setup-config.php:36
-msgid "Skip"
-msgstr "تخطي"
-
-#: setup-config.php:37
-msgid "Next"
-msgstr "التالي"
-
-#: setup-config.php:38
-msgid "Start"
-msgstr "ابدأ"
-
-#: setup-config.php:39
-msgid "Cancel"
-msgstr "الغاء"
-
-#: setup-config.php:40 setup-config.php:41 setup-config.php:42
-#: wizard/tgm/class-tgm-plugin-activation.php:2810
-msgid "Install"
-msgstr "تنصيب"
-
-#: setup-config.php:43
+#: inc/api/api-import-form.php:66
 msgid "Import"
 msgstr "استيراد"
 
-#: setup-config.php:44 wizard/tgm/class-tgm-plugin-activation.php:2819
-msgid "Activate"
-msgstr "تفعيل"
-
-#: setup-config.php:45
-msgid "Later"
-msgstr "لاحقاً"
-
-#: setup-config.php:46
+#: inc/api/api-import-form.php:79
 #, php-format
-msgid "Activate %s"
-msgstr "تفعيل %s"
+msgid "API key required. Configure it in %s."
+msgstr "مفتاح API مطلوب. قم بتكوينه في %s."
 
-#: setup-config.php:47
+#: inc/api/panels/api-settings.php:12
+msgid "Enable Movie/TV API Integration"
+msgstr "Enable Movie/TV API Integration"
+
+#: inc/api/panels/api-settings.php:18
+msgid "Enable this to show the import form on movies and TV shows pages."
+msgstr ""
+"قم بتفعيل هذا لإظهار نموذج الاستيراد على صفحات الأفلام والبرامج التلفزيونية."
+
+#: inc/api/panels/api-settings.php:25
+msgid "Primary API Provider"
+msgstr "Primary API Provider"
+
+#: inc/api/panels/api-settings.php:27
+msgid "Select API Provider"
+msgstr "Select API Provider"
+
+#: inc/api/panels/api-settings.php:37
+msgid "Choose your primary API provider for importing movie and TV show data."
+msgstr ""
+"اختر موفر واجهة برمجة التطبيقات الأساسي الخاص بك لاستيراد بيانات الأفلام "
+"والبرامج التلفزيونية."
+
+#: inc/api/panels/api-settings.php:49
+msgid "API Keys Configuration"
+msgstr "API Keys Configuration"
+
+#: inc/api/panels/api-settings.php:56
+msgid "DB Movies API Key"
+msgstr "DB Movies API Key"
+
+#: inc/api/panels/api-settings.php:58
+msgid "Enter your primary TMDB API key"
+msgstr "Enter your primary TMDB API key"
+
+#: inc/api/panels/api-settings.php:60
+msgid "Get TMDB API Key"
+msgstr "Get TMDB API Key"
+
+#: inc/api/panels/api-settings.php:67
+msgid "Services API Key"
+msgstr "Services API Key"
+
+#: inc/api/panels/api-settings.php:69
+msgid "Enter your secondary TMDB API key"
+msgstr "Enter your secondary TMDB API key"
+
+#: inc/api/panels/api-settings.php:78
+msgid "OMDB API Key"
+msgstr "OMDB API Key"
+
+#: inc/api/panels/api-settings.php:80
+msgid "Enter your OMDB API key"
+msgstr "Enter your OMDB API key"
+
+#: inc/api/panels/api-settings.php:82
+msgid "Get OMDB API Key"
+msgstr "Get OMDB API Key"
+
+#: inc/api/panels/api-settings.php:92
+msgid "Default Language"
+msgstr "اللغة الافتراضية"
+
+#: inc/api/panels/api-settings.php:94
+msgid "Select Language"
+msgstr "اختر اللغة"
+
+#: inc/api/panels/api-settings.php:106
+msgid "Default Region"
+msgstr "المنطقة الافتراضية"
+
+#: inc/api/panels/api-settings.php:108
+msgid "Select Region"
+msgstr "اختر المنطقة"
+
+#: inc/api/panels/api-settings.php:120
+msgid ""
+"Set default language and region for API requests (applies to supported APIs)."
+msgstr ""
+"تعيين اللغة والمنطقة الافتراضية لطلبات واجهة برمجة التطبيقات (تنطبق على "
+"واجهات برمجة التطبيقات المدعومة)."
+
+#: inc/api/panels/api-settings.php:128
+msgid "Default Image Size"
+msgstr "حجم الصورة الافتراضي"
+
+#: inc/api/panels/api-settings.php:138
+msgid ""
+"Select the default image size to download from APIs (applies to supported "
+"APIs)."
+msgstr ""
+"حدد حجم الصورة الافتراضي للتنزيل من واجهات برمجة التطبيقات (ينطبق على واجهات "
+"برمجة التطبيقات المدعومة)."
+
+#: inc/api/panels/api-settings.php:148
+msgid "Download images locally"
+msgstr "تحميل الصور للوردبريس"
+
+#: inc/api/panels/api-settings.php:156
+msgid ""
+"When enabled, images from APIs will be downloaded and stored in your media "
+"library."
+msgstr ""
+"عند تفعيل هذا الخيار، سيتم تنزيل الصور من واجهات برمجة التطبيقات وتخزينها في "
+"مكتبة الوسائط الخاصة بك."
+
+#: inc/api/panels/api-settings.php:166
+msgid "Auto-create posts"
+msgstr "إنشاء المنشورات تلقائيًا"
+
+#: inc/api/panels/api-settings.php:174
+msgid ""
+"Automatically create posts when importing data. Disable to preview data "
+"first."
+msgstr ""
+"إنشاء المنشورات تلقائيًا عند استيراد البيانات. عطّل معاينة البيانات أولًا."
+
+#: inc/api/panels/import-settings.php:18
+msgid "Import Schedule"
+msgstr "جدول الاستيراد"
+
+#: inc/api/panels/import-settings.php:22
+msgid "Manual Only"
+msgstr "يدوي فقط"
+
+#: inc/api/panels/import-settings.php:25
+msgid "Daily"
+msgstr "يومي"
+
+#: inc/api/panels/import-settings.php:28
+msgid "Weekly"
+msgstr "اسبوعي"
+
+#: inc/api/panels/import-settings.php:36
+msgid "Batch Size"
+msgstr "حجم الدفعة"
+
+#: inc/api/panels/import-settings.php:38
+msgid "Number of items to process in each batch (1-100)."
+msgstr "عدد العناصر التي سيتم معالجتها في كل دفعة (1-100)."
+
+#: inc/api/panels/import-settings.php:55
+msgid "Auto-update existing content"
+msgstr "التحديث التلقائي للمحتوى الموجود"
+
+#: inc/api/panels/import-settings.php:61
+msgid "Automatically update existing movies/shows with new data from TMDB."
+msgstr "تحديث الأفلام/العروض الموجودة تلقائيًا بالبيانات الجديدة من TMDB."
+
+#: inc/download-links.php:290
+msgid "Creating Links..."
+msgstr "يتم إنشاء الروابط..."
+
+#: inc/download-links.php:291 inc/links/bulk-links-form.php:122
+msgid "Edit"
+msgstr "تعديل"
+
+#: inc/download-links.php:292
+msgid "Error"
+msgstr "خطأ"
+
+#: inc/download-links.php:293
+msgid "An unknown error occurred"
+msgstr "حدث خطأ غير معروف"
+
+#: inc/download-links.php:294
+msgid "No post ID found"
+msgstr "لم يتم العثور على معرف المنشور"
+
+#: inc/download-links.php:295
+msgid "Please enter at least one URL"
+msgstr "الرجاء إدخال عنوان URL واحد على الأقل"
+
+#: inc/download-links.php:296 inc/download-links.php:362
+msgid "No valid URLs found"
+msgstr "لم يتم العثور على عناوين URL صالحة"
+
+#: inc/download-links.php:297
+msgid "Invalid URLs found"
+msgstr "تم العثور على عناوين URL غير صالحة"
+
+#: inc/download-links.php:319
+msgid "Security check failed"
+msgstr "فشل فحص الأمان"
+
+#: inc/download-links.php:325
+msgid "Insufficient permissions"
+msgstr "أذونات غير كافية"
+
+#: inc/download-links.php:332
+msgid "Invalid post ID"
+msgstr "معرف المنشور غير صالح"
+
+#: inc/download-links.php:339
+msgid "Invalid post type"
+msgstr "نوع المنشور غير صالح"
+
+#: inc/download-links.php:352
+msgid "No URLs provided"
+msgstr "لم يتم توفير عناوين URL"
+
+#: inc/download-links.php:373
 #, php-format
-msgid "%s is Activated"
-msgstr "تم تفعيل %s بنجاح"
+msgid "Invalid URL on line %d: %s"
+msgstr "عنوان URL غير صالح على السطر %d: %s"
 
-#: setup-config.php:48
-msgid "Enter your license key to enable remote updates and theme support."
-msgstr "ادخل رخصة الشراء لتفعيل التحديثات لهذا القالب."
-
-#: setup-config.php:49
-msgid "License key"
-msgstr "مفتاح التفعيل"
-
-#: setup-config.php:50
-msgid "The theme is already registered, so you can go to the next step!"
-msgstr "هذا القالب مسجل بالفعل يمكنك الذهاب الى الخطوة التالية!"
-
-#: setup-config.php:51
-msgid "Your theme is activated! Remote updates and theme support are enabled."
-msgstr "تم تفعيل هذا القالب بنجاح ويمكنك ان تستقبل التحديثات الان."
-
-#: setup-config.php:52
-msgid "Need help?"
-msgstr "تحتاج الى مساعدة ؟"
-
-#: setup-config.php:53
+#: inc/download-links.php:391
 #, php-format
-msgid "Welcome to %s"
-msgstr "أهلا بك في %s"
+msgid "Failed to create link for URL: %s - %s"
+msgstr "فشل إنشاء رابط لعنوان URL: %s - %s"
 
-#: setup-config.php:54
-msgid "Hi. Welcome back"
-msgstr "مرحبا! اهلا بعودتك"
-
-#: setup-config.php:55
-msgid ""
-"This wizard will set up your theme, install plugins, and import content. It "
-"is optional & should take only a few minutes."
-msgstr ""
-"سيتم الان تنصيب القالب الخاص بك والاضافات المطلوبة لتشغيله والمحتوي "
-"الافتراضي الذي تم شراءه مع القالب في عدة دقائق."
-
-#: setup-config.php:56
-msgid ""
-"You may have already run this theme setup wizard. If you would like to "
-"proceed anyway, click on the \"Start\" button below."
-msgstr ""
-"ربما تكون قد قمت بالفعل بتشغيل معالج إعداد القالب هذا. إذا كنت ترغب في "
-"المتابعة على أي حال ، فانقر فوق الزر \"ابدأ\" أدناه."
-
-#: setup-config.php:57
-msgid "Install Child Theme"
-msgstr "انشاء قالب فرعي من هذا القالب"
-
-#: setup-config.php:58
-msgid "You're good to go!"
-msgstr ""
-"لقد تم التنصيب بنجاح يمكنك الان البدا في تعديل واضافة محتوي موقعك كما تشاء!"
-
-#: setup-config.php:59
-msgid ""
-"Let's build & activate a child theme so you may easily make theme changes."
-msgstr ""
-"القوالب الفرعية تمكنك من التطوير على القالب بدون المساس بكود القالب الأساسي "
-"يمكنك تخطي هذه الخطوة ان لم تكن تعرف ماذا يعني هذا الكلام."
-
-#: setup-config.php:60
-msgid ""
-"Your child theme has already been installed and is now activated, if it "
-"wasn't already."
-msgstr "لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
-
-#: setup-config.php:61
-msgid "Learn about child themes"
-msgstr "تعلم المزيد حول القوالب الفرعية"
-
-#: setup-config.php:62
-msgid ""
-"Awesome. Your child theme has already been installed and is now activated."
-msgstr "رائع لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
-
-#: setup-config.php:63
-msgid "Awesome. Your child theme has been created and is now activated."
-msgstr "لقد تم تنصيب قالبك الفرعي وجاري تفعيلة الان."
-
-#: setup-config.php:64
-#, fuzzy
-#| msgid "Phenix Themes"
-msgid "Phenix Theme Installer"
-msgstr "قوالب فينكس"
-
-#: setup-config.php:65
-msgid "You're up to speed!"
-msgstr "احسنت لقد شارفت على الانتهاء!"
-
-#: setup-config.php:66
-msgid ""
-"Let's install some essential WordPress plugins to get your site up to speed."
-msgstr ""
-"دعنا الان ننصب بعض الإضافات الأساسية لسهولة وسرعة البدأ في تشغيل موقعك."
-
-#: setup-config.php:67
-msgid ""
-"The required WordPress plugins are all installed and up to date. Press \"Next"
-"\" to continue the setup wizard."
-msgstr ""
-"لقد تم تنصيب جميع الإضافات المطلوبة وتم تحديثها لأخر اصدار ويمكنك الان انت "
-"تضغط على التالي للاستمرار."
-
-#: setup-config.php:68 setup-config.php:71
-msgid "Advanced"
-msgstr "متقدم"
-
-#: setup-config.php:69 setup-config.php:75
-msgid "Import Content"
-msgstr "استيراد المحتوي"
-
-#: setup-config.php:70
-msgid ""
-"Let's import content to your website, to help you get familiar with the "
-"theme."
-msgstr ""
-"دعنا نستورد المحتوى إلى موقع الويب الخاص بك ، لمساعدتك في التعرف على القالب "
-"وسهولة التعديل عليه واضافة محتوي جديد."
-
-#: setup-config.php:72
-msgid "One More Step to Go"
-msgstr "بقيت خطوة واحدة للانتهاء"
-
-#: setup-config.php:73
+#: inc/download-links.php:417
 #, php-format
+msgid "Successfully created %d download link."
+msgid_plural "Successfully created %d download links."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: inc/download-links.php:428
+#, php-format
+msgid "%d URL failed to process."
+msgid_plural "%d URLs failed to process."
+msgstr[0] ""
+msgstr[1] ""
+msgstr[2] ""
+msgstr[3] ""
+msgstr[4] ""
+msgstr[5] ""
+
+#: inc/download-links.php:450
+msgid "No download links were created"
+msgstr "لم يتم إنشاء روابط التنزيل"
+
+#: inc/installer.php:25 inc/installer/template.php:30
+msgid "Theme Installer"
+msgstr "تنصيب القالب"
+
+#: inc/installer.php:216
+msgid "Content XML file not found."
+msgstr "لم يتم العثور على ملف XML للمحتوى."
+
+#: inc/installer.php:225
+msgid "Failed to parse XML file."
+msgstr "فشل تحليل ملف XML."
+
+#: inc/installer.php:308
+msgid "Content import completed."
+msgstr "تم الانتهاء من استيراد المحتوى."
+
+#: inc/installer/template.php:19
+msgid "Theme Installer - Installer Wizard"
+msgstr "معالج تنصيب القالب"
+
+#: inc/installer/template.php:31
+msgid "Installer Wizard"
+msgstr "معالج التنصيب"
+
+#: inc/installer/template.php:36
+msgid "Welcome"
+msgstr "مرحباً"
+
+#: inc/installer/template.php:40
+msgid "Plugins"
+msgstr "اضافات"
+
+#: inc/installer/template.php:44
+msgid "Content"
+msgstr "محتوي"
+
+#: inc/installer/template.php:48
+msgid "Complete"
+msgstr "مكتمل"
+
+#: inc/installer/template.php:66
+msgid "Welcome to the Theme Installer Wizard"
+msgstr "مرحبًا بك في معالج تثبيت القالب"
+
+#: inc/installer/template.php:67
 msgid ""
-"Your theme has been all set up and one step remaining is to import your demo "
-"data and Enjoy your new website by %s."
+"This wizard will help you install and set up the Theme Installer easily. The "
+"process usually takes less than 5 minutes."
 msgstr ""
-"تم إعداد القالب الخاص بك بالكامل وهناك خطوة واحدة متبقية وهي استيراد بيانات "
-"المحتوي التوضيحي الخاصة بك والاستمتاع بموقع الويب الجديد الخاص بك بواسطة %s."
+"سيساعدك هذا المعالج على تثبيت مُثبِّت السمات وإعداده بسهولة. عادةً ما تستغرق "
+"العملية أقل من 5 دقائق."
 
-#: setup-config.php:74
-msgid "Extras"
-msgstr "المزيد"
+#: inc/installer/template.php:70
+msgid "System Status"
+msgstr "حالة النظام"
 
-#: setup-config.php:76
-msgid "Explore More Themes"
-msgstr "المزيد من القوالب"
+#: inc/installer/template.php:73
+msgid "WordPress Version"
+msgstr "نسخة ووردبريس"
 
-#: setup-config.php:77
-msgid "Get Theme Support"
-msgstr "الدعم الفني"
+#: inc/installer/template.php:77
+msgid "PHP Version"
+msgstr "إصدار PHP"
 
-#: setup-config.php:78
-msgid "Start Customizing"
-msgstr "البدا في التعديل"
+#: inc/installer/template.php:83
+msgid "File Writing"
+msgstr "كتابة الملفات"
+
+#: inc/installer/template.php:85
+msgid "Available"
+msgstr "متاح"
+
+#: inc/installer/template.php:85
+msgid "Not Available"
+msgstr "غير متوفر"
+
+#: inc/installer/template.php:92
+msgid "Start Installation"
+msgstr "ابدأ التنصيب"
+
+#: inc/installer/template.php:93
+msgid "Skip Wizard"
+msgstr "تخطي المعالج"
+
+#: inc/installer/template.php:102
+msgid "Install Required Plugins"
+msgstr "تنصيب الإضافات"
+
+#: inc/installer/template.php:103
+msgid ""
+"The theme requires some plugins to work perfectly. You can choose which "
+"plugins to install."
+msgstr ""
+"يتطلب القالب بعض الإضافات ليعمل بكفاءة. يمكنك اختيار الإضافات التي ترغب "
+"بتثبيتها."
+
+#: inc/installer/template.php:120
+msgid "(Required)"
+msgstr "(مطلوب)"
+
+#: inc/installer/template.php:128
+msgid "Active"
+msgstr "مفعل"
+
+#: inc/installer/template.php:130
+msgid "Installed but not active"
+msgstr "مثبت, غير مفعل"
+
+#: inc/installer/template.php:132
+msgid "Not Installed"
+msgstr "غير منصبة"
+
+#: inc/installer/template.php:144
+msgid "Installing plugins..."
+msgstr "تنصيب الاضافات..."
+
+#: inc/installer/template.php:149
+msgid "Install Selected Plugins"
+msgstr "تنصيب الإضافات"
+
+#: inc/installer/template.php:152
+msgid "Skip Plugin Installation"
+msgstr "تخطي تثبيت الاضافات"
+
+#: inc/installer/template.php:163 inc/installer/template.php:195
+msgid "Import Demo Content"
+msgstr "استيراد المحتوي التجريبي"
+
+#: inc/installer/template.php:164
+msgid ""
+"You can import demo content to help you get started with the theme. This is "
+"optional and can be skipped."
+msgstr ""
+"يمكنك استيراد محتوى تجريبي لمساعدتك في البدء باستخدام السمة. هذا اختياري "
+"ويمكن تخطيه."
+
+#: inc/installer/template.php:168
+msgid "Demo Content Preview"
+msgstr "معاينة المحتوى التجريبي"
+
+#: inc/installer/template.php:172
+msgid "What will be imported?"
+msgstr "ماذا سيتم استيراده؟"
+
+#: inc/installer/template.php:174 inc/installer/template.php:223
+msgid "Design System Settings"
+msgstr "إعدادات نظام التصميم"
+
+#: inc/installer/template.php:175
+msgid "Site Editor Settings"
+msgstr "إعدادات محرر الموقع"
+
+#: inc/installer/template.php:176
+msgid "Demo posts/content with images"
+msgstr "المشاركات/المحتوى التجريبي مع الصور"
+
+#: inc/installer/template.php:177
+msgid "Main pages (Home, About Us, Contact Us)"
+msgstr "الصفحات الرئيسية (الصفحة الرئيسية، نبذة عنا، اتصل بنا)"
+
+#: inc/installer/template.php:190
+msgid "Importing content..."
+msgstr "استيراد المحتوي..."
+
+#: inc/installer/template.php:198
+msgid "Skip and Finish Installation"
+msgstr "تخطي وإنهاء التثبيت"
+
+#: inc/installer/template.php:214
+msgid "Congratulations! The theme has been installed successfully"
+msgstr "مبروك! تم تثبيت القالب بنجاح"
+
+#: inc/installer/template.php:215
+msgid ""
+"The Theme Installer has been set up successfully. You can now start building "
+"your website."
+msgstr "تم تثبيت القالب بنجاح. يمكنك الآن البدء ببناء موقعك."
+
+#: inc/installer/template.php:218
+msgid "Next Steps"
+msgstr "الخطوات التالية"
+
+#: inc/installer/template.php:224
+msgid "Customize your site features and fonts from the design system"
+msgstr "قم بتخصيص ميزات موقعك وخطوطه من نظام التصميم"
+
+#: inc/installer/template.php:226
+msgid "Open Settings"
+msgstr "افتح الإعدادات"
+
+#: inc/installer/template.php:232
+msgid "Create Pages"
+msgstr "إنشاء الصفحات"
+
+#: inc/installer/template.php:233
+msgid "Create new pages or edit existing ones"
+msgstr "إنشاء صفحات جديدة أو تعديل الصفحات الموجودة"
+
+#: inc/installer/template.php:235
+msgid "Manage Pages"
+msgstr "إدارة الصفحات"
+
+#: inc/installer/template.php:241
+msgid "Site Editor"
+msgstr "محرر الموقع"
+
+#: inc/installer/template.php:242
+msgid "Edit templates and design your site and its colors."
+msgstr "قم بتعديل القوالب وتصميم موقعك وألوانه."
+
+#: inc/installer/template.php:244
+msgid "Open Gutenberg Editor"
+msgstr "محرر جوتنبرج المفتوح"
+
+#: inc/installer/template.php:250
+msgid "Dynamic Menus"
+msgstr "القوائم الديناميكية"
+
+#: inc/installer/template.php:251
+msgid "Manage your site’s classic menus"
+msgstr "إدارة القوائم الكلاسيكية لموقعك"
+
+#: inc/installer/template.php:253
+msgid "Open Menus"
+msgstr "افتح القوائم"
+
+#: inc/installer/template.php:261
+msgid "Visit Site"
+msgstr "زيارة الموقع"
+
+#: inc/installer/template.php:264
+msgid "Dashboard"
+msgstr "لوحة التحكم"
+
+#: inc/installer/template.php:276
+msgid "All rights reserved."
+msgstr "جميع الحقوق محفوظة."
+
+#: inc/installer/template.php:277
+msgid "Developed by Phenix Team"
+msgstr "تم تطويره بواسطة فريق فينيكس"
+
+#: inc/links/bulk-links-form.php:17
+msgid "Bulk Add Download Links"
+msgstr "إضافة روابط التنزيل"
+
+#: inc/links/bulk-links-form.php:44
+msgid "Link Type"
+msgstr "نوع الرابط"
+
+#: inc/links/bulk-links-form.php:46 template-parts/single/details-tabs.php:55
+msgid "Download"
+msgstr "تحميل"
+
+#: inc/links/bulk-links-form.php:47
+msgid "Watch Online"
+msgstr "مشاهدة"
+
+#: inc/links/bulk-links-form.php:48
+msgid "Torrent"
+msgstr "تورنت"
+
+#: inc/links/bulk-links-form.php:49
+msgid "Rent or Buy"
+msgstr "شراء"
+
+#: inc/links/bulk-links-form.php:53 inc/links/bulk-links-form.php:93
+msgid "Language"
+msgstr "اللغة"
+
+#: inc/links/bulk-links-form.php:55
+msgid "English"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:56
+msgid "Spanish"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:57
+msgid "Arabic"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:61 inc/links/bulk-links-form.php:94
+msgid "Quality"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:63
+msgid "HD 1080p"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:64
+msgid "HD 720p"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:65
+msgid "4K"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:69
+msgid "File Size"
+msgstr "حجم الملف"
+
+#: inc/links/bulk-links-form.php:70
+msgid "e.g., 1.5 GB"
+msgstr ""
+
+#: inc/links/bulk-links-form.php:77
+msgid "URLs"
+msgstr "الروابط"
+
+#: inc/links/bulk-links-form.php:78
+msgid "Enter one URL per line"
+msgstr "أدخل عنوان URL واحد لكل سطر"
+
+#: inc/links/bulk-links-form.php:79
+msgid "Enter one URL per line. Each URL will create a separate download link."
+msgstr "أدخل رابطًا واحدًا في كل سطر. سيُنشئ كل رابط رابط تنزيل منفصلًا."
+
+#: inc/links/bulk-links-form.php:81
+msgid "Create Download Links"
+msgstr "إنشاء روابط التنزيل"
+
+#: inc/links/bulk-links-form.php:88
+msgid "Download Links"
+msgstr "روابط التحميل"
+
+#: inc/links/bulk-links-form.php:92 template-parts/theme/advanced-search.php:16
+msgid "Type"
+msgstr "النوع"
+
+#: inc/links/bulk-links-form.php:95
+msgid "Size"
+msgstr "الحجم"
+
+#: inc/links/bulk-links-form.php:96
+msgid "Server"
+msgstr "السيرفر"
+
+#: inc/links/bulk-links-form.php:97
+msgid "Views"
+msgstr "المشاهدات"
+
+#: inc/links/bulk-links-form.php:98
+msgid "Actions"
+msgstr "الاختيارات"
+
+#: inc/links/bulk-links-form.php:132
+msgid "No download links found. Create some using the form above."
+msgstr "لم يتم العثور على روابط تنزيل. أنشئ بعضها باستخدام النموذج أعلاه."
+
+#: inc/user-auth.php:12
+msgid "Invalid username. Please try again."
+msgstr "اسم المستخدم غير صالح. يُرجى المحاولة مرة أخرى."
+
+#: inc/user-auth.php:13
+msgid "Invalid email address. Please try again."
+msgstr "عنوان بريدك الإلكتروني غير صالح. يُرجى المحاولة مرة أخرى."
+
+#: inc/user-auth.php:14
+msgid "Incorrect password. Please try again."
+msgstr "كلمة المرور غير صحيحة. يُرجى المحاولة مرة أخرى."
+
+#: inc/user-auth.php:15
+msgid "Too many attempts. Please try again later."
+msgstr "محاولات كثيرة. يُرجى المحاولة لاحقًا."
+
+#: inc/user-auth.php:16
+msgid "Invalid username or email address."
+msgstr "اسم المستخدم أو عنوان البريد الإلكتروني غير صالح."
+
+#: inc/user-auth.php:17
+msgid "Please enter your username or email address."
+msgstr "الرجاء إدخال اسم المستخدم أو عنوان البريد الإلكتروني الخاص بك."
+
+#: inc/user-auth.php:18
+msgid "Please enter your password."
+msgstr "الرجاء إدخال كلمة المرور الخاصة بك."
+
+#: inc/user-auth.php:19 inc/user-auth.php:50
+msgid "Passwords do not match."
+msgstr "كلمات المرور غير متطابقة."
+
+#: inc/user-auth.php:20 inc/user-auth.php:45
+msgid "Username already exists. Please choose another."
+msgstr "اسم المستخدم موجود بالفعل. يُرجى اختيار اسم آخر."
+
+#: inc/user-auth.php:21 inc/user-auth.php:46
+msgid "Email already exists. Please use another email address."
+msgstr "البريد الإلكتروني موجود بالفعل. يُرجى استخدام بريد إلكتروني آخر."
+
+#: inc/user-auth.php:22 inc/user-auth.php:51
+msgid "Failed to create account. Please try again."
+msgstr "فشل إنشاء الحساب. يُرجى المحاولة مرة أخرى."
+
+#: inc/user-auth.php:29 inc/user-auth.php:30
+msgid "Invalid username or email address"
+msgstr "اسم المستخدم أو عنوان البريد الإلكتروني غير صالح"
+
+#: inc/user-auth.php:31
+msgid "Incorrect password"
+msgstr "كلمة المرور غير صحيحة"
+
+#: inc/user-auth.php:32
+msgid "Please enter your username or email address"
+msgstr "الرجاء إدخال اسم المستخدم أو عنوان البريد الإلكتروني الخاص بك"
+
+#: inc/user-auth.php:33
+msgid "Please enter your password"
+msgstr "الرجاء إدخال كلمة المرور الخاصة بك"
+
+#: inc/user-auth.php:34
+msgid "Invalid username or password"
+msgstr "اسم المستخدم أو كلمة المرور غير صالحة"
+
+#: inc/user-auth.php:35
+msgid "Password is required"
+msgstr "كلمة المرور مطلوبة"
+
+#: inc/user-auth.php:36
+msgid "Password reset link has expired"
+msgstr "انتهت صلاحية رابط إعادة تعيين كلمة المرور"
+
+#: inc/user-auth.php:37
+msgid "Invalid password reset link"
+msgstr "رابط إعادة تعيين كلمة المرور غير صالح"
+
+#: inc/user-auth.php:44
+msgid "Invalid username"
+msgstr "اسم المستخدم غير صالح"
+
+#: inc/user-auth.php:47
+msgid "Please enter your username"
+msgstr "الرجاء إدخال اسم المستخدم الخاص بك"
+
+#: inc/user-auth.php:48
+msgid "Please enter your email address"
+msgstr "الرجاء إدخال عنوان بريدك الإلكتروني"
+
+#: inc/user-auth.php:49
+msgid "Invalid email address"
+msgstr "عنوان البريد الإلكتروني غير صالح"
+
+#: inc/user-auth.php:52
+msgid "Registration is currently unavailable"
+msgstr "التسجيل غير متاح حاليا"
+
+#: inc/user-auth.php:97
+msgid "An error occurred during registration: "
+msgstr "حدث خطأ ، يرجى المحاولة مرة أخرى: "
+
+#: inc/user-auth.php:102
+msgid "An error occurred: "
+msgstr "حدث خطأ ، يرجى المحاولة مرة أخرى: "
+
+#: inc/user-auth.php:119
+msgid "Action: "
+msgstr "الاختيارات: "
+
+#: inc/user-auth.php:124
+msgid "Your account has been created successfully. Please log in now."
+msgstr "تم إنشاء حسابك بنجاح. يُرجى تسجيل الدخول الآن."
+
+#: inc/user-auth.php:138
+msgid "Please check your email."
+msgstr "يرجى التحقق من بريدك الإلكتروني."
 
 #: template-parts/_placeholder.php:2
 msgid "Theme Part Placeholder"
 msgstr "هذا قالب مؤقت افتراضي حتي يتم اختيار واحد من الإعدادات"
 
-#: template-parts/cards/blog.php:38
+#: template-parts/cards/blog.php:42
 msgid "Read More"
 msgstr "قراءة المزيد"
 
-#: template-parts/cards/standard.php:41
-msgid "Add to Card"
-msgstr "شراء القالب"
+#: template-parts/single/details-tabs.php:63
+msgid "Screenshots"
+msgstr "لقطات الشاشة"
 
-#: template-parts/dynamic/search-bar.php:26
-msgid "Search keywords"
-msgstr "كلمات البحث"
+#: template-parts/single/details-tabs.php:67
+msgid "Cast"
+msgstr "طاقم العمل"
 
-#: template-parts/dynamic/search-bar.php:37
-msgid "Show All"
-msgstr "عرض الكل"
+#: template-parts/single/media-content.php:130
+msgid "Previous Episode"
+msgstr "الحلقة السابقة"
 
-#: template-parts/dynamic/search-bar.php:51
-msgid "Search Now"
-msgstr "ابحث الان"
+#: template-parts/single/media-content.php:157
+msgid "Next Episode"
+msgstr "الحلقة التالية"
 
-#: template-parts/post/info.php:21
-msgid "Share via Facebook"
-msgstr ""
+#: template-parts/single/media-content.php:307
+msgid "Watch & Download"
+msgstr "مشاهدة وتحميل"
 
-#: template-parts/post/info.php:22
-msgid "Share via Twitter"
-msgstr ""
+#: template-parts/single/media-content.php:337
+msgid "Share:"
+msgstr "مشاركة:"
 
-#: template-parts/post/info.php:23
-msgid "Share via Linked-In"
-msgstr ""
+#: template-parts/single/media-poster.php:56
+msgid "Watch Trailer"
+msgstr "مشاهدة التريلر"
 
-#: template-parts/post/info.php:24
-msgid "Share via WhatsApp"
-msgstr ""
-
-#: template-parts/post/tags.php:12
+#: template-parts/single/tags.php:12
 msgid "Tags Keywords"
 msgstr "الكلمات الدلالية"
 
-#: template-parts/zdocs/search-form.php:12
-#, fuzzy
-#| msgid "Search keywords"
-msgid "keywords"
-msgstr "كلمات البحث"
+#: template-parts/theme/advanced-search.php:8
+msgid "Quick Search"
+msgstr "البحث السريع"
 
-#: template-parts/zdocs/search-form.php:25
-msgid "- All Categories -"
-msgstr ""
+#: template-parts/theme/advanced-search.php:10
+#: template-parts/theme/search-bar-small.php:5
+msgid "Search..."
+msgstr "بحث..."
 
-#: template-parts/zdocs/search-form.php:29
-#, fuzzy
-#| msgid "Search Now"
+#: template-parts/theme/advanced-search.php:18
+msgid "TV Shows"
+msgstr "المسلسلات"
+
+#: template-parts/theme/advanced-search.php:19
+msgid "Movies"
+msgstr "الافلام"
+
+#: template-parts/theme/advanced-search.php:33
+msgid "-- Genre --"
+msgstr "-- التصنيف --"
+
+#: template-parts/theme/advanced-search.php:47
+msgid "-- Release Year --"
+msgstr "-- سنة الاصدار --"
+
+#: template-parts/theme/advanced-search.php:61
+msgid "-- Quality --"
+msgstr "-- الجودة --"
+
+#: template-parts/theme/advanced-search.php:75
+msgid "-- Status --"
+msgstr "-- الحالة --"
+
+#: template-parts/theme/advanced-search.php:81
+msgid "Start Search"
+msgstr "ابحث الان"
+
+#: template-parts/theme/search-bar-small.php:12
+#: template-parts/theme/search-bar.php:12
+msgid "Advanced Search"
+msgstr "بحث متقدم"
+
+#: template-parts/theme/search-bar-small.php:13
+#: template-parts/theme/search-bar.php:13
 msgid "Search"
-msgstr "ابحث الان"
-
-#: template-parts/zdocs/search-sidebar.php:12
-#, fuzzy
-#| msgid "Search Now"
-msgid "Search Docs"
-msgstr "ابحث الان"
-
-#: wizard/class-merlin.php:447
-msgid "Something went wrong. Please refresh the page and try again!"
-msgstr "هناك خطأ ما. يرجى تحديث الصفحة وحاول مرة أخرى!"
-
-#: wizard/class-merlin.php:593
-msgid "Please define default parameters in the form of an array."
-msgstr "يرجى تحديد المعلمات الافتراضية في شكل مصفوفة."
-
-#: wizard/class-merlin.php:598
-msgid "Please define an SVG icon filename."
-msgstr "يرجى تحديد اسم ملف رمز SVG."
-
-#: wizard/class-merlin.php:707
-msgid "Welcome"
-msgstr "مرحباً"
-
-#: wizard/class-merlin.php:714
-msgid "Child"
-msgstr "فرعي"
-
-#: wizard/class-merlin.php:720
-msgid "License"
-msgstr "رخصة"
-
-#: wizard/class-merlin.php:728
-msgid "Plugins"
-msgstr "اضافات"
-
-#: wizard/class-merlin.php:736 wizard/class-merlin.php:1972
-msgid "Content"
-msgstr "محتوي"
-
-#: wizard/class-merlin.php:742
-msgid "Ready"
-msgstr "جاهز"
-
-#: wizard/class-merlin.php:843
-msgid "The welcome step has been displayed"
-msgstr "تم عرض خطوة الترحيب"
-
-#: wizard/class-merlin.php:937
-msgid "The license activation step has been displayed"
-msgstr "تم عرض خطوة تنشيط الترخيص"
-
-#: wizard/class-merlin.php:1007
-msgid "The child theme installation step has been displayed"
-msgstr "تم عرض خطوة تثبيت السمة الفرعية"
-
-#: wizard/class-merlin.php:1094 wizard/tgm/class-tgm-plugin-activation.php:2366
-msgid "Required"
-msgstr "مطلوب"
-
-#: wizard/class-merlin.php:1095
-msgid "req"
-msgstr "req"
-
-#: wizard/class-merlin.php:1135
-msgid "The plugin installation step has been displayed"
-msgstr "تم عرض خطوة تثبيت البرنامج المساعد"
-
-#: wizard/class-merlin.php:1181
-msgid "Select Demo"
-msgstr "اختر من القوالب"
-
-#: wizard/class-merlin.php:1219
-msgid "The content import step has been displayed"
-msgstr "تم عرض خطوة استيراد المحتوى"
-
-#: wizard/class-merlin.php:1299
-msgid "The final step has been displayed"
-msgstr "تم عرض الخطوة الأخيرة"
-
-#: wizard/class-merlin.php:1376
-msgid "The existing child theme was activated"
-msgstr "تم تنشيط القالب الفرعي الموجود"
-
-#: wizard/class-merlin.php:1393
-msgid "The newly generated child theme was activated"
-msgstr "تم تنشيط القالب الفرعي الذي تم إنشاؤه حديثًا"
-
-#: wizard/class-merlin.php:1414
-msgid ""
-"Yikes! The theme activation failed. Please try again or contact support."
-msgstr "ييكيس! فشل تنشيط الموضوع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم."
-
-#: wizard/class-merlin.php:1423
-msgid "Please add your license key before attempting to activate one."
-msgstr "الرجاء إضافة مفتاح الترخيص الخاص بك قبل محاولة تنشيط واحد."
-
-#: wizard/class-merlin.php:1436
-msgid "The license activation was performed with the following results"
-msgstr "تم تفعيل الترخيص بالنتائج التالية"
-
-#: wizard/class-merlin.php:1482 wizard/class-merlin.php:1523
-msgid "An error occurred, please try again."
-msgstr "حدث خطأ ، يرجى المحاولة مرة أخرى."
-
-#. translators: Expiration date
-#: wizard/class-merlin.php:1495
-#, php-format
-msgid "Your license key expired on %s."
-msgstr "انتهت صلاحية مفتاح الترخيص الخاص بك في %s."
-
-#: wizard/class-merlin.php:1501
-msgid "Your license key has been disabled."
-msgstr "تم تعطيل مفتاح الترخيص الخاص بك."
-
-#: wizard/class-merlin.php:1505
-msgid ""
-"This appears to be an invalid license key. Please try again or contact "
-"support."
-msgstr ""
-"يبدو أن هذا مفتاح ترخيص غير صالح. يرجى المحاولة مرة أخرى أو الاتصال بالدعم."
-
-#: wizard/class-merlin.php:1510
-msgid "Your license is not active for this URL."
-msgstr "الترخيص الخاص بك ليس نشطًا لعنوان URL هذا."
-
-#. translators: EDD Item Name
-#: wizard/class-merlin.php:1515
-#, php-format
-msgid "This appears to be an invalid license key for %s."
-msgstr "يبدو أن هذا مفتاح ترخيص غير صالح لـ %s."
-
-#: wizard/class-merlin.php:1519
-msgid "Your license key has reached its activation limit."
-msgstr "وصل مفتاح الترخيص الخاص بك إلى حد التنشيط."
-
-#: wizard/class-merlin.php:1613
-msgid "The child theme functions.php content was generated"
-msgstr "تم إنشاء محتوى القالب الفرعية function.php"
-
-#: wizard/class-merlin.php:1644
-msgid "The child theme style.css content was generated"
-msgstr "تم إنشاء محتوى style.css للقالب الفرعية"
-
-#: wizard/class-merlin.php:1678
-msgid ""
-"The child theme screenshot was copied to the child theme, with the following "
-"result"
-msgstr ""
-"تم نسخ لقطة الشاشة للقالب الفرعي إلى القالب الفرعي ، مع النتيجة التالية"
-
-#: wizard/class-merlin.php:1680
-msgid "The child theme screenshot was not generated, because of these results"
-msgstr "لم يتم إنشاء لقطة الشاشة للمظهر الفرعي بسبب هذه النتائج"
-
-#: wizard/class-merlin.php:1709
-msgid "Activating"
-msgstr "جاري التفعيل"
-
-#: wizard/class-merlin.php:1725
-msgid "Updating"
-msgstr "جاري التحديث"
-
-#: wizard/class-merlin.php:1741 wizard/class-merlin.php:1757
-#: wizard/class-merlin.php:1975 wizard/class-merlin.php:1988
-#: wizard/class-merlin.php:2001 wizard/class-merlin.php:2014
-#: wizard/class-merlin.php:2027 wizard/class-merlin.php:2040
-#: wizard/class-merlin.php:2083
-msgid "Installing"
-msgstr "جاري التنصيب"
-
-#: wizard/class-merlin.php:1749
-msgid "A plugin with the following data will be processed"
-msgstr "ستتم معالجة البرنامج المساعد بالبيانات التالية"
-
-#: wizard/class-merlin.php:1761
-msgid "A plugin with the following data was processed"
-msgstr "تمت معالجة مكون إضافي بالبيانات التالية"
-
-#: wizard/class-merlin.php:1793
-msgid ""
-"The content importer AJAX call failed to start, because of incorrect data"
-msgstr ""
-"فشل بدء استدعاء AJAX الخاص ببرنامج استيراد المحتوى ، بسبب البيانات غير "
-"الصحيحة"
-
-#: wizard/class-merlin.php:1798
-msgid "Invalid content!"
-msgstr "محتوى غير صالح!"
-
-#: wizard/class-merlin.php:1809
-msgid "The content import AJAX call will be executed with this import data"
-msgstr "سيتم تنفيذ استدعاء AJAX لاستيراد المحتوى باستخدام بيانات الاستيراد هذه"
-
-#: wizard/class-merlin.php:1851
-msgid "The content import AJAX call failed with this passed data"
-msgstr "فشل استدعاء AJAX لاستيراد المحتوى مع هذه البيانات التي تم تمريرها"
-
-#: wizard/class-merlin.php:1862
-msgid "Error"
-msgstr "خطأ"
-
-#: wizard/class-merlin.php:1876
-msgid ""
-"The content importer AJAX call for retrieving total content import items "
-"failed to start, because of incorrect data."
-msgstr ""
-"فشل استدعاء AJAX الخاص ببرنامج استيراد المحتوى لاسترداد إجمالي عناصر استيراد "
-"المحتوى ، بسبب البيانات غير الصحيحة."
-
-#: wizard/class-merlin.php:1881
-msgid "Invalid data!"
-msgstr "بيانات غير صالحة!"
-
-#: wizard/class-merlin.php:1973
-msgid "Demo content data."
-msgstr "بيانات المحتوى التجريبي."
-
-#: wizard/class-merlin.php:1974 wizard/class-merlin.php:1987
-#: wizard/class-merlin.php:2000 wizard/class-merlin.php:2013
-#: wizard/class-merlin.php:2026 wizard/class-merlin.php:2039
-msgid "Pending"
-msgstr "قيد الانتظار"
-
-#: wizard/class-merlin.php:1985
-msgid "Widgets"
-msgstr "وديجات"
-
-#: wizard/class-merlin.php:1986
-msgid "Sample widgets data."
-msgstr "محتوي ويدج تجريبي."
-
-#: wizard/class-merlin.php:1998
-msgid "Revolution Slider"
-msgstr "السلايدر الثوري"
-
-#: wizard/class-merlin.php:1999
-msgid "Sample Revolution sliders data."
-msgstr "Sample Revolution sliders data."
-
-#: wizard/class-merlin.php:2011
-msgid "Options"
-msgstr "الاختيارات"
-
-#: wizard/class-merlin.php:2012
-msgid "Sample theme options data."
-msgstr "عينة من بيانات الاختيارات."
-
-#: wizard/class-merlin.php:2024
-msgid "Redux Options"
-msgstr ""
-
-#: wizard/class-merlin.php:2025
-msgid "Redux framework options."
-msgstr ""
-
-#: wizard/class-merlin.php:2037
-msgid "After import setup"
-msgstr ""
-
-#: wizard/class-merlin.php:2038
-msgid "After import setup."
-msgstr ""
-
-#: wizard/class-merlin.php:2067
-msgid "The revolution slider import was executed"
-msgstr ""
-
-#: wizard/class-merlin.php:2104
-msgid "The home page was set"
-msgstr ""
-
-#: wizard/class-merlin.php:2114
-msgid "The blog page was set"
-msgstr ""
-
-#: wizard/class-merlin.php:2129
-msgid "The Hello world post status was set to draft"
-msgstr ""
-
-#: wizard/class-merlin.php:2153
-msgid ""
-"This predefined demo import does not have the name parameter: "
-"import_file_name"
-msgstr ""
-
-#: wizard/includes/class-merlin-customizer-importer.php:30
-msgid "The customizer import has finished successfully"
-msgstr ""
-
-#: wizard/includes/class-merlin-customizer-importer.php:57
-#, php-format
-msgid "Error: The customizer import file is missing! File path: %s"
-msgstr ""
-
-#: wizard/includes/class-merlin-customizer-importer.php:70
-msgid ""
-"Error: The customizer import file does not have any content in it. Please "
-"make sure to use the correct customizer import file."
-msgstr ""
-
-#: wizard/includes/class-merlin-customizer-importer.php:80
-msgid ""
-"Error: The customizer import file is not in a correct format. Please make "
-"sure to use the correct customizer import file."
-msgstr ""
-
-#: wizard/includes/class-merlin-customizer-importer.php:86
-msgid ""
-"Error: The customizer import file is not suitable for current theme. You can "
-"only import customizer settings for the same theme or a child theme."
-msgstr ""
-
-#: wizard/includes/class-merlin-downloader.php:49
-msgid "The file was not able to save to disk, while trying to download it"
-msgstr ""
-
-#: wizard/includes/class-merlin-downloader.php:66
-msgid "Missing URL for downloading a file!"
-msgstr ""
-
-#: wizard/includes/class-merlin-downloader.php:84
-#, php-format
-msgid ""
-"An error occurred while fetching file from: %1$s%2$s%3$s!%4$sReason: %5$s - "
-"%6$s."
-msgstr ""
-
-#: wizard/includes/class-merlin-redux-importer.php:32
-msgid "The Redux Framework data was imported"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:72
-msgid "Error: Widget import file could not be found."
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:83
-msgid "Error: Widget import file does not have any content in it."
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:105
-msgid ""
-"Error: Widget import data could not be read. Please try a different file."
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:144
-msgid "Sidebar does not exist in theme (moving widget to Inactive)"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:165
-msgid "Site does not support widget"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:198
-msgid "Widget already exists"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:256
-msgid "Imported"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:260
-msgid "Imported to Inactive"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:266
-msgid "No Title"
-msgstr ""
-
-#: wizard/includes/class-merlin-widget-importer.php:328
-msgid "No results for widget import!"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:334
-msgid "Install Required Plugins"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:335
-msgid "Install Plugins"
-msgstr "تنصيب الاضافات"
-
-#. translators: %s: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:337
-#, php-format
-msgid "Installing Plugin: %s"
-msgstr ""
-
-#. translators: %s: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:339
-#, php-format
-msgid "Updating Plugin: %s"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:340
-msgid "Something went wrong with the plugin API."
-msgstr ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:343
-#, php-format
-msgid "This theme requires the following plugin: %1$s."
-msgid_plural "This theme requires the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:349
-#, php-format
-msgid "This theme recommends the following plugin: %1$s."
-msgid_plural "This theme recommends the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:355
-#, php-format
-msgid ""
-"The following plugin needs to be updated to its latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgid_plural ""
-"The following plugins need to be updated to their latest version to ensure "
-"maximum compatibility with this theme: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:361
-#, php-format
-msgid "There is an update available for: %1$s."
-msgid_plural "There are updates available for the following plugins: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:367
-#, php-format
-msgid "The following required plugin is currently inactive: %1$s."
-msgid_plural "The following required plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name(s).
-#: wizard/tgm/class-tgm-plugin-activation.php:373
-#, php-format
-msgid "The following recommended plugin is currently inactive: %1$s."
-msgid_plural "The following recommended plugins are currently inactive: %1$s."
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:378
-msgid "Begin installing plugin"
-msgid_plural "Begin installing plugins"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:383
-msgid "Begin updating plugin"
-msgid_plural "Begin updating plugins"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:388
-msgid "Begin activating plugin"
-msgid_plural "Begin activating plugins"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:392
-msgid "Return to Required Plugins Installer"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:393
-#: wizard/tgm/class-tgm-plugin-activation.php:920
-#: wizard/tgm/class-tgm-plugin-activation.php:2626
-#: wizard/tgm/class-tgm-plugin-activation.php:3673
-msgid "Return to the Dashboard"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:394
-#: wizard/tgm/class-tgm-plugin-activation.php:3252
-msgid "Plugin activated successfully."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:395
-#: wizard/tgm/class-tgm-plugin-activation.php:3045
-msgid "The following plugin was activated successfully:"
-msgid_plural "The following plugins were activated successfully:"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:397
-#, php-format
-msgid "No action taken. Plugin %1$s was already active."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:399
-#, php-format
-msgid ""
-"Plugin not activated. A higher version of %s is needed for this theme. "
-"Please update the plugin."
-msgstr ""
-
-#. translators: 1: dashboard link.
-#: wizard/tgm/class-tgm-plugin-activation.php:401
-#, php-format
-msgid "All plugins installed and activated successfully. %1$s"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:402
-msgid "Dismiss this notice"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:403
-msgid ""
-"There are one or more required or recommended plugins to install, update or "
-"activate."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:404
-msgid "Please contact the administrator of this site for help."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:607
-msgid "This plugin needs to be updated to be compatible with your theme."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:608
-msgid "Update Required"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:725
-msgid "Set the parent_slug config variable instead."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:1027
-msgid ""
-"The remote plugin package does not contain a folder with the desired slug "
-"and renaming did not work."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:1027
-#: wizard/tgm/class-tgm-plugin-activation.php:1030
-msgid ""
-"Please contact the plugin provider and ask them to package their plugin "
-"according to the WordPress guidelines."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:1030
-msgid ""
-"The remote plugin package consists of more than one file, but the files are "
-"not packaged in a folder."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:1214
-#: wizard/tgm/class-tgm-plugin-activation.php:3041
-msgctxt "plugin A *and* plugin B"
-msgid "and"
-msgstr ""
-
-#. translators: %s: version number
-#: wizard/tgm/class-tgm-plugin-activation.php:2075
-#, php-format
-msgid "TGMPA v%s"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2369
-msgid "Recommended"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2385
-msgid "WordPress Repository"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2388
-msgid "External Source"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2391
-msgid "Pre-Packaged"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2408
-msgid "Not Installed"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2412
-msgid "Installed But Not Activated"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2414
-msgid "Active"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2420
-msgid "Required Update not Available"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2423
-msgid "Requires Update"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2426
-msgid "Update recommended"
-msgstr ""
-
-#. translators: 1: install status, 2: update status
-#: wizard/tgm/class-tgm-plugin-activation.php:2435
-#, php-format
-msgctxt "Install/Update Status"
-msgid "%1$s, %2$s"
-msgstr ""
-
-#. translators: 1: number of plugins.
-#: wizard/tgm/class-tgm-plugin-activation.php:2481
-#, php-format
-msgctxt "plugins"
-msgid "All <span class=\"count\">(%s)</span>"
-msgid_plural "All <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: number of plugins.
-#: wizard/tgm/class-tgm-plugin-activation.php:2485
-#, php-format
-msgid "To Install <span class=\"count\">(%s)</span>"
-msgid_plural "To Install <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: number of plugins.
-#: wizard/tgm/class-tgm-plugin-activation.php:2489
-#, php-format
-msgid "Update Available <span class=\"count\">(%s)</span>"
-msgid_plural "Update Available <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#. translators: 1: number of plugins.
-#: wizard/tgm/class-tgm-plugin-activation.php:2493
-#, php-format
-msgid "To Activate <span class=\"count\">(%s)</span>"
-msgid_plural "To Activate <span class=\"count\">(%s)</span>"
-msgstr[0] ""
-msgstr[1] ""
-msgstr[2] ""
-msgstr[3] ""
-msgstr[4] ""
-msgstr[5] ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2575
-msgctxt "as in: \"version nr unknown\""
-msgid "unknown"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2583
-msgid "Installed version:"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2591
-msgid "Minimum required version:"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2603
-msgid "Available version:"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2626
-msgid "No plugins to install, update or activate."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2640
-msgid "Plugin"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2641
-msgid "Source"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2642
-msgid "Type"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2646
-msgid "Version"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2647
-msgid "Status"
-msgstr ""
-
-#. translators: %2$s: plugin name in screen reader markup
-#: wizard/tgm/class-tgm-plugin-activation.php:2696
-#, php-format
-msgid "Install %2$s"
-msgstr ""
-
-#. translators: %2$s: plugin name in screen reader markup
-#: wizard/tgm/class-tgm-plugin-activation.php:2701
-#, php-format
-msgid "Update %2$s"
-msgstr ""
-
-#. translators: %2$s: plugin name in screen reader markup
-#: wizard/tgm/class-tgm-plugin-activation.php:2707
-#, php-format
-msgid "Activate %2$s"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2777
-msgid "Upgrade message from the plugin author:"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2816
-msgid "Update"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2850
-msgid "No plugins were selected to be installed. No action taken."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2852
-msgid "No plugins were selected to be updated. No action taken."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2893
-msgid "No plugins are available to be installed at this time."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:2895
-msgid "No plugins are available to be updated at this time."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3001
-msgid "No plugins were selected to be activated. No action taken."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3027
-msgid "No plugins are available to be activated at this time."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3251
-msgid "Plugin activation failed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: wizard/tgm/class-tgm-plugin-activation.php:3591
-#, php-format
-msgid "Updating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#. translators: 1: plugin name, 2: error message.
-#: wizard/tgm/class-tgm-plugin-activation.php:3594
-#, php-format
-msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:3596
-#, php-format
-msgid "The installation of %1$s failed."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3600
-msgid ""
-"The installation and activation process is starting. This process may take a "
-"while on some hosts, so please be patient."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:3602
-#, php-format
-msgid "%1$s installed and activated successfully."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3602
-#: wizard/tgm/class-tgm-plugin-activation.php:3610
-msgid "Show Details"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3602
-#: wizard/tgm/class-tgm-plugin-activation.php:3610
-msgid "Hide Details"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3603
-msgid "All installations and activations have been completed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: wizard/tgm/class-tgm-plugin-activation.php:3605
-#, php-format
-msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3608
-msgid ""
-"The installation process is starting. This process may take a while on some "
-"hosts, so please be patient."
-msgstr ""
-
-#. translators: 1: plugin name.
-#: wizard/tgm/class-tgm-plugin-activation.php:3610
-#, php-format
-msgid "%1$s installed successfully."
-msgstr ""
-
-#: wizard/tgm/class-tgm-plugin-activation.php:3611
-msgid "All installations have been completed."
-msgstr ""
-
-#. translators: 1: plugin name, 2: action number 3: total number of actions.
-#: wizard/tgm/class-tgm-plugin-activation.php:3613
-#, php-format
-msgid "Installing Plugin %1$s (%2$d/%3$d)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/Importer.php:55
-msgid ""
-"The XMLReader class is missing! Please install the XMLReader PHP extension "
-"on your server"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/Importer.php:68
-msgid "Could not open the XML file for parsing!"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/Importer.php:248
-msgid "Content import start error: "
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/Importer.php:280
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:173
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:291
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:364
-#, php-format
-msgid ""
-"This WXR file (version %s) is newer than the importer (version %s) and may "
-"not be supported. Please consider updating."
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/Importer.php:504
-msgid "New AJAX call!"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:135
-msgid "Could not open the file for parsing"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:514
-msgid "The file does not exist, please try again."
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:577
-msgid "Invalid author mapping"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:678
-msgid "Cannot import auto-draft posts"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:770
-#, php-format
-msgid "Failed to import \"%s\": Invalid post type %s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:780
-#, php-format
-msgid "%s \"%s\" already exists."
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:858
-#, php-format
-msgid "Skipping attachment \"%s\", fetching attachments disabled"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:872
-#, php-format
-msgid "Failed to import \"%s\" (%s)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:904
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1822
-#, php-format
-msgid "Imported \"%s\" (%s)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:909
-#, php-format
-msgid "Post %d remapped to %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:949
-#, php-format
-msgid "Failed to import term: %s - %s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1094
-msgid "Invalid file type"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1593
-#, php-format
-msgid "Failed to import user \"%s\""
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1614
-#, php-format
-msgid "Imported user \"%s\""
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1618
-#, php-format
-msgid "User %d remapped to %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1783
-#, php-format
-msgid "Failed to import %s %s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1827
-#, php-format
-msgid "Term %d remapped to %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1886
-#, php-format
-msgid "Failed to add metakey: %s, metavalue: %s to term_id: %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1895
-#, php-format
-msgid "Meta for term_id %d : %s => %s ; successfully added!"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1947
-#, php-format
-msgid "Remote server returned %1$d %2$s for %3$s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1969
-msgid "Zero size file downloaded"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:1975
-#, php-format
-msgid "Remote file is too large, limit is %s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2000
-#, php-format
-msgid "Running post-processing for post %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2013
-#, php-format
-msgid "Could not find the post parent for \"%s\" (post #%d)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2018
-#, php-format
-msgid "Post %d was imported with parent %d, but could not be found"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2032
-#, php-format
-msgid "Could not find the author for \"%s\" (post #%d)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2037
-#, php-format
-msgid "Post %d was imported with author \"%s\", but could not be found"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2063
-#, php-format
-msgid "Post %d was marked for post-processing, but none was required."
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2074
-#, php-format
-msgid "Could not update \"%s\" (post #%d) with mapped data"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2119
-#, php-format
-msgid "Could not find the menu object for \"%s\" (post #%d)"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2124
-#, php-format
-msgid ""
-"Post %d was imported with object \"%d\" of type \"%s\", but could not be "
-"found"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2146
-#, php-format
-msgid "Could not find the comment parent for comment #%d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2150
-#, php-format
-msgid "Comment %d was imported with parent %d, but could not be found"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2164
-#, php-format
-msgid "Could not find the author for comment #%d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2168
-#, php-format
-msgid "Comment %d was imported with author %d, but could not be found"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2185
-#, php-format
-msgid "Could not update comment #%d with mapped data"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2216
-#, php-format
-msgid "Faulty term_id provided in terms-to-be-remapped array %s"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2226
-#, php-format
-msgid "No taxonomy provided in terms-to-be-remapped array for term #%d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2236
-#, php-format
-msgid "No parent_slug identified in remapping-array for term: %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2244
-#, php-format
-msgid "The term(%d)\"s parent_slug (%s) is not found in the remapping-array."
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2258
-#, php-format
-msgid "No data returned by get_term_by for term_id #%d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2277
-#, php-format
-msgid "Could not update \"%s\" (term #%d) with mapped data"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2287
-#, php-format
-msgid "Term %d was successfully updated with parent %d"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2322
-msgid "Starting remapping of featured images"
-msgstr ""
-
-#: wizard/vendor/proteusthemes/wp-content-importer-v2/src/WXRImporter.php:2331
-#, php-format
-msgid "Remapping featured image ID %d to new ID %d for post ID %d"
-msgstr ""
+msgstr "ابحث"
+
+#: template-parts/theme/search-bar.php:5
+msgid "Search.."
+msgstr "بحث.."
+
+#: template-parts/user/login.php:39 template-parts/user/lost-password.php:29
+msgid "Username or Email"
+msgstr "اسم المستخدم أو البريد الإلكتروني"
+
+#: template-parts/user/login.php:44 template-parts/user/signup.php:53
+msgid "Password"
+msgstr "كلمة المرور"
+
+#: template-parts/user/login.php:45
+msgid "Show/Hide"
+msgstr "اظهار/اخفاء"
+
+#: template-parts/user/login.php:54
+msgid "Remember ME"
+msgstr "تذكر بياناتي"
+
+#: template-parts/user/login.php:58
+msgid "Login"
+msgstr "تسجيل الدخول"
+
+#: template-parts/user/login.php:65
+msgid "Lost your password?"
+msgstr "هل فقدت كلمة المرور الخاصة بك؟"
+
+#: template-parts/user/login.php:67 template-parts/user/lost-password.php:42
+msgid "Don't have an account? You can create one here"
+msgstr "ليس لديك حساب؟ يمكنك إنشاء واحد هنا"
+
+#: template-parts/user/lost-password.php:11
+msgid "Check your email for the password reset link."
+msgstr "تحقق من بريدك الإلكتروني للحصول على رابط إعادة تعيين كلمة المرور."
+
+#: template-parts/user/lost-password.php:37
+msgid "Recover Account"
+msgstr "استعادة الحساب"
+
+#: template-parts/user/signup.php:39
+msgid "Username"
+msgstr "اسم المستخدم"
+
+#: template-parts/user/signup.php:46
+msgid "Email"
+msgstr "بريد إلكتروني"
+
+#: template-parts/user/signup.php:54 template-parts/user/signup.php:62
+msgid "Show or Hide"
+msgstr "إظهار أو إخفاء"
+
+#: template-parts/user/signup.php:61
+msgid "Confirm Password"
+msgstr "تأكيد كلمة المرور"
+
+#: template-parts/user/signup.php:68
+msgid "Country"
+msgstr "الدولة"
+
+#: template-parts/user/signup.php:83
+msgid "City"
+msgstr "المدينة"
+
+#: template-parts/user/signup.php:90
+msgid "Address"
+msgstr "العنوان"
+
+#: template-parts/user/signup.php:97
+msgid "Phone Number"
+msgstr "رقم الهاتف"
+
+#: template-parts/user/signup.php:105
+msgid "I agree to our Terms of Use and Privacy Policy"
+msgstr "أوافق على شروط الاستخدام وسياسة الخصوصية الخاصة بنا"
+
+#: template-parts/user/signup.php:108
+msgid "Create Account"
+msgstr "إنشاء حساب"
 
 #. Theme Name of the plugin/theme
-#, fuzzy
-#| msgid "Phenix Themes"
-msgid "Phenix Themes Store"
-msgstr "قوالب فينكس"
+msgid "Playora Multimedia"
+msgstr ""
 
 #. Theme URI of the plugin/theme
-#. Author URI of the plugin/theme
-msgid "http://phenixthemes.com"
+msgid "https://phenixthemes.com"
 msgstr ""
 
 #. Description of the plugin/theme
@@ -1777,14 +1094,356 @@ msgstr ""
 msgid "Phenix Themes {Abdullah.Ramadan}"
 msgstr ""
 
+#. Author URI of the plugin/theme
+msgid "http://phenixthemes.com"
+msgstr ""
+
+#~ msgid "All Genres"
+#~ msgstr "كل التصنيفات"
+
+#, fuzzy
+#~| msgid "قراءة المزيد"
+#~ msgid "كتابة الملفات"
+#~ msgstr "قراءة المزيد"
+
+#, fuzzy
+#~| msgid "قراءة المزيد"
+#~ msgid "زيارة الموقع"
+#~ msgstr "قراءة المزيد"
+
+#, fuzzy
+#~| msgid "The license activation step has been displayed"
+#~ msgid "An email with an activation link has been sent."
+#~ msgstr "تم عرض خطوة تنشيط الترخيص"
+
+#~ msgid "Success"
+#~ msgstr "تم بنجاح"
+
+#, fuzzy
+#~| msgid "Order Now"
+#~ msgctxt "heading"
+#~ msgid "Order"
+#~ msgstr "اطلب الان"
+
+#, fuzzy
+#~| msgid "Phenix Themes"
+#~ msgid "Phenix Theme Setup"
+#~ msgstr "قوالب فينكس"
+
+#~ msgid "%1$s%2$s Themes &lsaquo; Theme Setup: %3$s%4$s"
+#~ msgstr "%1$s%2$s قوالب &lsaquo; تنصيب قالب: %3$s%4$s"
+
+#~ msgid "Return to the dashboard"
+#~ msgstr "لوحة التحكم"
+
+#~ msgid "Disable this wizard"
+#~ msgstr "تعطيل هذا التنصيب"
+
+#~ msgid "Skip"
+#~ msgstr "تخطي"
+
+#~ msgid "Next"
+#~ msgstr "التالي"
+
+#~ msgid "Start"
+#~ msgstr "ابدأ"
+
+#~ msgid "Cancel"
+#~ msgstr "الغاء"
+
+#~ msgid "Later"
+#~ msgstr "لاحقاً"
+
+#~ msgid "Activate %s"
+#~ msgstr "تفعيل %s"
+
+#~ msgid "%s is Activated"
+#~ msgstr "تم تفعيل %s بنجاح"
+
+#~ msgid "Enter your license key to enable remote updates and theme support."
+#~ msgstr "ادخل رخصة الشراء لتفعيل التحديثات لهذا القالب."
+
+#~ msgid "License key"
+#~ msgstr "مفتاح التفعيل"
+
+#~ msgid "The theme is already registered, so you can go to the next step!"
+#~ msgstr "هذا القالب مسجل بالفعل يمكنك الذهاب الى الخطوة التالية!"
+
+#~ msgid ""
+#~ "Your theme is activated! Remote updates and theme support are enabled."
+#~ msgstr "تم تفعيل هذا القالب بنجاح ويمكنك ان تستقبل التحديثات الان."
+
+#~ msgid "Need help?"
+#~ msgstr "تحتاج الى مساعدة ؟"
+
+#~ msgid "Welcome to %s"
+#~ msgstr "أهلا بك في %s"
+
+#~ msgid "Hi. Welcome back"
+#~ msgstr "مرحبا! اهلا بعودتك"
+
+#~ msgid ""
+#~ "This wizard will set up your theme, install plugins, and import content. "
+#~ "It is optional & should take only a few minutes."
+#~ msgstr ""
+#~ "سيتم الان تنصيب القالب الخاص بك والاضافات المطلوبة لتشغيله والمحتوي "
+#~ "الافتراضي الذي تم شراءه مع القالب في عدة دقائق."
+
+#~ msgid ""
+#~ "You may have already run this theme setup wizard. If you would like to "
+#~ "proceed anyway, click on the \"Start\" button below."
+#~ msgstr ""
+#~ "ربما تكون قد قمت بالفعل بتشغيل معالج إعداد القالب هذا. إذا كنت ترغب في "
+#~ "المتابعة على أي حال ، فانقر فوق الزر \"ابدأ\" أدناه."
+
+#~ msgid "Install Child Theme"
+#~ msgstr "انشاء قالب فرعي من هذا القالب"
+
+#~ msgid "You're good to go!"
+#~ msgstr ""
+#~ "لقد تم التنصيب بنجاح يمكنك الان البدا في تعديل واضافة محتوي موقعك كما "
+#~ "تشاء!"
+
+#~ msgid ""
+#~ "Let's build & activate a child theme so you may easily make theme changes."
+#~ msgstr ""
+#~ "القوالب الفرعية تمكنك من التطوير على القالب بدون المساس بكود القالب "
+#~ "الأساسي يمكنك تخطي هذه الخطوة ان لم تكن تعرف ماذا يعني هذا الكلام."
+
+#~ msgid ""
+#~ "Your child theme has already been installed and is now activated, if it "
+#~ "wasn't already."
+#~ msgstr "لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
+
+#~ msgid "Learn about child themes"
+#~ msgstr "تعلم المزيد حول القوالب الفرعية"
+
+#~ msgid ""
+#~ "Awesome. Your child theme has already been installed and is now activated."
+#~ msgstr "رائع لقد تم تنصيب قالبك الفرعي بالفعل وهو الان فعال."
+
+#~ msgid "Awesome. Your child theme has been created and is now activated."
+#~ msgstr "لقد تم تنصيب قالبك الفرعي وجاري تفعيلة الان."
+
+#~ msgid "You're up to speed!"
+#~ msgstr "احسنت لقد شارفت على الانتهاء!"
+
+#~ msgid ""
+#~ "Let's install some essential WordPress plugins to get your site up to "
+#~ "speed."
+#~ msgstr ""
+#~ "دعنا الان ننصب بعض الإضافات الأساسية لسهولة وسرعة البدأ في تشغيل موقعك."
+
+#~ msgid ""
+#~ "The required WordPress plugins are all installed and up to date. Press "
+#~ "\"Next\" to continue the setup wizard."
+#~ msgstr ""
+#~ "لقد تم تنصيب جميع الإضافات المطلوبة وتم تحديثها لأخر اصدار ويمكنك الان "
+#~ "انت تضغط على التالي للاستمرار."
+
+#~ msgid "Advanced"
+#~ msgstr "متقدم"
+
+#~ msgid ""
+#~ "Let's import content to your website, to help you get familiar with the "
+#~ "theme."
+#~ msgstr ""
+#~ "دعنا نستورد المحتوى إلى موقع الويب الخاص بك ، لمساعدتك في التعرف على "
+#~ "القالب وسهولة التعديل عليه واضافة محتوي جديد."
+
+#~ msgid "One More Step to Go"
+#~ msgstr "بقيت خطوة واحدة للانتهاء"
+
+#~ msgid ""
+#~ "Your theme has been all set up and one step remaining is to import your "
+#~ "demo data and Enjoy your new website by %s."
+#~ msgstr ""
+#~ "تم إعداد القالب الخاص بك بالكامل وهناك خطوة واحدة متبقية وهي استيراد "
+#~ "بيانات المحتوي التوضيحي الخاصة بك والاستمتاع بموقع الويب الجديد الخاص بك "
+#~ "بواسطة %s."
+
+#~ msgid "Extras"
+#~ msgstr "المزيد"
+
+#~ msgid "Explore More Themes"
+#~ msgstr "المزيد من القوالب"
+
+#~ msgid "Get Theme Support"
+#~ msgstr "الدعم الفني"
+
+#~ msgid "Start Customizing"
+#~ msgstr "البدا في التعديل"
+
+#~ msgid "Add to Card"
+#~ msgstr "شراء القالب"
+
+#~ msgid "Search keywords"
+#~ msgstr "كلمات البحث"
+
+#~ msgid "Show All"
+#~ msgstr "عرض الكل"
+
+#~ msgid "Search Now"
+#~ msgstr "ابحث الان"
+
+#, fuzzy
+#~| msgid "Search keywords"
+#~ msgid "keywords"
+#~ msgstr "كلمات البحث"
+
+#~ msgid "Something went wrong. Please refresh the page and try again!"
+#~ msgstr "هناك خطأ ما. يرجى تحديث الصفحة وحاول مرة أخرى!"
+
+#~ msgid "Please define default parameters in the form of an array."
+#~ msgstr "يرجى تحديد المعلمات الافتراضية في شكل مصفوفة."
+
+#~ msgid "Please define an SVG icon filename."
+#~ msgstr "يرجى تحديد اسم ملف رمز SVG."
+
+#~ msgid "Child"
+#~ msgstr "فرعي"
+
+#~ msgid "License"
+#~ msgstr "رخصة"
+
+#~ msgid "Ready"
+#~ msgstr "جاهز"
+
+#~ msgid "The welcome step has been displayed"
+#~ msgstr "تم عرض خطوة الترحيب"
+
+#~ msgid "The license activation step has been displayed"
+#~ msgstr "تم عرض خطوة تنشيط الترخيص"
+
+#~ msgid "The child theme installation step has been displayed"
+#~ msgstr "تم عرض خطوة تثبيت السمة الفرعية"
+
+#~ msgid "req"
+#~ msgstr "req"
+
+#~ msgid "The plugin installation step has been displayed"
+#~ msgstr "تم عرض خطوة تثبيت البرنامج المساعد"
+
+#~ msgid "The content import step has been displayed"
+#~ msgstr "تم عرض خطوة استيراد المحتوى"
+
+#~ msgid "The final step has been displayed"
+#~ msgstr "تم عرض الخطوة الأخيرة"
+
+#~ msgid "The existing child theme was activated"
+#~ msgstr "تم تنشيط القالب الفرعي الموجود"
+
+#~ msgid "The newly generated child theme was activated"
+#~ msgstr "تم تنشيط القالب الفرعي الذي تم إنشاؤه حديثًا"
+
+#~ msgid ""
+#~ "Yikes! The theme activation failed. Please try again or contact support."
+#~ msgstr "ييكيس! فشل تنشيط الموضوع. يرجى المحاولة مرة أخرى أو الاتصال بالدعم."
+
+#~ msgid "Please add your license key before attempting to activate one."
+#~ msgstr "الرجاء إضافة مفتاح الترخيص الخاص بك قبل محاولة تنشيط واحد."
+
+#~ msgid "The license activation was performed with the following results"
+#~ msgstr "تم تفعيل الترخيص بالنتائج التالية"
+
+#~ msgid "Your license key expired on %s."
+#~ msgstr "انتهت صلاحية مفتاح الترخيص الخاص بك في %s."
+
+#~ msgid "Your license key has been disabled."
+#~ msgstr "تم تعطيل مفتاح الترخيص الخاص بك."
+
+#~ msgid ""
+#~ "This appears to be an invalid license key. Please try again or contact "
+#~ "support."
+#~ msgstr ""
+#~ "يبدو أن هذا مفتاح ترخيص غير صالح. يرجى المحاولة مرة أخرى أو الاتصال "
+#~ "بالدعم."
+
+#~ msgid "Your license is not active for this URL."
+#~ msgstr "الترخيص الخاص بك ليس نشطًا لعنوان URL هذا."
+
+#~ msgid "This appears to be an invalid license key for %s."
+#~ msgstr "يبدو أن هذا مفتاح ترخيص غير صالح لـ %s."
+
+#~ msgid "Your license key has reached its activation limit."
+#~ msgstr "وصل مفتاح الترخيص الخاص بك إلى حد التنشيط."
+
+#~ msgid "The child theme functions.php content was generated"
+#~ msgstr "تم إنشاء محتوى القالب الفرعية function.php"
+
+#~ msgid "The child theme style.css content was generated"
+#~ msgstr "تم إنشاء محتوى style.css للقالب الفرعية"
+
+#~ msgid ""
+#~ "The child theme screenshot was copied to the child theme, with the "
+#~ "following result"
+#~ msgstr ""
+#~ "تم نسخ لقطة الشاشة للقالب الفرعي إلى القالب الفرعي ، مع النتيجة التالية"
+
+#~ msgid ""
+#~ "The child theme screenshot was not generated, because of these results"
+#~ msgstr "لم يتم إنشاء لقطة الشاشة للمظهر الفرعي بسبب هذه النتائج"
+
+#~ msgid "Activating"
+#~ msgstr "جاري التفعيل"
+
+#~ msgid "Updating"
+#~ msgstr "جاري التحديث"
+
+#~ msgid "A plugin with the following data will be processed"
+#~ msgstr "ستتم معالجة البرنامج المساعد بالبيانات التالية"
+
+#~ msgid "A plugin with the following data was processed"
+#~ msgstr "تمت معالجة مكون إضافي بالبيانات التالية"
+
+#~ msgid ""
+#~ "The content importer AJAX call failed to start, because of incorrect data"
+#~ msgstr ""
+#~ "فشل بدء استدعاء AJAX الخاص ببرنامج استيراد المحتوى ، بسبب البيانات غير "
+#~ "الصحيحة"
+
+#~ msgid "The content import AJAX call will be executed with this import data"
+#~ msgstr ""
+#~ "سيتم تنفيذ استدعاء AJAX لاستيراد المحتوى باستخدام بيانات الاستيراد هذه"
+
+#~ msgid "The content import AJAX call failed with this passed data"
+#~ msgstr "فشل استدعاء AJAX لاستيراد المحتوى مع هذه البيانات التي تم تمريرها"
+
+#~ msgid ""
+#~ "The content importer AJAX call for retrieving total content import items "
+#~ "failed to start, because of incorrect data."
+#~ msgstr ""
+#~ "فشل استدعاء AJAX الخاص ببرنامج استيراد المحتوى لاسترداد إجمالي عناصر "
+#~ "استيراد المحتوى ، بسبب البيانات غير الصحيحة."
+
+#~ msgid "Pending"
+#~ msgstr "قيد الانتظار"
+
+#~ msgid "Widgets"
+#~ msgstr "وديجات"
+
+#~ msgid "Sample widgets data."
+#~ msgstr "محتوي ويدج تجريبي."
+
+#~ msgid "Revolution Slider"
+#~ msgstr "السلايدر الثوري"
+
+#~ msgid "Sample Revolution sliders data."
+#~ msgstr "Sample Revolution sliders data."
+
+#~ msgid "Options"
+#~ msgstr "الاختيارات"
+
+#~ msgid "Sample theme options data."
+#~ msgstr "عينة من بيانات الاختيارات."
+
+#, fuzzy
+#~| msgid "Phenix Themes"
+#~ msgid "Phenix Themes Store"
+#~ msgstr "قوالب فينكس"
+
 #~ msgid "Theme Setup"
 #~ msgstr "إعادة التنصيب"
-
-#~ msgid "Advanced Systems"
-#~ msgstr "أنظمة متقدمة"
-
-#~ msgid "قراءة المزيد"
-#~ msgstr "قراءة المزيد"
 
 #~ msgid "طلب خدمة"
 #~ msgstr "طلب خدمة"

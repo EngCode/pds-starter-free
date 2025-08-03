@@ -8,12 +8,6 @@
  * @subpackage Phenix_WP
  * @since Phenix WP 1.0
  * 
- * ========> Reference by Comments <=======
- ** 01 - Theme Support
- ** 02 - Phenix Assets
- ** 03 - Setup Templates Meta
- ** 04 - ACF Fallback
- ** 05 - Add Dynamic Options to CF7 Dropdowns
 */
 
 //===> make sure Plugins are loaded <===//
@@ -25,20 +19,68 @@ function pds_theme_installer_config() {
     return array(
         //====> Contact Form 7 <====//
         'contact-form-7' => array(
-            'required' => false,
+            'required' => true,
             'name' => 'Contact Form 7',
             'slug' => 'contact-form-7',
             'file' => 'contact-form-7/wp-contact-form-7.php',
-            'description' => __('إضافة نماذج الاتصال المطلوبة للموقع', 'phenix'),
+            'description' => __('Required contact form plugin for the site', 'phenix'),
         ),
-        //====> YOAST SEO <====//
-        'yoast-seo' => array(
+        //====> LiteSpeed <====//
+        'litespeed-cache' => array(
             'required' => false,
-            'name' => 'Yoast SEO',
-            'slug' => 'wordpress-seo',
-            'file' => 'wordpress-seo/wp-seo.php',
-            'description' => __('إضافة تحسين محركات البحث', 'phenix'),
-        )
+            'name' => 'LiteSpeed Cache',
+            'slug' => 'litespeed-cache',
+            'file' => 'litespeed-cache/litespeed-cache.php',
+            'description' => __('Site performance optimization plugin', 'phenix'),
+        ),
+        //====> Performance Lab <====//
+        'performance-lab' => array(
+            'required' => false,
+            'name' => 'Performance Lab',
+            'slug' => 'performance-lab',
+            'file' => 'performance-lab/performance-lab.php',
+            'description' => __('A set of tools to improve site performance', 'phenix'),
+        ),
+        //====> Embed Optimizer <====//
+        'embed-optimizer' => array(
+            'required' => false,
+            'name' => 'Embed Optimizer',
+            'slug' => 'embed-optimizer',
+            'file' => 'embed-optimizer/load.php',
+            'description' => __('Optimize embedded media performance.', 'phenix'),
+        ),
+        //====> Modern Image Formats <====//
+        'webp-uploads' => array(
+            'required' => false,
+            'name' => 'Modern Image Formats',
+            'slug' => 'webp-uploads',
+            'file' => 'webp-uploads/load.php',
+            'description' => __('Adds support for modern image formats WebP and AVIF.', 'phenix'),
+        ),
+        //====> Speculative Loading <====//
+        'speculation-rules' => array(
+            'required' => false,
+            'name' => 'Speculative Loading',
+            'slug' => 'speculation-rules',
+            'file' => 'speculation-rules/load.php',
+            'description' => __('Improve page loading through preloading.', 'phenix'),
+        ),
+        //====> Optimization Detective <====//
+        'optimization-detective' => array(
+            'required' => false,
+            'name' => 'Optimization Detective',
+            'slug' => 'optimization-detective',
+            'file' => 'optimization-detective/load.php',
+            'description' => __('Analyze site performance and provide optimization recommendations.', 'phenix'),
+        ),
+        //====> Performant Translations <====//
+        'performant-translations' => array(
+            'required' => false,
+            'name' => 'Performant Translations',
+            'slug' => 'performant-translations',
+            'file' => 'performant-translations/performant-translations.php',
+            'description' => __('Improve translation performance on the site.', 'phenix'),
+        ),
     );
 }
 

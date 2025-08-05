@@ -159,13 +159,53 @@ if (!function_exists('pds_theme_script')) :
     add_action('wp_enqueue_scripts', 'pds_theme_script');
 endif;
 
-//====> Setup Templates Parts <====//
+//====> Setup Templates Parts and its Meta Options <====//
 if (!function_exists('pds_templates_meta_register') && function_exists("pds_get_theme_parts")) :
+    function pds_templates_meta_register() {
+        //===> Define Meta Data & Get the Json Files <===//
+        $template_meta = array();
+        $templates_meta_list = array();
+        $templates_meta_files = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-parts"), 'json');
+
+        //===> Add the Files to a List <===//
+        if (count($templates_meta_files) > 0) {
+            foreach ($templates_meta_files as $key => $value) {
+                //===> if its a Directory <===//
+                if(is_array($value)) {
+                    //===> Get its Files and add them to the list <===//
+                    foreach ($value as $key2 => $value2) $templates_meta_list[] = $key.'/'.$value2;
+                } else {
+                    //===> Add only JSON File <===//
+                    $templates_meta_list[] = $value;
+                }
+            }
+        }
+
+        //===> Get each File Content <===//
+        if (count($templates_meta_list) > 0) {
+            foreach($templates_meta_list as $key => $value) {
+                //===> Get the File Content <===//
+                $template_json = json_decode(file_get_contents(get_template_directory()."/template-parts/".$value), true);
+                //===> Check if the File has a Name <===//
+                if (isset($template_json['name'])) {
+                    //===> Add the Template Meta <===//
+                    $template_meta[$template_json['name']] = array("features" => $template_json['features'], "options" => $template_json['options']);
+                } else {
+                    //===> Skip if No Name <===//
+                    continue;
+                }
+            }
+        }
+
+        update_option("templates_meta", $template_meta);
+    };
+
     function pds_templates_parts_register() {
         //===> Set Templates Parts <===//
-        $current_theme_parts = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-parts"));
+        $current_theme_parts = pds_get_theme_parts(new DirectoryIterator(get_template_directory()."/template-parts"), 'php');
         update_option('theme_parts', $current_theme_parts);
     };
 
     add_action('init', 'pds_templates_parts_register');
+    add_action('init', 'pds_templates_meta_register');
 endif;
